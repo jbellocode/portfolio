@@ -300,3 +300,5 @@ figcaption { font-size: .86rem; line-height: 1.55; color: var(--muted); margin-t
   .proj-logo { height: 96px; }
   .proj-links .btn { flex: 1 1 auto; }
 }
+.partner-logo { display: flex; align-items: center; justify-content: center; width: 72px; height: 72px; padding: 8px; background: #ffffff; border: 1px solid var(--rule); border-radius: 6px; flex: none; }
+.partner-logo img { max-width: 100%; max-height: 100%; object-fit: contain; }

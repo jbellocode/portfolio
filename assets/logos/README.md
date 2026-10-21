@@ -1,6 +1,6 @@
 # Project logos
 
-Drop the official logo files here with exactly these names (PNG, transparent or white background):
+Official logo files (supplied by the owner). Names the site expects with exactly these names (PNG, transparent or white background):
 
 - `reincarnate.png`
 - `ashvin.png`
