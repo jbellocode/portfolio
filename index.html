@@ -33,10 +33,10 @@
     <section class="hero">
       <div class="wrap hero-grid">
         <div class="hero-text">
-          <p class="kicker">Building performance · Digital twins · Operational data</p>
+          <p class="kicker">Digital twins · HVAC &amp; heating systems · Operational data</p>
           <h1>Buildings rarely perform the way they were designed. I find the gap and close it.</h1>
           <p class="byline"><strong>John Bello</strong>, M.Sc. Civil Systems Engineering, TU Berlin · DAAD Scholar · Berlin, Germany</p>
-          <p class="lede">I combine EnergyPlus simulation, sensor data and Python automation to show where a building overheats or wastes energy, and to test the fix before anything is built or replaced.</p>
+          <p class="lede">I build physics-based building models, calibrate them against BMS and IoT sensor data, and use them to diagnose and control heating, cooling and ventilation. Every fix is tested in simulation before it reaches the building.</p>
           <div class="actions">
             <a class="btn primary" href="#research">Read the research</a>
             <a class="btn" href="#contact">Get in touch</a>
@@ -91,15 +91,16 @@
           <span class="sec-no">1</span>
           <h2>The case for hiring me</h2>
         </div>
-        <p class="sec-intro">Six things a building-performance or digital-twin team needs, and where I have already done each one.</p>
+        <p class="sec-intro">What a team running digital twins on real HVAC systems needs, and where I have already done each one.</p>
         <div class="table-scroll">
           <table class="claims">
             <thead><tr><th scope="col">What you need</th><th scope="col">Evidence</th><th scope="col">Where</th></tr></thead>
             <tbody>
               <tr><th scope="row">Models that match reality</th><td>Calibrated an EnergyPlus office model to five months of hourly sensor data in three documented rounds: CV(RMSE) 15.4% → 9.65%, RMSE 2.34 °C, NMBE under 1%.</td><td>REINCARNATE thesis</td></tr>
               <tr><th scope="row">Automation from BIM</th><td>Python BIM-to-BEM workflow that turns IFC geometry into EnergyPlus IDF models and links them to operational data.</td><td>REINCARNATE thesis</td></tr>
-              <tr><th scope="row">Insight from messy sensor data</th><td>Validated and analysed 100,000+ HVAC and BMS records; anomaly detection across 50+ zones, mapped onto BIM in Unity.</td><td>ASHVIN, Horizon 2020</td></tr>
-              <tr><th scope="row">Control and comfort trade-offs</th><td>Wrote a predictive RMOT controller for a TABS slab: peak 31.3 → 26.0 °C, temperature range −67%, only 22 mode switches a year, with the +39% energy cost explained.</td><td>REINCARNATE thesis</td></tr>
+              <tr><th scope="row">Fault and anomaly detection on BMS data</th><td>Validated and analysed 100,000+ HVAC and BMS records; anomaly detection across 50+ zones, mapped onto BIM in Unity.</td><td>ASHVIN, Horizon 2020</td></tr>
+              <tr><th scope="row">Heating system analysis</th><td>Analysed a TABS radiant slab on a heat-pump and district-heating plant: heating-only signature, slab 25–31 °C, and +4.2 °C radiant uplift (MRT over air) in January.</td><td>REINCARNATE thesis</td></tr>
+              <tr><th scope="row">Predictive heating &amp; cooling control</th><td>Wrote a predictive RMOT controller for a TABS slab: peak 31.3 → 26.0 °C, temperature range −67%, only 22 mode switches a year, with the +39% energy cost explained.</td><td>REINCARNATE thesis</td></tr>
               <tr><th scope="row">Climate-resilience assessment</th><td>83 simulations under RCP 8.5 to 2080, using the ASHRAE 55 adaptive model; showed upgrades cut overheating from 2,700 to 638 hours.</td><td>BIM-SPEED, Horizon 2020</td></tr>
               <tr><th scope="row">Clear communication</th><td>Taught simulation setup and troubleshooting to 80+ master's students; four years coordinating clients, suppliers and subcontractors on site.</td><td>TU Berlin · Lagos</td></tr>
             </tbody>
@@ -157,10 +158,19 @@
               </table>
             </figure>
           </div>
+          <div class="system">
+            <h4>Heating system analysis</h4>
+            <dl>
+              <div><dt>Plant</dt><dd>200 mm concrete TABS slab, ground-source heat pump, 2,000 L buffer, 60 °C district-heating loop</dd></div>
+              <div><dt>Signature</dt><dd>Heating-only operation: 5,745 kWh/yr district heat, peaking at 702 kWh in January; no active cooling</dd></div>
+              <div><dt>Radiant effect</dt><dd>Slab 25.1–31.4 °C; MRT 4.2 °C above air temperature in January, so comfort at lower air temperatures</dd></div>
+              <div><dt>Control</dt><dd>ISO 11855-based RMOT logic: 5,472 h heating, 3,288 h cooling, only 22 mode switches a year</dd></div>
+            </dl>
+          </div>
           <p class="aside"><strong>Data partner: Mainflux Labs.</strong> Their IoT platform supplied the measured indoor temperature, humidity and CO₂ from the 3L building (AtmoCube sensors, April–September 2025) that I used to calibrate and validate the model. <a href="#partners">More on Mainflux ↓</a></p>
           <p class="aside">Also within REINCARNATE: machine-learning crack detection for assessing brick quality, so masonry can be reused.</p>
           <footer class="paper-foot">
-            <ul class="tags"><li>EnergyPlus</li><li>Python</li><li>IFC / ArchiCAD</li><li>ASHRAE Guideline 14</li><li>TABS control</li><li>Digital twin</li></ul>
+            <ul class="tags"><li>EnergyPlus</li><li>OpenStudio</li><li>Python</li><li>IFC / ArchiCAD</li><li>ASHRAE Guideline 14</li><li>TABS &amp; heating systems</li><li>Digital twin</li></ul>
             <a class="more" href="https://cordis.europa.eu/project/id/101056773" target="_blank" rel="noopener">About REINCARNATE ↗</a>
           </footer>
         </article>
@@ -307,10 +317,10 @@
           <h2>Methods &amp; tools</h2>
         </div>
         <div class="methods">
-          <div><h3>Simulation &amp; BIM</h3><p>EnergyPlus, IES VE, DesignBuilder, IfcOpenShell, web-ifc, Revit API, gbXML</p></div>
+          <div><h3>HVAC &amp; heating systems</h3><p>EnergyPlus HVAC and plant modelling (radiant TABS slabs, district heating and cooling, natural ventilation), OpenStudio, heating-system diagnostics, ISO 11855 / ISO 7730</p></div>
+          <div><h3>Simulation &amp; BIM</h3><p>EnergyPlus, IES VE, DesignBuilder, OpenStudio, SketchUp, IfcOpenShell, web-ifc, Revit and Revit API, ArchiCAD, AutoCAD, Navisworks, gbXML</p></div>
           <div><h3>Data &amp; automation</h3><p>Python, R, SQL, REST APIs, IoT/BMS time series, anomaly detection, sensor-data validation</p></div>
           <div><h3>Standards &amp; methods</h3><p>Model calibration (ASHRAE Guideline 14 metrics), ASHRAE 55 adaptive comfort, RCP climate scenarios, scenario comparison</p></div>
-          <div><h3>Design tools</h3><p>Revit, ArchiCAD, AutoCAD, Navisworks, SketchUp, Open BIM</p></div>
         </div>
         <div class="creds">
           <div><h3>Education</h3><p>M.Sc. Civil Systems Engineering, Technical University of Berlin, 2023–26<br>B.Sc. Building Technology, Covenant University, Nigeria, 2013–18</p></div>
@@ -325,7 +335,7 @@
       <div class="wrap">
         <p class="kicker">Correspondence</p>
         <h2>Looking for someone to make your buildings measurable?</h2>
-        <p class="sec-intro">Open to roles in building energy simulation, digital twins and HVAC data analysis, in Berlin or remote across the EU.</p>
+        <p class="sec-intro">Open to roles in HVAC optimisation, building digital twins and energy simulation, in Berlin or remote across the EU.</p>
         <div class="actions">
           <a class="btn primary" href="mailto:johnifeoluwa.bello@gmail.com">johnifeoluwa.bello@gmail.com</a>
           <a class="btn" href="https://www.linkedin.com/in/john-bello-79458b165" target="_blank" rel="noopener">LinkedIn ↗</a>
