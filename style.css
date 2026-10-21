@@ -1,17 +1,20 @@
 /* Light only, by design: a printed research paper. */
 /* Layout: a research paper's page — title block with a chart figure, then numbered sections. */
 :root {
-  --paper: #f4f5f1;
-  --sheet: #fbfbf8;
-  --ink: #16191d;
-  --ink-2: #3a4148;
-  --muted: #5b636b;
-  --rule: #d6d9d2;
-  --accent: #8c5f19;     /* muted ochre: links, figure labels, section numbers */
-  --comfort: #2a7f6a;    /* psychrometric comfort zone */
-  --heat: #c9541f;       /* overheated state point */
-  --bar-a: #3b4652;
-  --bar-b: #e0862f;
+  /* Palette from the materials of the 3L office (John's thesis building):
+     exposed concrete, oak timber frame, glazing, graphite. */
+  --paper: #efeeeb;      /* concrete */
+  --sheet: #f8f7f5;
+  --ink: #1f2124;        /* graphite */
+  --ink-2: #3f4246;
+  --muted: #6a6b6c;
+  --rule: #d9d8d4;
+  --accent: #8e5f34;     /* oak: buttons, labels, links */
+  --accent-deep: #744c28;
+  --comfort: #587779;    /* glass: comfort and improved states */
+  --heat: #a8693a;       /* warm oak: overheated / as-built states */
+  --bar-a: #a8693a;
+  --bar-b: #587779;
   --serif: "Newsreader", Georgia, "Times New Roman", serif;
   --sans: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
@@ -47,9 +50,9 @@ nav a:hover { color: var(--accent); }
 .lede { font-size: 1.12rem; color: var(--ink-2); max-width: 58ch; }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; }
 .btn { display: inline-block; padding: 11px 20px; border: 1px solid var(--rule); border-radius: 4px; color: var(--ink); background: var(--sheet); text-decoration: none; font-weight: 500; font-size: .95rem; }
-.btn:hover { border-color: var(--ink); }
-.btn.primary { background: var(--ink); border-color: var(--ink); color: var(--sheet); }
-.btn.primary:hover { background: #2b3036; }
+.btn:hover { border-color: var(--accent); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--sheet); }
+.btn.primary:hover { background: var(--accent-deep); border-color: var(--accent-deep); }
 
 /* Fig. 1 psychrometric chart */
 .psy { margin: 0; min-width: 0; }
@@ -102,9 +105,9 @@ figcaption { font-size: .86rem; line-height: 1.55; color: var(--muted); margin-t
 .paper-meta { font-family: var(--mono); font-size: .74rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
 .paper h3 { font-family: var(--serif); font-weight: 500; font-size: clamp(1.4rem, 3vw, 1.85rem); line-height: 1.2; }
 .mark { flex: none; font-family: var(--sans); font-weight: 700; font-size: .85rem; letter-spacing: .06em; padding: 7px 11px; border: 1.5px solid currentColor; border-radius: 4px; }
-.mark-reincarnate { color: #2f8f62; }
-.mark-ashvin { color: #1b78a8; }
-.mark-bimspeed { color: #b4471c; }
+.mark-reincarnate { color: var(--ink); }
+.mark-ashvin { color: var(--ink); }
+.mark-bimspeed { color: var(--ink); }
 .abstract { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; border-top: 1px solid var(--rule); padding-top: 22px; }
 .abstract h4 { font-family: var(--mono); font-size: .72rem; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
 .abstract p { font-family: var(--serif); font-size: 1.08rem; line-height: 1.6; color: var(--ink-2); }
@@ -120,11 +123,11 @@ figcaption { font-size: .86rem; line-height: 1.55; color: var(--muted); margin-t
 .c-axis text { font-family: var(--mono); font-size: 11px; fill: var(--muted); }
 .c-val text { font-family: var(--mono); font-size: 12px; fill: var(--ink); }
 .c-a { fill: var(--bar-a); } .c-b { fill: var(--bar-b); }
-.c-limit { stroke: var(--heat); stroke-width: 1.5; stroke-dasharray: 6 4; }
+.c-limit { stroke: var(--ink); stroke-width: 1.5; stroke-dasharray: 6 4; }
 .lg { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; margin-right: 10px; }
 .key { display: inline-block; width: 12px; height: 12px; border-radius: 2px; }
 .key-a { background: var(--bar-a); } .key-b { background: var(--bar-b); }
-.key-limit { width: 16px; height: 0; border-top: 2px dashed var(--heat); border-radius: 0; }
+.key-limit { width: 16px; height: 0; border-top: 2px dashed var(--ink); border-radius: 0; }
 .paper-foot { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; border-top: 1px solid var(--rule); padding-top: 20px; }
 .tags { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .tags li { font-family: var(--mono); font-size: .8rem; color: var(--ink-2); background: var(--paper); border: 1px solid var(--rule); padding: 4px 10px; border-radius: 3px; }
@@ -196,8 +199,8 @@ figcaption { font-size: .86rem; line-height: 1.55; color: var(--muted); margin-t
 .minor-card h3 { font-family: var(--serif); font-weight: 500; font-size: 1.35rem; line-height: 1.25; }
 .minor-card > p { font-family: var(--serif); font-size: 1.05rem; line-height: 1.6; color: var(--ink-2); }
 .minor-card .tags { margin-top: auto; padding-top: 6px; }
-.mark-iwiq { color: #127fae; }
-.mark-bam { color: #b2262a; }
+.mark-iwiq { color: var(--ink); }
+.mark-bam { color: var(--ink); }
 @media (max-width: 900px) {
   .figs, .minor { grid-template-columns: 1fr; }
 }
@@ -214,5 +217,6 @@ figcaption { font-size: .86rem; line-height: 1.55; color: var(--muted); margin-t
 .partner-body > p { font-family: var(--serif); font-size: 1.05rem; line-height: 1.6; color: var(--ink-2); }
 .partner-list { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: .95rem; color: var(--ink-2); }
 .partner-list li { border-left: 2px solid var(--accent); padding-left: 12px; }
-.mark-mainflux { color: #1c5d99; }
+.mark-mainflux { color: var(--ink); }
 @media (max-width: 900px) { .partner-body { grid-template-columns: 1fr; gap: 16px; } .partner { padding: 22px; } }
+.palette-note { font-family: var(--mono); font-size: .75rem; margin-top: 6px; }

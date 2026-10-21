@@ -70,7 +70,7 @@
               <text class="t-hot" x="446" y="176">Overheated</text>
             </g>
           </svg>
-          <figcaption><span class="fig">Fig. 1</span> What I do, on a psychrometric chart: move a space from overheated (orange) into the comfort zone (green), with evidence that the change works. Humidity ratio in g/kg on the right axis.</figcaption>
+          <figcaption><span class="fig">Fig. 1</span> What I do, on a psychrometric chart: move a space from overheated (the warm dot) into the comfort zone (shaded), with evidence that the change works. Humidity ratio in g/kg on the right axis.</figcaption>
         </figure>
       </div>
 
@@ -78,7 +78,7 @@
         <dl class="evidence">
           <div><dt>9.65%</dt><dd>CV(RMSE) of my calibrated EnergyPlus model, hourly data. ASHRAE Guideline 14 accepts up to 30%.</dd></div>
           <div><dt>100k+</dt><dd>HVAC and BMS telemetry records analysed for anomalies across 50+ building zones</dd></div>
-          <div><dt>31.3 → 26.0 °C</dt><dd>peak office temperature after my automated TABS control, in simulation</dd></div>
+          <div><dt>31 → 26 °C</dt><dd>peak office temperature (31.3 → 26.0 °C) after my automated TABS control, in simulation</dd></div>
           <div><dt>83</dt><dd>EnergyPlus runs testing a 1961 building against climate projections to 2080</dd></div>
         </dl>
       </div>
@@ -337,6 +337,7 @@
   <footer class="colophon">
     <div class="wrap">
       <p>Cite as: Bello, J. (<span id="y">2026</span>). <em>Building performance portfolio.</em> Berlin.</p>
+      <p class="palette-note">Colours taken from the 3L office: exposed concrete, oak and glass.</p>
     </div>
   </footer>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
