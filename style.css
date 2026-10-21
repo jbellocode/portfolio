@@ -1,3 +1,4 @@
+/* Light only, by design: a printed research paper. */
 /* Layout: a research paper's page — title block with a chart figure, then numbered sections. */
 :root {
   --paper: #f4f5f1;
@@ -15,18 +16,6 @@
   --sans: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
   color-scheme: light;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --paper: #121518; --sheet: #181c20; --ink: #eceee9; --ink-2: #c5cbc8; --muted: #98a1a6; --rule: #2c3237;
-    --accent: #8db7ea; --comfort: #5cc3a6; --heat: #f08a55; --bar-a: #6f9fd8; --bar-b: #f0a35a;
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --paper: #121518; --sheet: #181c20; --ink: #eceee9; --ink-2: #c5cbc8; --muted: #98a1a6; --rule: #2c3237;
-  --accent: #8db7ea; --comfort: #5cc3a6; --heat: #f08a55; --bar-a: #6f9fd8; --bar-b: #f0a35a;
-  color-scheme: dark;
 }
 
 * { box-sizing: border-box; }
