@@ -64,10 +64,11 @@
               <text x="36" y="380">0</text><text x="96" y="380">5</text><text x="153" y="380">10</text><text x="213" y="380">15</text><text x="273" y="380">20</text><text x="333" y="380">25</text><text x="393" y="380">30</text><text x="453" y="380">35</text><text x="508" y="380">40</text>
               <text x="40" y="398">Dry-bulb temperature, °C</text>
               <text x="527" y="300">5</text><text x="527" y="236">10</text><text x="527" y="172">15</text><text x="527" y="108">20</text><text x="527" y="44">25</text>
-              <text x="210" y="150">100% RH</text>
-              <text x="440" y="110">50% RH</text>
+              <text class="t-rh" x="210" y="150">100% RH</text>
+              <text class="t-rh" x="440" y="110">50% RH</text>
               <text class="t-ok" x="276" y="326">Comfort zone</text>
-              <text class="t-hot" x="446" y="176">Overheated</text>
+              <text class="t-hot t-wide" x="446" y="176">Overheated</text>
+              <text class="t-hot t-narrow" x="424" y="168" text-anchor="end">Overheated</text>
             </g>
           </svg>
           <figcaption><span class="fig">Fig. 1</span> What I do, on a psychrometric chart: move a space from overheated (the warm dot) into the comfort zone (shaded), with evidence that the change works. Humidity ratio in g/kg on the right axis.</figcaption>
@@ -142,7 +143,7 @@
                 <line class="r-auto" x1="160" y1="110" x2="298" y2="110"/>
                 <circle class="r-auto-dot" cx="160" cy="110" r="6"/><circle class="r-auto-dot" cx="298" cy="110" r="6"/>
                 <g class="c-val"><text x="94" y="46" text-anchor="middle">20.9</text><text x="511" y="46" text-anchor="middle">31.3 °C</text><text x="160" y="132" text-anchor="middle">22.5</text><text x="298" y="132" text-anchor="end">26.0 °C</text></g>
-                <g class="c-axis"><text x="60" y="160" text-anchor="middle">20</text><text x="140" y="160" text-anchor="middle">22</text><text x="220" y="160" text-anchor="middle">24</text><text x="300" y="160" text-anchor="middle">26</text><text x="380" y="160" text-anchor="middle">28</text><text x="460" y="160" text-anchor="middle">30</text><text x="540" y="160" text-anchor="middle">32 °C</text><text x="306" y="18">26 °C cooling setpoint</text></g>
+                <g class="c-axis"><text x="60" y="160" text-anchor="middle">20</text><text x="140" y="160" text-anchor="middle">22</text><text x="220" y="160" text-anchor="middle">24</text><text x="300" y="160" text-anchor="middle">26</text><text x="380" y="160" text-anchor="middle">28</text><text x="460" y="160" text-anchor="middle">30</text><text x="540" y="160" text-anchor="middle">32</text><text x="306" y="18">26 °C setpoint</text></g>
               </svg>
               <figcaption><span class="fig">Fig. 2</span> Annual indoor temperature range, simulated. <span class="lg"><span class="key key-base"></span>Passive baseline (manual)</span> <span class="lg"><span class="key key-auto"></span>Automated RMOT control</span></figcaption>
             </figure>
@@ -219,7 +220,7 @@
           <figure class="chart">
             <svg viewBox="0 0 560 250" role="img" aria-label="Overheating hours, May to September. As built: 819 (2017–21), 2,271 (2031–50), 2,700 (2061–80). Upgraded: 0, 224, 638. Limit 200 hours.">
               <g class="c-grid"><line x1="50" y1="210" x2="550" y2="210"/><line x1="50" y1="150" x2="550" y2="150"/><line x1="50" y1="90" x2="550" y2="90"/><line x1="50" y1="30" x2="550" y2="30"/></g>
-              <g class="c-axis"><text x="40" y="214" text-anchor="end">0</text><text x="40" y="154" text-anchor="end">1,000</text><text x="40" y="94" text-anchor="end">2,000</text><text x="40" y="34" text-anchor="end">3,000</text></g>
+              <g class="c-axis"><text x="40" y="214" text-anchor="end">0</text><text x="40" y="154" text-anchor="end">1k</text><text x="40" y="94" text-anchor="end">2k</text><text x="40" y="34" text-anchor="end">3k</text></g>
               <rect class="c-a" x="90" y="160.9" width="56" height="49.1"/>
               <rect class="c-b" x="152" y="209" width="56" height="1"/>
               <rect class="c-a" x="250" y="73.7" width="56" height="136.3"/>
