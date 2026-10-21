@@ -18,7 +18,6 @@
     <div class="wrap bar">
       <a class="brand" href="#top">John Bello</a>
       <nav aria-label="Sections">
-        <a href="#case">The case</a>
         <a href="#research">EU research</a>
         <a href="#more">More work</a>
         <a href="#experience">Experience</a>
@@ -85,40 +84,31 @@
       </div>
     </section>
 
-    <!-- 1. The case: claim → evidence -->
-    <section class="sec" id="case">
-      <div class="wrap">
-        <div class="sec-head">
-          <span class="sec-no">1</span>
-          <h2>The case for hiring me</h2>
-        </div>
-        <p class="sec-intro">What a team running digital twins on real HVAC systems needs, and where I have already done each one.</p>
-        <div class="table-scroll">
-          <table class="claims">
-            <thead><tr><th scope="col">What you need</th><th scope="col">Evidence</th><th scope="col">Where</th></tr></thead>
-            <tbody>
-              <tr><th scope="row">Models that match reality</th><td>Calibrated an EnergyPlus office model to five months of hourly sensor data in three documented rounds: CV(RMSE) 15.4% → 9.65%, RMSE 2.34 °C, NMBE under 1%.</td><td>REINCARNATE thesis</td></tr>
-              <tr><th scope="row">Automation from BIM</th><td>Python BIM-to-BEM workflow that turns IFC geometry into EnergyPlus IDF models and links them to operational data.</td><td>REINCARNATE thesis</td></tr>
-              <tr><th scope="row">Fault and anomaly detection on BMS data</th><td>Validated and analysed 100,000+ HVAC and BMS records; anomaly detection across 50+ zones, mapped onto BIM in Unity.</td><td>ASHVIN, Horizon 2020</td></tr>
-              <tr><th scope="row">Heating system analysis</th><td>Analysed a TABS radiant slab on a heat-pump and district-heating plant: heating-only signature, slab 25–31 °C, and +4.2 °C radiant uplift (MRT over air) in January.</td><td>REINCARNATE thesis</td></tr>
-              <tr><th scope="row">Predictive heating &amp; cooling control</th><td>Wrote a predictive RMOT controller for a TABS slab: peak 31.3 → 26.0 °C, temperature range −67%, only 22 mode switches a year, with the +39% energy cost explained.</td><td>REINCARNATE thesis</td></tr>
-              <tr><th scope="row">Climate-resilience assessment</th><td>83 simulations under RCP 8.5 to 2080, using the ASHRAE 55 adaptive model; showed upgrades cut overheating from 2,700 to 638 hours.</td><td>BIM-SPEED, Horizon 2020</td></tr>
-              <tr><th scope="row">Clear communication</th><td>Taught simulation setup and troubleshooting to 80+ master's students; four years coordinating clients, suppliers and subcontractors on site.</td><td>TU Berlin · Lagos</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
 
-    <!-- 2. Research projects -->
+    <!-- 1. EU research projects -->
     <section class="sec" id="research">
       <div class="wrap">
         <div class="sec-head">
-          <span class="sec-no">2</span>
+          <span class="sec-no">1</span>
           <h2>EU research projects</h2>
         </div>
+        <p class="sec-intro">Three European Union research projects, the buildings and data behind them, and the analysis I built for each.</p>
 
         <article class="paper">
+          <div class="proj">
+            <a class="proj-logo" href="https://www.reincarnate-project.eu/" target="_blank" rel="noopener" aria-label="REINCARNATE project website">
+              <img src="assets/logos/reincarnate.png" alt="REINCARNATE logo" onerror="this.parentNode.classList.add('nologo');this.remove()">
+              <span class="logo-fallback">REINCARNATE</span>
+            </a>
+            <div class="proj-info">
+              <p class="proj-desc">EU project on circular construction: a Circular Potential Information Model that tracks how long buildings, components and materials can last and be reused, aiming to cut construction waste and emissions.</p>
+              <div class="proj-fund"><svg class="eu-flag" viewBox="0 0 810 540" role="img" aria-label="Flag of the European Union"><rect width="810" height="540" fill="#039"/><g fill="#fc0"><polygon points="405.0,60.0 411.7,80.7 433.5,80.7 415.9,93.5 422.6,114.3 405.0,101.5 387.4,114.3 394.1,93.5 376.5,80.7 398.3,80.7"/><polygon points="495.0,84.1 501.7,104.8 523.5,104.8 505.9,117.7 512.6,138.4 495.0,125.6 477.4,138.4 484.1,117.7 466.5,104.8 488.3,104.8"/><polygon points="560.9,150.0 567.6,170.7 589.4,170.7 571.8,183.5 578.5,204.3 560.9,191.5 543.3,204.3 550.0,183.5 532.4,170.7 554.1,170.7"/><polygon points="585.0,240.0 591.7,260.7 613.5,260.7 595.9,273.5 602.6,294.3 585.0,281.5 567.4,294.3 574.1,273.5 556.5,260.7 578.3,260.7"/><polygon points="560.9,330.0 567.6,350.7 589.4,350.7 571.8,363.5 578.5,384.3 560.9,371.5 543.3,384.3 550.0,363.5 532.4,350.7 554.1,350.7"/><polygon points="495.0,395.9 501.7,416.6 523.5,416.6 505.9,429.4 512.6,450.2 495.0,437.3 477.4,450.2 484.1,429.4 466.5,416.6 488.3,416.6"/><polygon points="405.0,420.0 411.7,440.7 433.5,440.7 415.9,453.5 422.6,474.3 405.0,461.5 387.4,474.3 394.1,453.5 376.5,440.7 398.3,440.7"/><polygon points="315.0,395.9 321.7,416.6 343.5,416.6 325.9,429.4 332.6,450.2 315.0,437.3 297.4,450.2 304.1,429.4 286.5,416.6 308.3,416.6"/><polygon points="249.1,330.0 255.9,350.7 277.6,350.7 260.0,363.5 266.7,384.3 249.1,371.5 231.5,384.3 238.2,363.5 220.6,350.7 242.4,350.7"/><polygon points="225.0,240.0 231.7,260.7 253.5,260.7 235.9,273.5 242.6,294.3 225.0,281.5 207.4,294.3 214.1,273.5 196.5,260.7 218.3,260.7"/><polygon points="249.1,150.0 255.9,170.7 277.6,170.7 260.0,183.5 266.7,204.3 249.1,191.5 231.5,204.3 238.2,183.5 220.6,170.7 242.4,170.7"/><polygon points="315.0,84.1 321.7,104.8 343.5,104.8 325.9,117.7 332.6,138.4 315.0,125.6 297.4,138.4 304.1,117.7 286.5,104.8 308.3,104.8"/></g></svg><span>Funded by the European Union<br>Horizon Europe · Grant No. 101056773</span></div>
+            </div>
+            <div class="proj-links">
+              <a class="btn primary" href="https://www.reincarnate-project.eu/" target="_blank" rel="noopener">Project website ↗</a>
+              <a class="btn" href="https://cordis.europa.eu/project/id/101056773" target="_blank" rel="noopener">EU CORDIS record ↗</a>
+            </div>
+          </div>
           <header class="paper-head">
             <div>
               <p class="paper-meta">Horizon Europe · Master's thesis, TU Berlin · Feb 2026 · with Mainflux Labs</p>
@@ -126,7 +116,6 @@
               <p class="paper-sub">Thesis: <em>An Analytical Framework Using Sensor Data to Evaluate the Energy Performance of Built Environments.</em></p>
               <p class="collab"><span>Worked with</span> Prof. Timo Hartmann (TU Berlin, supervisor) · Klaus Luig (REINCARNATE, second examiner) · Saša Klopanović (Mainflux Labs, external advisor)</p>
             </div>
-            <span class="mark mark-reincarnate" title="REINCARNATE, Horizon Europe">REINCARNATE</span>
           </header>
           <div class="abstract">
             <div><h4>Problem</h4><p>The 3L office in Menden, Germany ("low-tech, low-energy, low-maintenance") relies on a concrete-core TABS slab and natural ventilation. In practice it overheated, and its operators needed about 14 days of manual tuning to stabilise the slab.</p></div>
@@ -172,18 +161,30 @@
           <p class="aside">Also within REINCARNATE: machine-learning crack detection for assessing brick quality, so masonry can be reused.</p>
           <footer class="paper-foot">
             <ul class="tags"><li>EnergyPlus</li><li>OpenStudio</li><li>Python</li><li>IFC / ArchiCAD</li><li>ASHRAE Guideline 14</li><li>TABS &amp; heating systems</li><li>Digital twin</li></ul>
-            <a class="more" href="https://cordis.europa.eu/project/id/101056773" target="_blank" rel="noopener">About REINCARNATE ↗</a>
           </footer>
         </article>
 
         <article class="paper">
+          <div class="proj">
+            <a class="proj-logo" href="https://www.ashvin.eu/" target="_blank" rel="noopener" aria-label="ASHVIN project website">
+              <img src="assets/logos/ashvin.png" alt="ASHVIN logo" onerror="this.parentNode.classList.add('nologo');this.remove()">
+              <span class="logo-fallback">ASHVIN</span>
+            </a>
+            <div class="proj-info">
+              <p class="proj-desc">EU project on digital twins for construction, combining IoT sensing and data analytics into an open platform for planning, building and operating safer, more productive buildings.</p>
+              <div class="proj-fund"><svg class="eu-flag" viewBox="0 0 810 540" role="img" aria-label="Flag of the European Union"><rect width="810" height="540" fill="#039"/><g fill="#fc0"><polygon points="405.0,60.0 411.7,80.7 433.5,80.7 415.9,93.5 422.6,114.3 405.0,101.5 387.4,114.3 394.1,93.5 376.5,80.7 398.3,80.7"/><polygon points="495.0,84.1 501.7,104.8 523.5,104.8 505.9,117.7 512.6,138.4 495.0,125.6 477.4,138.4 484.1,117.7 466.5,104.8 488.3,104.8"/><polygon points="560.9,150.0 567.6,170.7 589.4,170.7 571.8,183.5 578.5,204.3 560.9,191.5 543.3,204.3 550.0,183.5 532.4,170.7 554.1,170.7"/><polygon points="585.0,240.0 591.7,260.7 613.5,260.7 595.9,273.5 602.6,294.3 585.0,281.5 567.4,294.3 574.1,273.5 556.5,260.7 578.3,260.7"/><polygon points="560.9,330.0 567.6,350.7 589.4,350.7 571.8,363.5 578.5,384.3 560.9,371.5 543.3,384.3 550.0,363.5 532.4,350.7 554.1,350.7"/><polygon points="495.0,395.9 501.7,416.6 523.5,416.6 505.9,429.4 512.6,450.2 495.0,437.3 477.4,450.2 484.1,429.4 466.5,416.6 488.3,416.6"/><polygon points="405.0,420.0 411.7,440.7 433.5,440.7 415.9,453.5 422.6,474.3 405.0,461.5 387.4,474.3 394.1,453.5 376.5,440.7 398.3,440.7"/><polygon points="315.0,395.9 321.7,416.6 343.5,416.6 325.9,429.4 332.6,450.2 315.0,437.3 297.4,450.2 304.1,429.4 286.5,416.6 308.3,416.6"/><polygon points="249.1,330.0 255.9,350.7 277.6,350.7 260.0,363.5 266.7,384.3 249.1,371.5 231.5,384.3 238.2,363.5 220.6,350.7 242.4,350.7"/><polygon points="225.0,240.0 231.7,260.7 253.5,260.7 235.9,273.5 242.6,294.3 225.0,281.5 207.4,294.3 214.1,273.5 196.5,260.7 218.3,260.7"/><polygon points="249.1,150.0 255.9,170.7 277.6,170.7 260.0,183.5 266.7,204.3 249.1,191.5 231.5,204.3 238.2,183.5 220.6,170.7 242.4,170.7"/><polygon points="315.0,84.1 321.7,104.8 343.5,104.8 325.9,117.7 332.6,138.4 315.0,125.6 297.4,138.4 304.1,117.7 286.5,104.8 308.3,104.8"/></g></svg><span>Funded by the European Union<br>Horizon 2020 · Grant No. 958161</span></div>
+            </div>
+            <div class="proj-links">
+              <a class="btn primary" href="https://www.ashvin.eu/" target="_blank" rel="noopener">Project website ↗</a>
+              <a class="btn" href="https://cordis.europa.eu/project/id/958161" target="_blank" rel="noopener">EU CORDIS record ↗</a>
+            </div>
+          </div>
           <header class="paper-head">
             <div>
               <p class="paper-meta">Horizon 2020 · Building data analyst · 2022–24</p>
               <h3>Finding HVAC faults in operational data, located on BIM</h3>
               <p class="collab"><span>Worked with</span> Prof. Timo Hartmann (TU Berlin) · Mainflux Labs (IoT platform partner)</p>
             </div>
-            <span class="mark mark-ashvin" title="ASHVIN, Horizon 2020">ASHVIN</span>
           </header>
           <div class="abstract">
             <div><h4>Problem</h4><p>Building telemetry is large, noisy and hard for engineering teams to act on.</p></div>
@@ -199,18 +200,30 @@
           </figure>
           <footer class="paper-foot">
             <ul class="tags"><li>Python</li><li>R</li><li>SQL</li><li>IoT / BMS</li><li>ESP32</li><li>Unity</li></ul>
-            <span class="links"><a class="more" href="https://www.ashvin.eu" target="_blank" rel="noopener">About ASHVIN ↗</a><a href="https://cordis.europa.eu/project/id/958161" target="_blank" rel="noopener">CORDIS ↗</a></span>
           </footer>
         </article>
 
         <article class="paper">
+          <div class="proj">
+            <a class="proj-logo" href="https://www.bim-speed.eu/" target="_blank" rel="noopener" aria-label="BIM-SPEED project website">
+              <img src="assets/logos/bimspeed.png" alt="BIM-SPEED logo" onerror="this.parentNode.classList.add('nologo');this.remove()">
+              <span class="logo-fallback">BIM-SPEED</span>
+            </a>
+            <div class="proj-info">
+              <p class="proj-desc">EU project led by TU Berlin that brought BIM into the deep energy renovation of existing homes, with interoperable tools tested on demonstration buildings across Europe.</p>
+              <div class="proj-fund"><svg class="eu-flag" viewBox="0 0 810 540" role="img" aria-label="Flag of the European Union"><rect width="810" height="540" fill="#039"/><g fill="#fc0"><polygon points="405.0,60.0 411.7,80.7 433.5,80.7 415.9,93.5 422.6,114.3 405.0,101.5 387.4,114.3 394.1,93.5 376.5,80.7 398.3,80.7"/><polygon points="495.0,84.1 501.7,104.8 523.5,104.8 505.9,117.7 512.6,138.4 495.0,125.6 477.4,138.4 484.1,117.7 466.5,104.8 488.3,104.8"/><polygon points="560.9,150.0 567.6,170.7 589.4,170.7 571.8,183.5 578.5,204.3 560.9,191.5 543.3,204.3 550.0,183.5 532.4,170.7 554.1,170.7"/><polygon points="585.0,240.0 591.7,260.7 613.5,260.7 595.9,273.5 602.6,294.3 585.0,281.5 567.4,294.3 574.1,273.5 556.5,260.7 578.3,260.7"/><polygon points="560.9,330.0 567.6,350.7 589.4,350.7 571.8,363.5 578.5,384.3 560.9,371.5 543.3,384.3 550.0,363.5 532.4,350.7 554.1,350.7"/><polygon points="495.0,395.9 501.7,416.6 523.5,416.6 505.9,429.4 512.6,450.2 495.0,437.3 477.4,450.2 484.1,429.4 466.5,416.6 488.3,416.6"/><polygon points="405.0,420.0 411.7,440.7 433.5,440.7 415.9,453.5 422.6,474.3 405.0,461.5 387.4,474.3 394.1,453.5 376.5,440.7 398.3,440.7"/><polygon points="315.0,395.9 321.7,416.6 343.5,416.6 325.9,429.4 332.6,450.2 315.0,437.3 297.4,450.2 304.1,429.4 286.5,416.6 308.3,416.6"/><polygon points="249.1,330.0 255.9,350.7 277.6,350.7 260.0,363.5 266.7,384.3 249.1,371.5 231.5,384.3 238.2,363.5 220.6,350.7 242.4,350.7"/><polygon points="225.0,240.0 231.7,260.7 253.5,260.7 235.9,273.5 242.6,294.3 225.0,281.5 207.4,294.3 214.1,273.5 196.5,260.7 218.3,260.7"/><polygon points="249.1,150.0 255.9,170.7 277.6,170.7 260.0,183.5 266.7,204.3 249.1,191.5 231.5,204.3 238.2,183.5 220.6,170.7 242.4,170.7"/><polygon points="315.0,84.1 321.7,104.8 343.5,104.8 325.9,117.7 332.6,138.4 315.0,125.6 297.4,138.4 304.1,117.7 286.5,104.8 308.3,104.8"/></g></svg><span>Funded by the European Union<br>Horizon 2020 · Grant No. 820553</span></div>
+            </div>
+            <div class="proj-links">
+              <a class="btn primary" href="https://www.bim-speed.eu/" target="_blank" rel="noopener">Project website ↗</a>
+              <a class="btn" href="https://cordis.europa.eu/project/id/820553" target="_blank" rel="noopener">EU CORDIS record ↗</a>
+            </div>
+          </div>
           <header class="paper-head">
             <div>
               <p class="paper-meta">Horizon 2020 · TU Berlin · 2024 · weather data by Arup</p>
               <h3>Will a 1961 duplex in Gdynia overheat as the climate warms?</h3>
               <p class="collab"><span>Worked with</span> Prof. Timo Hartmann (TU Berlin) · Nour Samaro</p>
             </div>
-            <span class="mark mark-bimspeed" title="BIM-SPEED, Horizon 2020">BIM‑SPEED</span>
           </header>
           <div class="abstract">
             <div><h4>Problem</h4><p>A three-storey duplex from 1961 with 56 cm brick walls, in a cool-humid climate (ASHRAE 5A). It was not built for future heatwaves. How much will it overheat, and do envelope upgrades help?</p></div>
@@ -235,7 +248,6 @@
           </figure>
           <footer class="paper-foot">
             <ul class="tags"><li>EnergyPlus</li><li>ASHRAE 55</li><li>RCP 8.5</li><li>Climate scenarios</li><li>Excel</li></ul>
-            <span class="links"><a class="more" href="https://cordis.europa.eu/project/id/820553" target="_blank" rel="noopener">About BIM-SPEED ↗</a><a href="https://build-up.ec.europa.eu/en/resources-and-tools/links/bim-speed-project" target="_blank" rel="noopener">Build Up ↗</a></span>
           </footer>
         </article>
 
@@ -257,11 +269,11 @@
       </div>
     </section>
 
-    <!-- 3. Further research and tools -->
+    <!-- 2. Further research and tools -->
     <section class="sec" id="more">
       <div class="wrap">
         <div class="sec-head">
-          <span class="sec-no">3</span>
+          <span class="sec-no">2</span>
           <h2>Further research &amp; tools</h2>
         </div>
         <div class="minor">
@@ -293,11 +305,11 @@
       </div>
     </section>
 
-    <!-- 4. Experience -->
+    <!-- 3. Experience -->
     <section class="sec" id="experience">
       <div class="wrap">
         <div class="sec-head">
-          <span class="sec-no">4</span>
+          <span class="sec-no">3</span>
           <h2>Experience</h2>
         </div>
         <ol class="cv">
@@ -310,11 +322,11 @@
       </div>
     </section>
 
-    <!-- 5. Methods -->
+    <!-- 4. Methods -->
     <section class="sec" id="methods">
       <div class="wrap">
         <div class="sec-head">
-          <span class="sec-no">5</span>
+          <span class="sec-no">4</span>
           <h2>Methods &amp; tools</h2>
         </div>
         <div class="methods">
