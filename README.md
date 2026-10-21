@@ -1,4 +1,4 @@
-# Portfolio
+# John Bello — Portfolio
 
 Static site (plain HTML/CSS) ready for GitHub Pages.
 
