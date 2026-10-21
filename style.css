@@ -69,6 +69,7 @@ nav a:hover { color: var(--accent); }
 .psy-label text { font-family: var(--mono); font-size: 11px; fill: var(--muted); }
 .psy-label .t-ok { fill: var(--comfort); }
 .psy-label .t-hot { fill: var(--heat); }
+.psy-label .t-narrow { display: none; }
 @media (prefers-reduced-motion: no-preference) {
   .psy-hot { animation: pulse 2.4s ease-in-out infinite; transform-origin: 436px 181px; }
   @keyframes pulse { 50% { transform: scale(1.35); } }
@@ -166,7 +167,6 @@ figcaption { font-size: .86rem; line-height: 1.55; color: var(--muted); margin-t
   .creds { grid-template-columns: 1fr; gap: 20px; }
 }
 @media (max-width: 700px) {
-  nav a:not(.nav-cta) { display: none; }
   .hero { padding-block: 44px 40px; }
   .sec { padding-block: 56px; }
   .paper { padding: 22px; }
@@ -229,3 +229,52 @@ figcaption { font-size: .86rem; line-height: 1.55; color: var(--muted); margin-t
 .system dd { margin: 0; font-size: .9rem; line-height: 1.5; color: var(--ink-2); }
 @media (max-width: 900px) { .system dl { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 560px) { .system dl { grid-template-columns: 1fr; } }
+
+/* ---------- phone layout ---------- */
+@media (max-width: 700px) {
+  html { scroll-padding-top: 104px; }
+  body { font-size: 16px; }
+  /* menu: name on top, all links in a swipeable row */
+  .bar { height: auto; flex-direction: column; align-items: stretch; gap: 4px; padding-block: 10px 0; }
+  nav { gap: 20px; overflow-x: auto; white-space: nowrap; padding-bottom: 10px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  nav::-webkit-scrollbar { display: none; }
+  nav a { font-size: .9rem; }
+
+  .hero h1 { font-size: 2.1rem; }
+  .lede { font-size: 1.02rem; }
+  .actions .btn { flex: 1 1 auto; text-align: center; }
+
+  /* charts: keep labels readable when the SVG shrinks */
+  .psy-label text { font-size: 17px; }
+  .psy-label .t-rh, .psy-label .t-wide { display: none; }
+  .psy-label .t-narrow { display: inline; }
+  .chart .c-axis text, .chart .c-val text { font-size: 19px; }
+  figcaption { font-size: .82rem; }
+
+  /* evidence numbers: one per row, number beside its explanation */
+  .evidence { grid-template-columns: 1fr; margin-top: 40px; }
+  .evidence div, .evidence div + div, .evidence div:nth-child(3) { display: grid; grid-template-columns: 8.6rem minmax(0, 1fr); gap: 12px; align-items: baseline; padding: 14px 0; border-left: 0; border-bottom: 1px solid var(--rule); }
+  .evidence dt { font-size: 1.45rem; white-space: nowrap; }
+  .evidence dd { margin: 0; }
+
+  /* claims table becomes stacked cards */
+  .table-scroll { overflow: visible; }
+  .claims { min-width: 0; }
+  .claims thead { display: none; }
+  .claims, .claims tbody, .claims tr, .claims th, .claims td { display: block; width: auto; }
+  .claims tr { padding: 16px 0; border-bottom: 1px solid var(--rule); }
+  .claims tbody tr:first-child { border-top: 2px solid var(--ink); }
+  .claims th, .claims td { border: 0; padding: 0; }
+  .claims tbody th { width: auto; margin-bottom: 6px; }
+  .claims td:last-child { width: auto; margin-top: 8px; }
+
+  .rounds table { font-size: .84rem; }
+  .rounds td, .rounds th { padding-right: 8px; }
+  .rounds td:nth-child(n+3) { white-space: nowrap; }
+
+  .sec-head h2, .contact h2 { font-size: 1.75rem; line-height: 1.2; }
+  .paper h3 { font-size: 1.35rem; }
+  .abstract p { font-size: 1rem; }
+  .system { padding: 16px; }
+  .partner-head, .minor-card header { flex-direction: column-reverse; gap: 10px; }
+}
