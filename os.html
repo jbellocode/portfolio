@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>John Bello · Desktop</title>
+  <meta name="description" content="John Bello's portfolio as a desktop: EU research projects on digital twins, HVAC and building performance, each in its own window.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="os.css">
+</head>
+<body class="os">
+  <div class="desk" id="desk">
+    <header class="home-head">
+      <p class="kicker">Digital twins · HVAC &amp; heating systems</p>
+      <h1>John Bello</h1>
+      <p>Building performance engineer, Berlin. Tap a project to open it.</p>
+    </header>
+    <nav class="icons" id="icons" aria-label="Desktop"></nav>
+    <p class="wallmark" aria-hidden="true">John Bello<span>Building performance · Berlin</span></p>
+  </div>
+
+  <div class="startmenu" id="startmenu" hidden>
+    <div class="sm-head"><span class="sm-avatar">JB</span><div><strong>John Bello</strong><span>Building performance engineer</span></div></div>
+    <ul id="sm-list"></ul>
+    <div class="sm-foot">
+      <a href="index.html">Website view</a>
+      <a href="https://www.linkedin.com/in/john-bello-79458b165" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+  </div>
+
+  <footer class="taskbar" id="taskbar">
+    <button class="start" id="start" aria-label="Start menu" aria-expanded="false" aria-controls="startmenu">JB</button>
+    <div class="tasks" id="tasks"></div>
+    <div class="tray">
+      <span class="readout" title="From the REINCARNATE thesis">T<sub>peak</sub> 26.0 °C · CV(RMSE) 9.65%</span>
+      <a href="index.html" class="tray-link">Website view</a>
+    </div>
+  </footer>
+
+  <nav class="dock" id="dock" aria-label="Quick links">
+    <button data-open="home">Home</button>
+    <button data-open="reincarnate">Research</button>
+    <button data-open="cv">CV</button>
+    <button data-open="contact">Contact</button>
+  </nav>
+
+  <noscript><p class="nojs">This view needs JavaScript. <a href="index.html">Open the website view</a>.</p></noscript>
+  <script src="os.js"></script>
+</body>
+</html>
