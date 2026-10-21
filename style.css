@@ -7,10 +7,10 @@
   --ink-2: #3a4148;
   --muted: #5b636b;
   --rule: #d6d9d2;
-  --accent: #1d4e89;     /* journal blue: links, figure labels */
+  --accent: #8c5f19;     /* muted ochre: links, figure labels, section numbers */
   --comfort: #2a7f6a;    /* psychrometric comfort zone */
   --heat: #c9541f;       /* overheated state point */
-  --bar-a: #1d4e89;
+  --bar-a: #3b4652;
   --bar-b: #e0862f;
   --serif: "Newsreader", Georgia, "Times New Roman", serif;
   --sans: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -47,8 +47,9 @@ nav a:hover { color: var(--accent); }
 .lede { font-size: 1.12rem; color: var(--ink-2); max-width: 58ch; }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; }
 .btn { display: inline-block; padding: 11px 20px; border: 1px solid var(--rule); border-radius: 4px; color: var(--ink); background: var(--sheet); text-decoration: none; font-weight: 500; font-size: .95rem; }
-.btn:hover { border-color: var(--accent); }
-.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--sheet); }
+.btn:hover { border-color: var(--ink); }
+.btn.primary { background: var(--ink); border-color: var(--ink); color: var(--sheet); }
+.btn.primary:hover { background: #2b3036; }
 
 /* Fig. 1 psychrometric chart */
 .psy { margin: 0; min-width: 0; }
