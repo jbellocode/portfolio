@@ -173,3 +173,31 @@ figcaption { font-size: .86rem; line-height: 1.55; color: var(--muted); margin-t
   .flow li + li { margin-left: 0; }
   .flow li + li::after { content: none; }
 }
+
+/* thesis figures, asides and further projects */
+.paper-sub { font-family: var(--serif); font-size: 1rem; color: var(--muted); margin-top: 8px; max-width: 70ch; }
+.figs { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 32px; align-items: start; }
+.r-base { stroke: var(--heat); stroke-width: 4; stroke-linecap: round; }
+.r-base-dot { fill: var(--heat); }
+.r-auto { stroke: var(--comfort); stroke-width: 4; stroke-linecap: round; }
+.r-auto-dot { fill: var(--comfort); }
+.key-base { background: var(--heat); } .key-auto { background: var(--comfort); }
+.rounds { margin: 0; overflow-x: auto; }
+.rounds table { width: 100%; border-collapse: collapse; font-size: .9rem; font-variant-numeric: tabular-nums; }
+.rounds caption { text-align: left; font-size: .86rem; color: var(--muted); padding-bottom: 10px; caption-side: top; }
+.rounds th { font-family: var(--mono); font-size: .7rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); text-align: left; padding: 8px 10px 8px 0; border-bottom: 2px solid var(--ink); }
+.rounds td { padding: 9px 10px 9px 0; border-bottom: 1px solid var(--rule); color: var(--ink-2); }
+.rounds td:first-child { font-family: var(--mono); color: var(--accent); }
+.aside { font-size: .95rem; color: var(--ink-2); border-left: 2px solid var(--accent); padding-left: 14px; }
+.minor { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 28px; }
+.minor-card { background: var(--sheet); border: 1px solid var(--rule); border-radius: 6px; padding: 26px; display: flex; flex-direction: column; gap: 12px; }
+.minor-card header { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
+.minor-card .paper-meta { margin: 0; }
+.minor-card h3 { font-family: var(--serif); font-weight: 500; font-size: 1.35rem; line-height: 1.25; }
+.minor-card > p { font-family: var(--serif); font-size: 1.05rem; line-height: 1.6; color: var(--ink-2); }
+.minor-card .tags { margin-top: auto; padding-top: 6px; }
+.mark-iwiq { color: #127fae; }
+.mark-bam { color: #b2262a; }
+@media (max-width: 900px) {
+  .figs, .minor { grid-template-columns: 1fr; }
+}
