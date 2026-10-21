@@ -2,191 +2,270 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>John Bello — Building Energy Simulation & Digital Twins</title>
-  <meta name="description" content="John Bello — building energy simulation, HVAC data analysis and digital twins. Berlin, Germany.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>John Bello · Building Performance</title>
+  <meta name="description" content="John Bello: building energy simulation, HVAC data analysis and digital twins. Calibrated models, climate-resilience studies and BIM automation. Berlin.">
+  <meta property="og:title" content="John Bello · Building Performance">
+  <meta property="og:description" content="Building energy simulation, HVAC data and digital twins. Berlin, Germany.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
+  <header class="masthead">
     <div class="wrap bar">
-      <a class="logo" href="#top">JB</a>
-      <nav>
-        <a href="#work">Research</a>
-        <a href="#projects">Projects</a>
+      <a class="brand" href="#top">John Bello</a>
+      <nav aria-label="Sections">
+        <a href="#case">The case</a>
+        <a href="#research">Research</a>
         <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact" class="nav-cta">Contact</a>
+        <a href="#methods">Methods</a>
+        <a class="nav-cta" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main id="top">
-    <section class="hero wrap">
-      <p class="eyebrow">Berlin, Germany · M.Sc. Civil Systems Engineering, TU Berlin</p>
-      <h1>John Bello</h1>
-      <p class="role">Building Energy Simulation · HVAC Data Analysis · Digital Twins</p>
-      <p class="lede">I combine building simulation with operational data to find performance issues, test improvement strategies, and turn the analysis into clear, practical guidance.</p>
-      <div class="actions">
-        <a class="btn primary" href="#work">See my research</a>
-        <a class="btn" href="mailto:johnifeoluwa.bello@gmail.com">Get in touch</a>
-      </div>
-      <dl class="stats">
-        <div><dt>9.65%</dt><dd>CV(RMSE) on a calibrated EnergyPlus office model</dd></div>
-        <div><dt>100k+</dt><dd>HVAC &amp; BMS telemetry records analysed</dd></div>
-        <div><dt>50+</dt><dd>building zones covered by anomaly detection</dd></div>
-        <div><dt>80+</dt><dd>master's students trained in building simulation</dd></div>
-      </dl>
-    </section>
-
-    <section id="work" class="wrap research">
-      <div class="research-head">
-        <h2>Research Projects</h2>
-        <span class="rule" aria-hidden="true"></span>
-      </div>
-      <div class="rp-grid">
-        <article class="rp-card">
-          <header class="rp-top">
-            <h3>Reincarnate – Circular Construction</h3>
-            <span class="rp-mark mark-reincarnate">REINCARNATE</span>
-          </header>
-          <p class="rp-meta">Horizon Europe · Master's thesis · 2025–26</p>
-          <p class="rp-desc">EU research project on cutting construction waste through circular use of building materials. My master's thesis built a calibrated EnergyPlus digital twin of the 3L office building, with a Python BIM-to-BEM workflow from IFC and TABS control logic that keeps peak indoor temperatures near 26 °C.</p>
-          <dl class="rp-stats">
-            <div><dt>9.65%</dt><dd>CV(RMSE), hourly calibration</dd></div>
-            <div><dt>2.34 °C</dt><dd>RMSE vs. measured</dd></div>
-          </dl>
-          <ul class="rp-tags"><li>Python</li><li>EnergyPlus</li><li>IFC / IfcOpenShell</li><li>Model calibration</li><li>Digital twin</li></ul>
-          <a class="rp-more" href="https://cordis.europa.eu/project/id/101056773" target="_blank" rel="noopener">More →</a>
-        </article>
-
-        <article class="rp-card">
-          <header class="rp-top">
-            <h3>ASHVIN – Digital Twins for Construction</h3>
-            <span class="rp-mark mark-ashvin">ASHVIN</span>
-          </header>
-          <p class="rp-meta">Horizon 2020 · Building data analyst · 2022–24</p>
-          <p class="rp-desc">EU research project on digital twins for the construction industry. I analysed HVAC and BMS telemetry in Python and R, built anomaly detection and sensor-data validation workflows, and mapped detected anomalies onto BIM geometry in Unity so engineers could locate them.</p>
-          <dl class="rp-stats">
-            <div><dt>100k+</dt><dd>telemetry records</dd></div>
-            <div><dt>50+</dt><dd>building zones monitored</dd></div>
-          </dl>
-          <ul class="rp-tags"><li>Python</li><li>R</li><li>IoT / BMS</li><li>Anomaly detection</li><li>Unity</li></ul>
-          <span class="rp-links"><a class="rp-more" href="https://www.ashvin.eu" target="_blank" rel="noopener">More →</a><a href="https://cordis.europa.eu/project/id/958161" target="_blank" rel="noopener">CORDIS</a></span>
-        </article>
-
-        <article class="rp-card rp-wide">
-          <header class="rp-top">
-            <h3>BIM-SPEED – Overheating under Climate Change, Gdynia</h3>
-            <span class="rp-mark mark-bimspeed">BIM‑SPEED</span>
-          </header>
-          <p class="rp-meta">Horizon 2020 · TU Berlin · 2024</p>
-          <div class="rp-split">
-            <div>
-              <p class="rp-desc">Within the BIM-SPEED project on BIM for deep renovation, I simulated overheating in a 1961 duplex in Gdynia, Poland: 83 EnergyPlus runs comparing the building as built with an upgraded envelope, under historical weather and RCP 8.5 projections, assessed with the ASHRAE 55 adaptive comfort model.</p>
-              <p class="rp-desc">Upgrades cut overheating sharply but still miss the 200-hour limit in future climates, so shading and cooling come next.</p>
-              <ul class="rp-tags"><li>EnergyPlus</li><li>ASHRAE 55</li><li>RCP 8.5</li><li>Climate scenarios</li><li>Excel</li></ul>
-              <span class="rp-links"><a class="rp-more" href="https://cordis.europa.eu/project/id/820553" target="_blank" rel="noopener">More →</a><a href="https://build-up.ec.europa.eu/en/resources-and-tools/links/bim-speed-project" target="_blank" rel="noopener">Build Up</a></span>
-            </div>
-            <figure class="rp-chart">
-              <svg viewBox="0 0 420 240" role="img" aria-label="Overheating hours, May to September. As built: 819 (2017–21), 2,271 (2031–50), 2,700 (2061–80). Upgraded: 0, 224, 638. Limit 200 hours.">
-                <g class="grid"><line x1="40" y1="200" x2="410" y2="200"/><line x1="40" y1="140" x2="410" y2="140"/><line x1="40" y1="80" x2="410" y2="80"/><line x1="40" y1="20" x2="410" y2="20"/></g>
-                <g class="axis"><text x="30" y="204" text-anchor="end">0</text><text x="30" y="144" text-anchor="end">1k</text><text x="30" y="84" text-anchor="end">2k</text><text x="30" y="24" text-anchor="end">3k</text></g>
-                <rect class="bar-a" x="62" y="150.9" width="40" height="49.1"/>
-                <rect class="bar-b" x="106" y="199" width="40" height="1"/>
-                <rect class="bar-a" x="182" y="63.7" width="40" height="136.3"/>
-                <rect class="bar-b" x="226" y="186.6" width="40" height="13.4"/>
-                <rect class="bar-a" x="302" y="38" width="40" height="162"/>
-                <rect class="bar-b" x="346" y="161.7" width="40" height="38.3"/>
-                <line class="limit" x1="40" y1="188" x2="410" y2="188"/>
-                <g class="val" text-anchor="middle"><text x="82" y="144">819</text><text x="126" y="180">0</text><text x="202" y="57">2,271</text><text x="246" y="180">224</text><text x="322" y="32">2,700</text><text x="366" y="155">638</text></g>
-                <g class="axis" text-anchor="middle"><text x="104" y="222">2017–21</text><text x="224" y="222">2031–50</text><text x="344" y="222">2061–80</text></g>
-              </svg>
-              <figcaption><span class="lg"><span class="key key-a"></span>As built</span><span class="lg"><span class="key key-b"></span>Upgraded</span><span class="lg"><span class="key key-limit"></span>200 h limit</span><span class="lg">Overheating hours, May–Sep</span></figcaption>
-            </figure>
+    <!-- Title block, like the first page of a paper -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <p class="kicker">Building performance · Digital twins · Operational data</p>
+          <h1>Buildings rarely perform the way they were designed. I find the gap and close it.</h1>
+          <p class="byline"><strong>John Bello</strong>, M.Sc. Civil Systems Engineering, TU Berlin · DAAD Scholar · Berlin, Germany</p>
+          <p class="lede">I combine EnergyPlus simulation, sensor data and Python automation to show where a building overheats or wastes energy, and to test the fix before anything is built or replaced.</p>
+          <div class="actions">
+            <a class="btn primary" href="#research">Read the research</a>
+            <a class="btn" href="#contact">Get in touch</a>
           </div>
+        </div>
+
+        <figure class="psy">
+          <svg viewBox="0 0 560 400" role="img" aria-labelledby="psy-title psy-desc">
+            <title id="psy-title">Psychrometric chart</title>
+            <desc id="psy-desc">A hot, humid state point at 33 °C moves into the thermal comfort zone between 20 and 26 °C.</desc>
+            <g class="psy-grid">
+              <line x1="100" y1="40" x2="100" y2="360"/><line x1="160" y1="40" x2="160" y2="360"/><line x1="220" y1="40" x2="220" y2="360"/><line x1="280" y1="40" x2="280" y2="360"/><line x1="340" y1="40" x2="340" y2="360"/><line x1="400" y1="40" x2="400" y2="360"/><line x1="460" y1="40" x2="460" y2="360"/>
+              <line x1="40" y1="296" x2="520" y2="296"/><line x1="40" y1="232" x2="520" y2="232"/><line x1="40" y1="168" x2="520" y2="168"/><line x1="40" y1="104" x2="520" y2="104"/><line x1="40" y1="40" x2="520" y2="40"/>
+            </g>
+            <line class="psy-axis" x1="40" y1="360" x2="520" y2="360"/>
+            <line class="psy-axis" x1="520" y1="40" x2="520" y2="360"/>
+            <polyline class="psy-sat" points="40,311 100,291 160,263 220,223 280,172 340,104 382,40"/>
+            <polyline class="psy-rh" points="40,336 100,325 160,311 220,292 280,266 340,232 400,185 460,126 520,48"/>
+            <polygon class="psy-zone" points="280,309 352,309 340,206 272,206"/>
+            <line class="psy-path" x1="436" y1="181" x2="318" y2="258"/>
+            <polyline class="psy-head" points="333,255 318,258 326,245"/>
+            <circle class="psy-hot" cx="436" cy="181" r="7"/>
+            <circle class="psy-ok" cx="318" cy="258" r="5"/>
+            <g class="psy-label">
+              <text x="36" y="380">0</text><text x="96" y="380">5</text><text x="153" y="380">10</text><text x="213" y="380">15</text><text x="273" y="380">20</text><text x="333" y="380">25</text><text x="393" y="380">30</text><text x="453" y="380">35</text><text x="508" y="380">40</text>
+              <text x="40" y="398">Dry-bulb temperature, °C</text>
+              <text x="527" y="300">5</text><text x="527" y="236">10</text><text x="527" y="172">15</text><text x="527" y="108">20</text><text x="527" y="44">25</text>
+              <text x="210" y="150">100% RH</text>
+              <text x="440" y="110">50% RH</text>
+              <text class="t-ok" x="276" y="326">Comfort zone</text>
+              <text class="t-hot" x="446" y="176">Overheated</text>
+            </g>
+          </svg>
+          <figcaption><span class="fig">Fig. 1</span> What I do, on a psychrometric chart: move a space from overheated (orange) into the comfort zone (green), with evidence that the change works. Humidity ratio in g/kg on the right axis.</figcaption>
+        </figure>
+      </div>
+
+      <div class="wrap">
+        <dl class="evidence">
+          <div><dt>9.65%</dt><dd>CV(RMSE) of my calibrated EnergyPlus model, hourly data. ASHRAE Guideline 14 accepts up to 30%.</dd></div>
+          <div><dt>100k+</dt><dd>HVAC and BMS telemetry records analysed for anomalies across 50+ building zones</dd></div>
+          <div><dt>83</dt><dd>EnergyPlus runs testing a 1961 building against climate projections to 2080</dd></div>
+          <div><dt>80+</dt><dd>master's students taught building simulation at TU Berlin</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- 1. The case: claim → evidence -->
+    <section class="sec" id="case">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="sec-no">1</span>
+          <h2>The case for hiring me</h2>
+        </div>
+        <p class="sec-intro">Six things a building-performance or digital-twin team needs, and where I have already done each one.</p>
+        <div class="table-scroll">
+          <table class="claims">
+            <thead><tr><th scope="col">What you need</th><th scope="col">Evidence</th><th scope="col">Where</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Models that match reality</th><td>Calibrated an office-zone EnergyPlus model to hourly measured temperatures: CV(RMSE) 9.65%, RMSE 2.34 °C.</td><td>REINCARNATE thesis</td></tr>
+              <tr><th scope="row">Automation from BIM</th><td>Python BIM-to-BEM workflow that turns IFC geometry into EnergyPlus IDF models and links them to operational data.</td><td>REINCARNATE thesis</td></tr>
+              <tr><th scope="row">Insight from messy sensor data</th><td>Validated and analysed 100,000+ HVAC and BMS records; anomaly detection across 50+ zones, mapped onto BIM in Unity.</td><td>ASHVIN, Horizon 2020</td></tr>
+              <tr><th scope="row">Control and comfort trade-offs</th><td>Simulation-tested Python control logic for thermally activated building systems, holding peaks near 26 °C while quantifying energy cost.</td><td>REINCARNATE thesis</td></tr>
+              <tr><th scope="row">Climate-resilience assessment</th><td>83 simulations under RCP 8.5 to 2080, using the ASHRAE 55 adaptive model; showed upgrades cut overheating from 2,700 to 638 hours.</td><td>BIM-SPEED, Horizon 2020</td></tr>
+              <tr><th scope="row">Clear communication</th><td>Taught simulation setup and troubleshooting to 80+ master's students; four years coordinating clients, suppliers and subcontractors on site.</td><td>TU Berlin · Lagos</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Research projects -->
+    <section class="sec" id="research">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="sec-no">2</span>
+          <h2>Research projects</h2>
+        </div>
+
+        <article class="paper">
+          <header class="paper-head">
+            <div>
+              <p class="paper-meta">Horizon Europe · Master's thesis · 2025–26 · with Mainflux Labs</p>
+              <h3>A calibrated digital twin of the 3L office building</h3>
+            </div>
+            <span class="mark mark-reincarnate" title="REINCARNATE, Horizon Europe">REINCARNATE</span>
+          </header>
+          <div class="abstract">
+            <div><h4>Problem</h4><p>Office zones were overheating, and the building model and measured data were never connected.</p></div>
+            <div><h4>Method</h4><p>Python BIM-to-BEM from IFC to EnergyPlus; calibration on hourly indoor temperature and weather data; control logic for TABS tested in simulation.</p></div>
+            <div><h4>Result</h4><p><strong>CV(RMSE) 9.65%</strong>, RMSE 2.34 °C. TABS control limits peaks to about 26 °C, with the comfort–energy trade-off quantified.</p></div>
+          </div>
+          <figure class="flow" aria-label="Workflow from IFC model to calibrated digital twin">
+            <ol>
+              <li>IFC model</li><li>Python BIM-to-BEM</li><li>EnergyPlus IDF</li><li>Calibration vs. sensors</li><li>TABS control tests</li>
+            </ol>
+            <figcaption><span class="fig">Fig. 2</span> Thesis workflow</figcaption>
+          </figure>
+          <footer class="paper-foot">
+            <ul class="tags"><li>Python</li><li>EnergyPlus</li><li>IfcOpenShell</li><li>Calibration</li><li>Digital twin</li></ul>
+            <a class="more" href="https://cordis.europa.eu/project/id/101056773" target="_blank" rel="noopener">About REINCARNATE ↗</a>
+          </footer>
         </article>
-      </div>
-    </section>
 
-    <section id="projects" class="wrap">
-      <div class="section-head">
-        <h2>Other projects</h2>
-      </div>
-      <div class="grid two">
-        <article class="card">
-          <p class="tag">DECODER · Concordia University · 2025</p>
-          <h3>Multi-building energy forecasting API</h3>
-          <p>Developed a forecasting API for energy predictions to support renovation and decarbonisation planning across a building portfolio.</p>
+        <article class="paper">
+          <header class="paper-head">
+            <div>
+              <p class="paper-meta">Horizon 2020 · Building data analyst · 2022–24</p>
+              <h3>Finding HVAC faults in operational data, located on BIM</h3>
+            </div>
+            <span class="mark mark-ashvin" title="ASHVIN, Horizon 2020">ASHVIN</span>
+          </header>
+          <div class="abstract">
+            <div><h4>Problem</h4><p>Building telemetry is large, noisy and hard for engineering teams to act on.</p></div>
+            <div><h4>Method</h4><p>Sensor-data validation for missing and invalid readings, then anomaly detection models in Python and R on IoT and BMS time series.</p></div>
+            <div><h4>Result</h4><p><strong>100,000+ records</strong> analysed across <strong>50+ zones</strong>; anomalies mapped onto BIM geometry in Unity so teams could find them.</p></div>
+          </div>
+          <figure class="flow" aria-label="Workflow from sensor data to anomalies located on BIM">
+            <ol>
+              <li>IoT / BMS data</li><li>Validation</li><li>Anomaly detection</li><li>BIM in Unity</li><li>Follow-up actions</li>
+            </ol>
+            <figcaption><span class="fig">Fig. 3</span> Data workflow</figcaption>
+          </figure>
+          <footer class="paper-foot">
+            <ul class="tags"><li>Python</li><li>R</li><li>SQL</li><li>IoT / BMS</li><li>Unity</li></ul>
+            <span class="links"><a class="more" href="https://www.ashvin.eu" target="_blank" rel="noopener">About ASHVIN ↗</a><a href="https://cordis.europa.eu/project/id/958161" target="_blank" rel="noopener">CORDIS ↗</a></span>
+          </footer>
         </article>
-        <article class="card">
-          <p class="tag">The Polytechnic, Ibadan · 2019–21</p>
-          <h3>Sustainable composite bricks</h3>
-          <p>Led a six-member team researching bricks made from recycled polymer and sand, coordinating analysis, documentation and partner reporting.</p>
+
+        <article class="paper">
+          <header class="paper-head">
+            <div>
+              <p class="paper-meta">Horizon 2020 · TU Berlin · 2024</p>
+              <h3>Will a 1961 duplex in Gdynia overheat as the climate warms?</h3>
+            </div>
+            <span class="mark mark-bimspeed" title="BIM-SPEED, Horizon 2020">BIM‑SPEED</span>
+          </header>
+          <div class="abstract">
+            <div><h4>Problem</h4><p>Existing homes in cool climates are not designed for future heatwaves. How much will they overheat, and do envelope upgrades help?</p></div>
+            <div><h4>Method</h4><p>83 EnergyPlus runs, as built vs. upgraded envelope, under 2017–21 weather and RCP 8.5 projections for 2040 and 2070; ASHRAE 55 adaptive comfort.</p></div>
+            <div><h4>Result</h4><p>Upgrades cut overheating from <strong>2,700 to 638 hours</strong> by 2061–80, but not below the 200-hour limit. Shading and cooling are needed next.</p></div>
+          </div>
+          <figure class="chart">
+            <svg viewBox="0 0 560 250" role="img" aria-label="Overheating hours, May to September. As built: 819 (2017–21), 2,271 (2031–50), 2,700 (2061–80). Upgraded: 0, 224, 638. Limit 200 hours.">
+              <g class="c-grid"><line x1="50" y1="210" x2="550" y2="210"/><line x1="50" y1="150" x2="550" y2="150"/><line x1="50" y1="90" x2="550" y2="90"/><line x1="50" y1="30" x2="550" y2="30"/></g>
+              <g class="c-axis"><text x="40" y="214" text-anchor="end">0</text><text x="40" y="154" text-anchor="end">1,000</text><text x="40" y="94" text-anchor="end">2,000</text><text x="40" y="34" text-anchor="end">3,000</text></g>
+              <rect class="c-a" x="90" y="160.9" width="56" height="49.1"/>
+              <rect class="c-b" x="152" y="209" width="56" height="1"/>
+              <rect class="c-a" x="250" y="73.7" width="56" height="136.3"/>
+              <rect class="c-b" x="312" y="196.6" width="56" height="13.4"/>
+              <rect class="c-a" x="410" y="48" width="56" height="162"/>
+              <rect class="c-b" x="472" y="171.7" width="56" height="38.3"/>
+              <line class="c-limit" x1="50" y1="198" x2="550" y2="198"/>
+              <g class="c-val" text-anchor="middle"><text x="118" y="154">819</text><text x="180" y="190">0</text><text x="278" y="67">2,271</text><text x="340" y="190">224</text><text x="438" y="42">2,700</text><text x="500" y="165">638</text></g>
+              <g class="c-axis" text-anchor="middle"><text x="149" y="232">2017–21</text><text x="309" y="232">2031–50</text><text x="469" y="232">2061–80</text></g>
+            </svg>
+            <figcaption><span class="fig">Fig. 4</span> Overheating hours, May–September. <span class="lg"><span class="key key-a"></span>As built</span> <span class="lg"><span class="key key-b"></span>Upgraded envelope</span> <span class="lg"><span class="key key-limit"></span>200 h limit</span></figcaption>
+          </figure>
+          <footer class="paper-foot">
+            <ul class="tags"><li>EnergyPlus</li><li>ASHRAE 55</li><li>RCP 8.5</li><li>Climate scenarios</li><li>Excel</li></ul>
+            <span class="links"><a class="more" href="https://cordis.europa.eu/project/id/820553" target="_blank" rel="noopener">About BIM-SPEED ↗</a><a href="https://build-up.ec.europa.eu/en/resources-and-tools/links/bim-speed-project" target="_blank" rel="noopener">Build Up ↗</a></span>
+          </footer>
         </article>
+
+        <div class="also">
+          <h3>Also</h3>
+          <ul>
+            <li><strong>Energy forecasting API</strong> for multi-building renovation and decarbonisation planning. DECODER, Concordia University, 2025.</li>
+            <li><strong>Sustainable composite bricks</strong> from recycled polymer and sand; led a six-member research team. The Polytechnic, Ibadan, 2019–21.</li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <section id="experience" class="wrap">
-      <div class="section-head">
-        <h2>Experience</h2>
-      </div>
-      <ol class="timeline">
-        <li>
-          <span class="when">Sep 2025 – Mar 2026</span>
-          <div><h3>Graduate Researcher</h3><p class="org">REINCARNATE &amp; Mainflux Labs · Berlin</p><p>Building energy simulation and digital twins: BIM-to-BEM, model calibration, TABS control.</p></div>
-        </li>
-        <li>
-          <span class="when">2022 – 2024</span>
-          <div><h3>Building Data Analyst</h3><p class="org">ASHVIN EU Horizon 2020 · Berlin</p><p>HVAC operational analysis, anomaly detection and sensor-data validation.</p></div>
-        </li>
-        <li>
-          <span class="when">2022 – 2024</span>
-          <div><h3>Research Assistant — Building Simulation &amp; Training</h3><p class="org">Technical University of Berlin</p><p>Designed simulation exercises in IES VE, EnergyPlus and ArchiCAD for 80+ master's students; ran bi-weekly training.</p></div>
-        </li>
-        <li>
-          <span class="when">2019 – 2021</span>
-          <div><h3>Research Assistant &amp; Research Lead</h3><p class="org">The Polytechnic, Ibadan · Nigeria</p><p>Building technology research on sustainable materials.</p></div>
-        </li>
-        <li>
-          <span class="when">2016 – 2020</span>
-          <div><h3>Project Engineer — Construction Coordination</h3><p class="org">Blevic Geomatics &amp; Consults · Lagos</p><p>Led delivery of a 500-seat event centre; procurement for a five-storey mixed-use building; MEP drawing review.</p></div>
-        </li>
-      </ol>
-      <div class="edu">
-        <div><h3>M.Sc. Civil Systems Engineering</h3><p>Technical University of Berlin · 2023–2026</p></div>
-        <div><h3>B.Sc. Building Technology</h3><p>Covenant University, Nigeria · 2013–2018</p></div>
-        <div><h3>DAAD Scholar</h3><p>German Academic Exchange Service · 2023</p></div>
+    <!-- 3. Experience -->
+    <section class="sec" id="experience">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="sec-no">3</span>
+          <h2>Experience</h2>
+        </div>
+        <ol class="cv">
+          <li><span class="when">2025–26</span><div><h3>Graduate Researcher, building energy simulation &amp; digital twins</h3><p class="org">REINCARNATE &amp; Mainflux Labs · Berlin</p></div></li>
+          <li><span class="when">2022–24</span><div><h3>Building Data Analyst, HVAC operational analysis</h3><p class="org">ASHVIN, EU Horizon 2020 · Berlin</p></div></li>
+          <li><span class="when">2022–24</span><div><h3>Research Assistant, building simulation &amp; technical training</h3><p class="org">Technical University of Berlin</p></div></li>
+          <li><span class="when">2019–21</span><div><h3>Research Assistant &amp; Research Lead, building technology</h3><p class="org">The Polytechnic, Ibadan · Nigeria</p></div></li>
+          <li><span class="when">2016–20</span><div><h3>Project Engineer, construction coordination</h3><p class="org">Blevic Geomatics &amp; Consults · Lagos. Delivered a 500-seat event centre (EUR 115k–176k).</p></div></li>
+        </ol>
       </div>
     </section>
 
-    <section id="skills" class="wrap">
-      <div class="section-head">
-        <h2>Skills</h2>
+    <!-- 4. Methods -->
+    <section class="sec" id="methods">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="sec-no">4</span>
+          <h2>Methods &amp; tools</h2>
+        </div>
+        <div class="methods">
+          <div><h3>Simulation &amp; BIM</h3><p>EnergyPlus, IES VE, DesignBuilder, IfcOpenShell, web-ifc, Revit API, gbXML</p></div>
+          <div><h3>Data &amp; automation</h3><p>Python, R, SQL, REST APIs, IoT/BMS time series, anomaly detection, sensor-data validation</p></div>
+          <div><h3>Standards &amp; methods</h3><p>Model calibration (ASHRAE Guideline 14 metrics), ASHRAE 55 adaptive comfort, RCP climate scenarios, scenario comparison</p></div>
+          <div><h3>Design tools</h3><p>Revit, ArchiCAD, AutoCAD, Navisworks, SketchUp, Open BIM</p></div>
+        </div>
+        <div class="creds">
+          <div><h3>Education</h3><p>M.Sc. Civil Systems Engineering, Technical University of Berlin, 2023–26<br>B.Sc. Building Technology, Covenant University, Nigeria, 2013–18</p></div>
+          <div><h3>Recognition</h3><p>DAAD Scholar, German Academic Exchange Service, 2023</p></div>
+          <div><h3>Languages</h3><p>English (native) · German (B1)</p></div>
+        </div>
       </div>
-      <div class="skills">
-        <div><h3>Building simulation &amp; BIM</h3><p class="chips"><span>EnergyPlus</span><span>IES VE</span><span>DesignBuilder</span><span>IfcOpenShell</span><span>web-ifc</span><span>Revit API</span><span>gbXML</span></p></div>
-        <div><h3>Operational data &amp; automation</h3><p class="chips"><span>Python</span><span>R</span><span>SQL</span><span>REST APIs</span><span>IoT/BMS time series</span><span>Anomaly detection</span><span>Sensor-data validation</span></p></div>
-        <div><h3>Design &amp; building tools</h3><p class="chips"><span>Revit</span><span>ArchiCAD</span><span>AutoCAD</span><span>Navisworks</span><span>SketchUp</span><span>Open BIM</span></p></div>
-        <div><h3>Methods</h3><p class="chips"><span>Model calibration</span><span>Scenario comparison</span><span>Thermal comfort (ASHRAE 55)</span><span>Technical training</span></p></div>
-      </div>
-      <p class="langs"><strong>Languages:</strong> English (native) · German (B1)</p>
     </section>
 
-    <section id="contact" class="wrap contact">
-      <h2>Let's talk about building performance.</h2>
-      <p>Open to roles in building energy simulation, digital twins and HVAC data analysis.</p>
-      <div class="actions">
-        <a class="btn primary" href="mailto:johnifeoluwa.bello@gmail.com">johnifeoluwa.bello@gmail.com</a>
-        <a class="btn" href="https://www.linkedin.com/in/john-bello-79458b165" target="_blank" rel="noopener">LinkedIn</a>
+    <!-- Correspondence -->
+    <section class="sec contact" id="contact">
+      <div class="wrap">
+        <p class="kicker">Correspondence</p>
+        <h2>Looking for someone to make your buildings measurable?</h2>
+        <p class="sec-intro">Open to roles in building energy simulation, digital twins and HVAC data analysis, in Berlin or remote across the EU.</p>
+        <div class="actions">
+          <a class="btn primary" href="mailto:johnifeoluwa.bello@gmail.com">johnifeoluwa.bello@gmail.com</a>
+          <a class="btn" href="https://www.linkedin.com/in/john-bello-79458b165" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="wrap"><small>© <span id="y"></span> John Bello · Berlin</small></footer>
+  <footer class="colophon">
+    <div class="wrap">
+      <p>Cite as: Bello, J. (<span id="y">2026</span>). <em>Building performance portfolio.</em> Berlin.</p>
+    </div>
+  </footer>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
