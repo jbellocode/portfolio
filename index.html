@@ -3,31 +3,159 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Name — Portfolio</title>
-  <meta name="description" content="Portfolio of Your Name">
+  <title>John Bello — Building Energy Simulation & Digital Twins</title>
+  <meta name="description" content="John Bello — building energy simulation, HVAC data analysis and digital twins. Berlin, Germany.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="wrap">
-    <nav><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="logo" href="#top">JB</a>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
   </header>
-  <main class="wrap">
-    <section class="hero">
-      <h1>Your Name</h1>
-      <p class="lede">One sentence about what you do and who you do it for.</p>
+
+  <main id="top">
+    <section class="hero wrap">
+      <p class="eyebrow">Berlin, Germany · M.Sc. Civil Systems Engineering, TU Berlin</p>
+      <h1>John Bello</h1>
+      <p class="role">Building Energy Simulation · HVAC Data Analysis · Digital Twins</p>
+      <p class="lede">I combine building simulation with operational data to find performance issues, test improvement strategies, and turn the analysis into clear, practical guidance.</p>
+      <div class="actions">
+        <a class="btn primary" href="#work">See my work</a>
+        <a class="btn" href="mailto:johnifeoluwa.bello@gmail.com">Get in touch</a>
+      </div>
+      <dl class="stats">
+        <div><dt>9.65%</dt><dd>CV(RMSE) on a calibrated EnergyPlus office model</dd></div>
+        <div><dt>100k+</dt><dd>HVAC &amp; BMS telemetry records analysed</dd></div>
+        <div><dt>50+</dt><dd>building zones covered by anomaly detection</dd></div>
+        <div><dt>80+</dt><dd>master's students trained in building simulation</dd></div>
+      </dl>
     </section>
-    <section id="work">
-      <h2>Selected work</h2>
-      <div class="grid">
-        <article class="card"><h3>Project one</h3><p>What it is, your role, the outcome.</p><a href="#">View →</a></article>
-        <article class="card"><h3>Project two</h3><p>What it is, your role, the outcome.</p><a href="#">View →</a></article>
-        <article class="card"><h3>Project three</h3><p>What it is, your role, the outcome.</p><a href="#">View →</a></article>
+
+    <section id="work" class="wrap">
+      <div class="section-head">
+        <span class="num">01</span>
+        <h2>Featured work</h2>
+      </div>
+      <div class="features">
+        <article class="feature">
+          <p class="tag">Digital Twins · REINCARNATE &amp; Mainflux Labs · 2025–26</p>
+          <h3>Calibrated digital twin of the 3L office building</h3>
+          <p>Modelled the building in EnergyPlus and combined it with measured indoor conditions and weather data to investigate overheating and operational behaviour.</p>
+          <ul>
+            <li>Python <strong>BIM-to-BEM workflow</strong>: IFC geometry → EnergyPlus IDF, linked to operational data</li>
+            <li>Calibrated against hourly measured temperatures: <strong>CV(RMSE) 9.65%</strong>, RMSE 2.34 °C</li>
+            <li>Simulation-tested Python control logic for TABS, holding peak indoor temperatures to <strong>≈26 °C</strong> while quantifying the comfort–energy trade-off</li>
+          </ul>
+          <p class="tools">EnergyPlus · Python · IfcOpenShell · IFC</p>
+        </article>
+        <article class="feature">
+          <p class="tag">Operational Data · ASHVIN EU Horizon 2020 · 2022–24</p>
+          <h3>HVAC anomaly detection mapped to BIM</h3>
+          <p>Analysed IoT and BMS time-series data to find operational anomalies and inefficiencies, then made them easy for engineering teams to locate.</p>
+          <ul>
+            <li>Analysed <strong>100,000+</strong> HVAC and telemetry records in Python and R</li>
+            <li>Anomaly detection models across <strong>50+ building zones</strong>, with sensor-data validation upstream</li>
+            <li>Mapped detected anomalies onto <strong>BIM geometry in Unity</strong> for visual diagnosis</li>
+          </ul>
+          <p class="tools">Python · R · SQL · Unity · IoT/BMS</p>
+        </article>
       </div>
     </section>
-    <section id="about"><h2>About</h2><p>A short bio.</p></section>
-    <section id="contact"><h2>Contact</h2><p><a href="mailto:you@example.com">you@example.com</a></p></section>
+
+    <section id="projects" class="wrap">
+      <div class="section-head">
+        <span class="num">02</span>
+        <h2>Projects</h2>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <p class="tag">BIM-SPEED · TU Berlin · 2024</p>
+          <h3>Renovation scenarios under future climate — Gdynia</h3>
+          <p>Compared renovation and passive/active cooling scenarios in EnergyPlus under historical and RCP 8.5 climates, with an Excel overheating-risk model based on the ASHRAE 55-2017 adaptive comfort model.</p>
+        </article>
+        <article class="card">
+          <p class="tag">DECODER · Concordia University · 2025</p>
+          <h3>Multi-building energy forecasting API</h3>
+          <p>Developed a forecasting API for energy predictions to support renovation and decarbonisation planning across a building portfolio.</p>
+        </article>
+        <article class="card">
+          <p class="tag">The Polytechnic, Ibadan · 2019–21</p>
+          <h3>Sustainable composite bricks</h3>
+          <p>Led a six-member team researching bricks made from recycled polymer and sand, coordinating analysis, documentation and partner reporting.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="wrap">
+      <div class="section-head">
+        <span class="num">03</span>
+        <h2>Experience</h2>
+      </div>
+      <ol class="timeline">
+        <li>
+          <span class="when">Sep 2025 – Mar 2026</span>
+          <div><h3>Graduate Researcher</h3><p class="org">REINCARNATE &amp; Mainflux Labs · Berlin</p><p>Building energy simulation and digital twins: BIM-to-BEM, model calibration, TABS control.</p></div>
+        </li>
+        <li>
+          <span class="when">2022 – 2024</span>
+          <div><h3>Building Data Analyst</h3><p class="org">ASHVIN EU Horizon 2020 · Berlin</p><p>HVAC operational analysis, anomaly detection and sensor-data validation.</p></div>
+        </li>
+        <li>
+          <span class="when">2022 – 2024</span>
+          <div><h3>Research Assistant — Building Simulation &amp; Training</h3><p class="org">Technical University of Berlin</p><p>Designed simulation exercises in IES VE, EnergyPlus and ArchiCAD for 80+ master's students; ran bi-weekly training.</p></div>
+        </li>
+        <li>
+          <span class="when">2019 – 2021</span>
+          <div><h3>Research Assistant &amp; Research Lead</h3><p class="org">The Polytechnic, Ibadan · Nigeria</p><p>Building technology research on sustainable materials.</p></div>
+        </li>
+        <li>
+          <span class="when">2016 – 2020</span>
+          <div><h3>Project Engineer — Construction Coordination</h3><p class="org">Blevic Geomatics &amp; Consults · Lagos</p><p>Led delivery of a 500-seat event centre; procurement for a five-storey mixed-use building; MEP drawing review.</p></div>
+        </li>
+      </ol>
+      <div class="edu">
+        <div><h3>M.Sc. Civil Systems Engineering</h3><p>Technical University of Berlin · 2023–2026</p></div>
+        <div><h3>B.Sc. Building Technology</h3><p>Covenant University, Nigeria · 2013–2018</p></div>
+        <div><h3>DAAD Scholar</h3><p>German Academic Exchange Service · 2023</p></div>
+      </div>
+    </section>
+
+    <section id="skills" class="wrap">
+      <div class="section-head">
+        <span class="num">04</span>
+        <h2>Skills</h2>
+      </div>
+      <div class="skills">
+        <div><h3>Building simulation &amp; BIM</h3><p class="chips"><span>EnergyPlus</span><span>IES VE</span><span>DesignBuilder</span><span>IfcOpenShell</span><span>web-ifc</span><span>Revit API</span><span>gbXML</span></p></div>
+        <div><h3>Operational data &amp; automation</h3><p class="chips"><span>Python</span><span>R</span><span>SQL</span><span>REST APIs</span><span>IoT/BMS time series</span><span>Anomaly detection</span><span>Sensor-data validation</span></p></div>
+        <div><h3>Design &amp; building tools</h3><p class="chips"><span>Revit</span><span>ArchiCAD</span><span>AutoCAD</span><span>Navisworks</span><span>SketchUp</span><span>Open BIM</span></p></div>
+        <div><h3>Methods</h3><p class="chips"><span>Model calibration</span><span>Scenario comparison</span><span>Thermal comfort (ASHRAE 55)</span><span>Technical training</span></p></div>
+      </div>
+      <p class="langs"><strong>Languages:</strong> English (native) · German (B1)</p>
+    </section>
+
+    <section id="contact" class="wrap contact">
+      <h2>Let's talk about building performance.</h2>
+      <p>Open to roles in building energy simulation, digital twins and HVAC data analysis.</p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:johnifeoluwa.bello@gmail.com">johnifeoluwa.bello@gmail.com</a>
+        <a class="btn" href="https://www.linkedin.com/in/john-bello-79458b165" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
   </main>
-  <footer class="wrap"><small>© <span id="y"></span> Your Name</small></footer>
+
+  <footer class="wrap"><small>© <span id="y"></span> John Bello · Berlin</small></footer>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
