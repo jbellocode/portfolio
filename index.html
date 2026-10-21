@@ -121,7 +121,8 @@
             <div>
               <p class="paper-meta">Horizon Europe · Master's thesis, TU Berlin · Feb 2026 · with Mainflux Labs</p>
               <h3>A sensor-calibrated digital twin that fixes overheating in a low-tech office</h3>
-              <p class="paper-sub">Thesis: <em>An Analytical Framework Using Sensor Data to Evaluate the Energy Performance of Built Environments.</em> Supervised by Prof. Timo Hartmann.</p>
+              <p class="paper-sub">Thesis: <em>An Analytical Framework Using Sensor Data to Evaluate the Energy Performance of Built Environments.</em></p>
+              <p class="collab"><span>Worked with</span> Prof. Timo Hartmann (TU Berlin, supervisor) · Klaus Luig (REINCARNATE, second examiner) · Saša Klopanović (Mainflux Labs, external advisor)</p>
             </div>
             <span class="mark mark-reincarnate" title="REINCARNATE, Horizon Europe">REINCARNATE</span>
           </header>
@@ -156,6 +157,7 @@
               </table>
             </figure>
           </div>
+          <p class="aside"><strong>Data partner: Mainflux Labs.</strong> Their IoT platform supplied the measured indoor temperature, humidity and CO₂ from the 3L building (AtmoCube sensors, April–September 2025) that I used to calibrate and validate the model. <a href="#partners">More on Mainflux ↓</a></p>
           <p class="aside">Also within REINCARNATE: machine-learning crack detection for assessing brick quality, so masonry can be reused.</p>
           <footer class="paper-foot">
             <ul class="tags"><li>EnergyPlus</li><li>Python</li><li>IFC / ArchiCAD</li><li>ASHRAE Guideline 14</li><li>TABS control</li><li>Digital twin</li></ul>
@@ -168,6 +170,7 @@
             <div>
               <p class="paper-meta">Horizon 2020 · Building data analyst · 2022–24</p>
               <h3>Finding HVAC faults in operational data, located on BIM</h3>
+              <p class="collab"><span>Worked with</span> Prof. Timo Hartmann (TU Berlin) · Mainflux Labs (IoT platform partner)</p>
             </div>
             <span class="mark mark-ashvin" title="ASHVIN, Horizon 2020">ASHVIN</span>
           </header>
@@ -176,7 +179,7 @@
             <div><h4>Method</h4><p>Sensor-data validation for missing and invalid readings, then anomaly detection models in Python and R on IoT and BMS time series.</p></div>
             <div><h4>Result</h4><p><strong>100,000+ records</strong> analysed across <strong>50+ zones</strong>; anomalies mapped onto BIM geometry in Unity so teams could find them.</p></div>
           </div>
-          <p class="aside">Also deployed the Mainflux IoT platform on a Raspberry Pi, connected ESP32 motion sensors, and built real-time visualisation of the sensor data.</p>
+          <p class="aside">With Mainflux Labs: deployed the Mainflux IoT platform on a Raspberry Pi, connected ESP32 motion sensors, and built real-time visualisation of the sensor data.</p>
           <figure class="flow" aria-label="Workflow from sensor data to anomalies located on BIM">
             <ol>
               <li>IoT / BMS data</li><li>Validation</li><li>Anomaly detection</li><li>BIM in Unity</li><li>Follow-up actions</li>
@@ -194,6 +197,7 @@
             <div>
               <p class="paper-meta">Horizon 2020 · TU Berlin · 2024 · weather data by Arup</p>
               <h3>Will a 1961 duplex in Gdynia overheat as the climate warms?</h3>
+              <p class="collab"><span>Worked with</span> Prof. Timo Hartmann (TU Berlin) · Nour Samaro</p>
             </div>
             <span class="mark mark-bimspeed" title="BIM-SPEED, Horizon 2020">BIM‑SPEED</span>
           </header>
@@ -224,6 +228,21 @@
           </footer>
         </article>
 
+        <aside class="partner" id="partners" aria-labelledby="partner-title">
+          <div class="partner-head">
+            <p class="paper-meta">Collaborating partner · REINCARNATE &amp; ASHVIN</p>
+            <span class="mark mark-mainflux">MAINFLUX</span>
+          </div>
+          <h3 id="partner-title">Mainflux Labs</h3>
+          <div class="partner-body">
+            <p>Mainflux Labs builds an open-source IoT platform for the cloud–edge continuum: cloud-native microservices in Docker and Kubernetes that scale from multi-datacentre deployments down to Raspberry Pi-class devices. The company works on EU research projects with partners including TU Berlin, TU Delft, UPC Barcelona and Fraunhofer.</p>
+            <ul class="partner-list">
+              <li><strong>REINCARNATE:</strong> supplied the measured IoT data from the 3L building that calibrated and validated my thesis model.</li>
+              <li><strong>ASHVIN:</strong> I deployed their platform on a Raspberry Pi with ESP32 sensors and real-time visualisation.</li>
+            </ul>
+          </div>
+          <p class="links"><a class="more" href="https://mainflux.com/" target="_blank" rel="noopener">mainflux.com ↗</a><a href="https://www.ashvin.eu/" target="_blank" rel="noopener">ASHVIN ↗</a><a href="https://www.spatial-h2020.eu/" target="_blank" rel="noopener">SPATIAL ↗</a></p>
+        </aside>
       </div>
     </section>
 

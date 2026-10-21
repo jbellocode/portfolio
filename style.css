@@ -201,3 +201,18 @@ figcaption { font-size: .86rem; line-height: 1.55; color: var(--muted); margin-t
 @media (max-width: 900px) {
   .figs, .minor { grid-template-columns: 1fr; }
 }
+
+/* collaborators and partner */
+.collab { font-size: .9rem; color: var(--ink-2); margin-top: 10px; }
+.collab span { font-family: var(--mono); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin-right: 8px; }
+.aside a { font-weight: 600; }
+.partner { margin-top: 28px; border: 1px solid var(--rule); border-top: 3px solid var(--ink); border-radius: 6px; padding: 30px 36px; background: var(--paper); display: flex; flex-direction: column; gap: 14px; }
+.partner-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
+.partner-head .paper-meta { margin: 0; }
+.partner h3 { font-family: var(--serif); font-weight: 500; font-size: 1.6rem; }
+.partner-body { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 32px; }
+.partner-body > p { font-family: var(--serif); font-size: 1.05rem; line-height: 1.6; color: var(--ink-2); }
+.partner-list { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: .95rem; color: var(--ink-2); }
+.partner-list li { border-left: 2px solid var(--accent); padding-left: 12px; }
+.mark-mainflux { color: #1c5d99; }
+@media (max-width: 900px) { .partner-body { grid-template-columns: 1fr; gap: 16px; } .partner { padding: 22px; } }
