@@ -219,7 +219,6 @@ figcaption { font-size: .86rem; line-height: 1.55; color: var(--muted); margin-t
 .partner-list li { border-left: 2px solid var(--accent); padding-left: 12px; }
 .mark-mainflux { color: var(--ink); }
 @media (max-width: 900px) { .partner-body { grid-template-columns: 1fr; gap: 16px; } .partner { padding: 22px; } }
-.palette-note { font-family: var(--mono); font-size: .75rem; margin-top: 6px; }
 
 /* heating system panel */
 .system { border: 1px solid var(--rule); border-radius: 6px; padding: 20px 22px; background: var(--paper); }
