@@ -408,3 +408,11 @@ figcaption { font-size: .86rem; line-height: 1.55; color: var(--muted); margin-t
   .cv-compact h3 { font-size: .86rem; }
   .cv-compact .org { font-size: .78rem; }
 }
+
+/* education, recognition and languages in the intro byline */
+.byline { display: flex; flex-direction: column; gap: 8px; }
+.by-name { font-size: .98rem; }
+.by-creds { margin: 0; display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr) minmax(0, .9fr); gap: 4px 18px; font-size: .78rem; line-height: 1.45; color: var(--muted); }
+.by-creds dt { font-family: var(--mono); font-size: .64rem; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin-bottom: 2px; }
+.by-creds dd { margin: 0; }
+@media (max-width: 700px) { .by-creds { grid-template-columns: 1fr; gap: 8px; } }
