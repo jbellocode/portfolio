@@ -18,9 +18,9 @@
     <div class="wrap bar">
       <a class="brand" href="#top">John Bello</a>
       <nav aria-label="Sections">
+        <a href="#experience">Experience</a>
         <a href="#research">EU research</a>
         <a href="#more">More work</a>
-        <a href="#experience">Experience</a>
         <a href="#methods">Methods</a>
         <a class="nav-cta" href="#contact">Contact</a>
       </nav>
@@ -42,45 +42,49 @@
           </div>
         </div>
 
-        <figure class="psy">
-          <svg viewBox="0 0 560 400" role="img" aria-labelledby="psy-title psy-desc">
-            <title id="psy-title">Psychrometric chart</title>
-            <desc id="psy-desc">A hot, humid state point at 33 °C moves into the thermal comfort zone between 20 and 26 °C.</desc>
-            <g class="psy-grid">
-              <line x1="100" y1="40" x2="100" y2="360"/><line x1="160" y1="40" x2="160" y2="360"/><line x1="220" y1="40" x2="220" y2="360"/><line x1="280" y1="40" x2="280" y2="360"/><line x1="340" y1="40" x2="340" y2="360"/><line x1="400" y1="40" x2="400" y2="360"/><line x1="460" y1="40" x2="460" y2="360"/>
-              <line x1="40" y1="296" x2="520" y2="296"/><line x1="40" y1="232" x2="520" y2="232"/><line x1="40" y1="168" x2="520" y2="168"/><line x1="40" y1="104" x2="520" y2="104"/><line x1="40" y1="40" x2="520" y2="40"/>
-            </g>
-            <line class="psy-axis" x1="40" y1="360" x2="520" y2="360"/>
-            <line class="psy-axis" x1="520" y1="40" x2="520" y2="360"/>
-            <polyline class="psy-sat" points="40,311 100,291 160,263 220,223 280,172 340,104 382,40"/>
-            <polyline class="psy-rh" points="40,336 100,325 160,311 220,292 280,266 340,232 400,185 460,126 520,48"/>
-            <polygon class="psy-zone" points="280,309 352,309 340,206 272,206"/>
-            <line class="psy-path" x1="436" y1="181" x2="318" y2="258"/>
-            <polyline class="psy-head" points="333,255 318,258 326,245"/>
-            <circle class="psy-hot" cx="436" cy="181" r="7"/>
-            <circle class="psy-ok" cx="318" cy="258" r="5"/>
-            <g class="psy-label">
-              <text x="36" y="380">0</text><text x="96" y="380">5</text><text x="153" y="380">10</text><text x="213" y="380">15</text><text x="273" y="380">20</text><text x="333" y="380">25</text><text x="393" y="380">30</text><text x="453" y="380">35</text><text x="508" y="380">40</text>
-              <text x="40" y="398">Dry-bulb temperature, °C</text>
-              <text x="527" y="300">5</text><text x="527" y="236">10</text><text x="527" y="172">15</text><text x="527" y="108">20</text><text x="527" y="44">25</text>
-              <text class="t-rh" x="210" y="150">100% RH</text>
-              <text class="t-rh" x="440" y="110">50% RH</text>
-              <text class="t-ok" x="276" y="326">Comfort zone</text>
-              <text class="t-hot t-wide" x="446" y="176">Overheated</text>
-              <text class="t-hot t-narrow" x="424" y="168" text-anchor="end">Overheated</text>
-            </g>
-          </svg>
-          <figcaption><span class="fig">Fig. 1</span> What I do, on a psychrometric chart: move a space from overheated (the warm dot) into the comfort zone (shaded), with evidence that the change works. Humidity ratio in g/kg on the right axis.</figcaption>
+        <figure class="hero-card" aria-label="Core skills">
+          <div class="skills-col">
+            <h2 class="skills-h">Core skills I bring:</h2>
+          <ol class="steps">
+            <li><span class="step-no">01</span><div><h3>Build</h3><p>Map HVAC drawings, floor plans, IFC files and sensor feeds into calibrated digital twins.</p></div></li>
+            <li><span class="step-no">02</span><div><h3>Forecast</h3><p>Use future weather data in simulations to plan heating and cooling ahead.</p></div></li>
+            <li><span class="step-no">03</span><div><h3>Tune</h3><p>Adjust control logic so rooms stay inside their temperature and CO₂ limits.</p></div></li>
+            <li><span class="step-no">04</span><div><h3>Anomaly detection</h3><p>Flag odd sensor readings and pin them to the right room on a BIM model.</p></div></li>
+          </ol>
+          </div>
+          <div class="iso">
+            <svg viewBox="0 0 810 790" role="img" aria-label="Wireframe of a four-storey building with one zone highlighted: zone OG_2, peak temperature cut from 31.3 to 26.0 °C">
+              <g class="iso-bg"><line x1="0" y1="30" x2="810" y2="30"/><line x1="0" y1="106" x2="810" y2="106"/><line x1="0" y1="182" x2="810" y2="182"/><line x1="0" y1="258" x2="810" y2="258"/><line x1="0" y1="334" x2="810" y2="334"/><line x1="0" y1="410" x2="810" y2="410"/><line x1="0" y1="486" x2="810" y2="486"/><line x1="0" y1="562" x2="810" y2="562"/><line x1="0" y1="638" x2="810" y2="638"/><line x1="0" y1="714" x2="810" y2="714"/><line x1="14" y1="0" x2="14" y2="790"/><line x1="90" y1="0" x2="90" y2="790"/><line x1="166" y1="0" x2="166" y2="790"/><line x1="242" y1="0" x2="242" y2="790"/><line x1="318" y1="0" x2="318" y2="790"/><line x1="394" y1="0" x2="394" y2="790"/><line x1="470" y1="0" x2="470" y2="790"/><line x1="546" y1="0" x2="546" y2="790"/><line x1="622" y1="0" x2="622" y2="790"/><line x1="698" y1="0" x2="698" y2="790"/><line x1="774" y1="0" x2="774" y2="790"/></g>
+              <g class="iso-mull"><line x1="110" y1="220" x2="110" y2="646"/><line x1="176" y1="253" x2="176" y2="680"/><line x1="241" y1="286" x2="241" y2="712"/><line x1="373" y1="286" x2="373" y2="712"/><line x1="438" y1="253" x2="438" y2="680"/><line x1="504" y1="220" x2="504" y2="647"/></g>
+              <g class="iso-line">
+                <polygon points="45,187 307,57 570,187 307,319"/>
+                <line x1="45" y1="187" x2="45" y2="614"/><line x1="307" y1="319" x2="307" y2="745"/><line x1="570" y1="187" x2="570" y2="614"/>
+                <polyline points="45,614 307,745 570,614"/>
+                <polyline points="45,272 307,404 570,272"/><polyline points="45,358 307,490 570,358"/><polyline points="45,444 307,576 570,444"/><polyline points="45,529 307,661 570,529"/>
+              </g>
+              <polygon class="iso-zone" points="307,404 570,273 570,358 307,489"/>
+              <line class="iso-lead" x1="471" y1="355" x2="610" y2="124"/>
+              <circle class="iso-dot" cx="471" cy="355" r="8"/>
+              <rect class="iso-tag" x="420" y="22" width="380" height="102" rx="6"/>
+              <text class="iso-t1" x="442" y="62">ZONE OG_2 · OVERHEATING</text>
+              <text class="iso-t2" x="442" y="102">T_peak 31.3 → 26.0 °C</text>
+            </svg>
+          </div>
         </figure>
       </div>
 
       <div class="wrap">
-        <dl class="evidence">
-          <div><dt>9.65%</dt><dd>CV(RMSE) of my calibrated EnergyPlus model, hourly data. ASHRAE Guideline 14 accepts up to 30%.</dd></div>
-          <div><dt>100k+</dt><dd>HVAC and BMS telemetry records analysed for anomalies across 50+ building zones</dd></div>
-          <div><dt>31 → 26 °C</dt><dd>peak office temperature (31.3 → 26.0 °C) after my automated TABS control, in simulation</dd></div>
-          <div><dt>83</dt><dd>EnergyPlus runs testing a 1961 building against climate projections to 2080</dd></div>
-        </dl>
+        <div class="exp-strip" id="experience">
+          <h2 class="skills-h">Experience</h2>
+          <ol class="cv cv-compact">
+          <li><span class="when">2025–26</span><div><h3>Graduate Researcher, building energy simulation &amp; digital twins</h3><p class="org">REINCARNATE &amp; Mainflux Labs · Berlin</p></div></li>
+          <li><span class="when">2024–25</span><div><h3>Student Researcher, building energy simulation &amp; climate resilience</h3><p class="org">Technische Universität Berlin · BIM-SPEED case study, with Nour Samaro</p></div></li>
+          <li><span class="when">2022–24</span><div><h3>Building Data Analyst, HVAC operational analysis</h3><p class="org">ASHVIN, EU Horizon 2020 · Berlin</p></div></li>
+          <li><span class="when">2022–24</span><div><h3>Teaching Assistant, building simulation &amp; technical training</h3><p class="org">Technical University of Berlin</p></div></li>
+          <li><span class="when">2019–21</span><div><h3>Research Assistant &amp; Research Lead, building technology</h3><p class="org">The Polytechnic, Ibadan · Nigeria</p></div></li>
+          <li><span class="when">2016–20</span><div><h3>Project Engineer, construction coordination</h3><p class="org">Blevic Geomatics &amp; Consults · Lagos. Delivered a 500-seat event centre (EUR 115k–176k).</p></div></li>
+        </ol>
+        </div>
       </div>
     </section>
 
@@ -109,69 +113,49 @@
               <a class="btn" href="https://cordis.europa.eu/project/id/101056773" target="_blank" rel="noopener">EU CORDIS record ↗</a>
             </div>
           </div>
-          <div class="feature-figs">
-            <p class="gal-h">From the thesis · real data from the 3L office</p>
-            <div class="feat-grid">
-              <figure class="feat">
-                <button type="button" class="zoom" data-full="assets/figures/calibration-progression.jpg" aria-label="Enlarge: Measured indoor temperature against three calibrated model versions, peak summer week"><img src="assets/figures/calibration-progression.jpg" alt="Measured indoor temperature against three calibrated model versions, peak summer week" loading="lazy"></button>
-                <figcaption><span class="fig">Calibration</span> <strong>A physics-based twin calibrated on real measurements.</strong> Hourly sensor data from Mainflux against three EnergyPlus model versions in the peak summer week. Each round closes the gap: RMSE 3.71 → 2.90 → 2.34 °C, CV(RMSE) 9.65%.</figcaption>
-              </figure>
-              <figure class="feat">
-                <button type="button" class="zoom" data-full="assets/figures/peak-week-control.jpg" aria-label="Enlarge: Peak summer week, passive baseline against automated TABS control"><img src="assets/figures/peak-week-control.jpg" alt="Peak summer week, passive baseline against automated TABS control" loading="lazy"></button>
-                <figcaption><span class="fig">Control</span> <strong>Anticipating thermal inertia instead of reacting.</strong> The passive baseline climbs to 31 °C. My predictive RMOT control of the concrete TABS slab holds the zone near 26 °C through the same week.</figcaption>
-              </figure>
-            </div>
-          </div>
           <header class="paper-head">
             <div>
-              <p class="paper-meta">Horizon Europe · Master's thesis, TU Berlin · Feb 2026 · with Mainflux Labs</p>
+              <p class="paper-meta">Horizon Europe · TU Berlin · 2025–26 · with Mainflux Labs</p>
               <h3>A sensor-calibrated digital twin that fixes overheating in a low-tech office</h3>
-              <p class="paper-sub">Thesis: <em>An Analytical Framework Using Sensor Data to Evaluate the Energy Performance of Built Environments.</em></p>
-              <p class="collab"><span>Worked with</span> Prof. Timo Hartmann (TU Berlin, supervisor) · Klaus Luig (REINCARNATE, second examiner) · Saša Klopanović (Mainflux Labs, external advisor)</p>
+              <p class="collab"><span>Worked with</span> Prof. Timo Hartmann (TU Berlin) · Klaus Luig (REINCARNATE) · Saša Klopanović (Mainflux Labs)</p>
             </div>
           </header>
-          <div class="abstract">
-            <div><h4>Problem</h4><p>The 3L office in Menden, Germany ("low-tech, low-energy, low-maintenance") relies on a concrete-core TABS slab and natural ventilation. In practice it overheated, and its operators needed about 14 days of manual tuning to stabilise the slab.</p></div>
-            <div><h4>Method</h4><p>Python BIM-to-BEM from ArchiCAD IFC to EnergyPlus. Cleaned 3,281 hourly sensor records (robust z-score anomaly detection, 99.4% complete), then calibrated in three rounds to ASHRAE Guideline 14. Wrote an RMOT-based TABS controller that anticipates loads 24–48 h ahead.</p></div>
-            <div><h4>Result</h4><p>Calibrated to <strong>CV(RMSE) 9.65%</strong> (limit 30%), RMSE 2.34 °C, NMBE under 1%. Automated control cut peak temperature from <strong>31.3 to 26.0 °C</strong> and the indoor temperature range by 67%, with the energy cost quantified (+39% site energy, mostly low-carbon district heat).</p></div>
+          <div class="abstract two">
+            <div><h4>Problem</h4><p>The 3L office in Menden, Germany heats and cools through a concrete-core TABS slab. It overheated in summer, and operators needed about 14 days of manual tuning to stabilise it.</p></div>
+            <div><h4>Method</h4><p>Generated an EnergyPlus model from the architectural drawings and IFC file, ran it with EnergyPlus weather data for the nearest station (Düsseldorf), tuned it against hourly sensor data, then wrote a forward-looking controller for the TABS slab.</p></div>
           </div>
-          <div class="figs">
-            <figure class="chart">
-              <svg viewBox="0 0 560 180" role="img" aria-label="Indoor temperature range over a year. Passive baseline: 20.9 to 31.3 °C. Automated RMOT control: 22.5 to 26.0 °C.">
-                <g class="c-grid"><line x1="60" y1="30" x2="60" y2="140"/><line x1="140" y1="30" x2="140" y2="140"/><line x1="220" y1="30" x2="220" y2="140"/><line x1="300" y1="30" x2="300" y2="140"/><line x1="380" y1="30" x2="380" y2="140"/><line x1="460" y1="30" x2="460" y2="140"/><line x1="540" y1="30" x2="540" y2="140"/></g>
-                <line class="c-limit" x1="300" y1="22" x2="300" y2="140"/>
-                <line class="r-base" x1="94" y1="60" x2="511" y2="60"/>
-                <circle class="r-base-dot" cx="94" cy="60" r="6"/><circle class="r-base-dot" cx="511" cy="60" r="6"/>
-                <line class="r-auto" x1="160" y1="110" x2="298" y2="110"/>
-                <circle class="r-auto-dot" cx="160" cy="110" r="6"/><circle class="r-auto-dot" cx="298" cy="110" r="6"/>
-                <g class="c-val"><text x="94" y="46" text-anchor="middle">20.9</text><text x="511" y="46" text-anchor="middle">31.3 °C</text><text x="160" y="132" text-anchor="middle">22.5</text><text x="298" y="132" text-anchor="end">26.0 °C</text></g>
-                <g class="c-axis"><text x="60" y="160" text-anchor="middle">20</text><text x="140" y="160" text-anchor="middle">22</text><text x="220" y="160" text-anchor="middle">24</text><text x="300" y="160" text-anchor="middle">26</text><text x="380" y="160" text-anchor="middle">28</text><text x="460" y="160" text-anchor="middle">30</text><text x="540" y="160" text-anchor="middle">32</text><text x="306" y="18">26 °C setpoint</text></g>
-              </svg>
-              <figcaption><span class="fig">Fig. 2</span> Annual indoor temperature range, simulated. <span class="lg"><span class="key key-base"></span>Passive baseline (manual)</span> <span class="lg"><span class="key key-auto"></span>Automated RMOT control</span></figcaption>
-            </figure>
-            <figure class="rounds">
-              <table>
-                <caption><span class="fig">Fig. 3</span> Calibration rounds, hourly zone temperature</caption>
-                <thead><tr><th scope="col">Round</th><th scope="col">Change</th><th scope="col">CV(RMSE)</th><th scope="col">RMSE</th></tr></thead>
-                <tbody>
-                  <tr><td>1</td><td>Typical assumptions</td><td>15.36%</td><td>3.71 °C</td></tr>
-                  <tr><td>2</td><td>Real occupancy, passive cooling</td><td>12.01%</td><td>2.90 °C</td></tr>
-                  <tr><td>3</td><td>Infiltration 1.5 → 0.15 ACH</td><td><strong>9.65%</strong></td><td><strong>2.34 °C</strong></td></tr>
-                </tbody>
-              </table>
-            </figure>
+          <div class="feature-figs">
+            <p class="gal-h">Real data from the 3L office</p>
+            <div class="feat-grid">
+              <figure class="feat">
+                <button type="button" class="zoom" data-full="assets/figures/floor-plan-sensor.png" aria-label="Enlarge: floor plan of the 3L office with the sensor location"><img src="assets/figures/floor-plan-sensor.png" alt="Second-floor plan of the 3L office with the AtmoCube sensor marked in the modelled zone" loading="lazy"></button>
+                <figcaption><span class="fig">Fig. 1</span> <strong>Starting from the floor plans.</strong> Second-floor plan of the 3L office with the AtmoCube sensor in the modelled zone. The simulation model was generated from these drawings and the IFC file, then linked to that sensor.</figcaption>
+              </figure>
+              <figure class="feat">
+                <button type="button" class="zoom" data-full="assets/figures/peak-week-control.jpg" aria-label="Enlarge: peak summer week, passive baseline against automated TABS control"><img src="assets/figures/peak-week-control.jpg" alt="Peak summer week in the 3L office: passive baseline peaks at 31 °C, automated TABS control holds about 26 °C" loading="lazy"></button>
+                <figcaption><span class="fig">Fig. 2</span> <strong>Working with a slow concrete slab.</strong> Peak summer week: the passive baseline overheats to 31 °C, while my control of the TABS slab, which acts on the outdoor temperature trend a day or two ahead, holds the zone near 26 °C.</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="result-row">
+            <div><h4>Result</h4><p>Calibrated to <strong>CV(RMSE) 9.65%</strong> (limit 30%), RMSE 2.34 °C, NMBE under 1%. Automated control cut peak temperature from <strong>31.3 to 26.0 °C</strong> and the indoor temperature range by 67%. The model also reproduced indoor CO₂ within 5.3% of the measured average (NMBE), validating air quality as well as temperature.</p></div>
           </div>
           <div class="system">
             <h4>Heating system analysis</h4>
             <dl>
-              <div><dt>Plant</dt><dd>200 mm concrete TABS slab, ground-source heat pump, 2,000 L buffer, 60 °C district-heating loop</dd></div>
-              <div><dt>Signature</dt><dd>Heating-only operation: 5,745 kWh/yr district heat, peaking at 702 kWh in January; no active cooling</dd></div>
-              <div><dt>Radiant effect</dt><dd>Slab 25.1–31.4 °C; MRT 4.2 °C above air temperature in January, so comfort at lower air temperatures</dd></div>
-              <div><dt>Control</dt><dd>ISO 11855-based RMOT logic: 5,472 h heating, 3,288 h cooling, only 22 mode switches a year</dd></div>
+              <div><dt>Plant</dt><dd>TABS slab, ground-source heat pump, 2,000 L buffer</dd></div>
+              <div><dt>Signature</dt><dd>Heating only, 5,745 kWh/yr, no active cooling</dd></div>
+              <div><dt>Radiant effect</dt><dd>MRT 4.2 °C above air in January</dd></div>
+              <div><dt>Control</dt><dd>Predictive RMOT logic, 22 mode switches a year</dd></div>
             </dl>
           </div>
-          <p class="aside"><strong>Data partner: Mainflux Labs.</strong> Their IoT platform supplied the measured indoor temperature, humidity and CO₂ from the 3L building (AtmoCube sensors, April–September 2025) that I used to calibrate and validate the model. <a href="#partners">More on Mainflux ↓</a></p>
-          <p class="aside">Also within REINCARNATE: machine-learning crack detection for assessing brick quality, so masonry can be reused.</p>
+          <div class="partners-mini">
+            <h4>Data partners</h4>
+            <ul>
+              <li><strong>3L building</strong> · BIM model and drawings behind the simulation. <a href="http://www.3-l.de/" target="_blank" rel="noopener">3-l.de ↗</a></li>
+              <li><strong>Mainflux Labs</strong> · IoT sensor data used to calibrate and validate the model. <a href="https://mainflux.com/" target="_blank" rel="noopener">mainflux.com ↗</a></li>
+            </ul>
+          </div>
           <footer class="paper-foot">
             <ul class="tags"><li>EnergyPlus</li><li>OpenStudio</li><li>Python</li><li>IFC / ArchiCAD</li><li>ASHRAE Guideline 14</li><li>TABS &amp; heating systems</li><li>Digital twin</li></ul>
           </footer>
@@ -196,23 +180,37 @@
             <div>
               <p class="paper-meta">Horizon 2020 · Building data analyst · 2022–24</p>
               <h3>Finding HVAC faults in operational data, located on BIM</h3>
-              <p class="collab"><span>Worked with</span> Prof. Timo Hartmann (TU Berlin) · Mainflux Labs (IoT platform partner)</p>
+              <p class="collab"><span>Worked with</span> Prof. Timo Hartmann (TU Berlin)</p>
             </div>
           </header>
-          <div class="abstract">
-            <div><h4>Problem</h4><p>Building telemetry is large, noisy and hard for engineering teams to act on.</p></div>
-            <div><h4>Method</h4><p>Sensor-data validation for missing and invalid readings, then anomaly detection models in Python and R on IoT and BMS time series.</p></div>
-            <div><h4>Result</h4><p><strong>100,000+ records</strong> analysed across <strong>50+ zones</strong>; anomalies mapped onto BIM geometry in Unity so teams could find them.</p></div>
+          <div class="abstract two">
+            <div><h4>Problem</h4><p>A working office produces thousands of sensor readings, and an outlier in a table gives facility staff no clue which room or component it came from.</p></div>
+            <div><h4>Method</h4><p>Flagged temperature anomalies against a moving average in R, then mapped them onto a clickable BIM model of the Kineum office in Unity.</p></div>
           </div>
-          <p class="aside">With Mainflux Labs: deployed the Mainflux IoT platform on a Raspberry Pi, connected ESP32 motion sensors, and built real-time visualisation of the sensor data.</p>
-          <figure class="flow" aria-label="Workflow from sensor data to anomalies located on BIM">
-            <ol>
-              <li>IoT / BMS data</li><li>Validation</li><li>Anomaly detection</li><li>BIM in Unity</li><li>Follow-up actions</li>
-            </ol>
-            <figcaption><span class="fig">Fig. 4</span> Data workflow</figcaption>
-          </figure>
+          <div class="feature-figs">
+            <p class="gal-h">Real data from the Kineum office · ASHVIN demo site</p>
+            <div class="feat-grid">
+              <figure class="feat">
+                <button type="button" class="zoom" data-full="assets/figures/ashvin-unity-anomalies.jpg" aria-label="Enlarge: Unity model of the Kineum office coloured by temperature anomaly"><img src="assets/figures/ashvin-unity-anomalies.jpg" alt="3D BIM model of the Kineum office in Unity, floor shaded orange by temperature anomaly, with an anomaly chart pop-up" loading="lazy"></button>
+                <figcaption><span class="fig">Fig. 3</span> <strong>Problems placed in the building.</strong> The Kineum office's BIM model in Unity: walls shade from yellow to red as temperatures stray, and clicking a component opens its sensor history.</figcaption>
+              </figure>
+              <figure class="feat an-fig">
+                <div class="an-plot"><svg viewBox="0 0 680 318" role="img" aria-label="Kineum office indoor temperature, 31 August to 30 September 2021: flagged sensor readings and daily level. Readings range from about 15.7 to 22 °C; the level falls from about 20.6 °C in early September to about 16 °C around 23 September."><g class="an-grid"><line x1="62" y1="244.9" x2="650" y2="244.9"/><line x1="62" y1="210.6" x2="650" y2="210.6"/><line x1="62" y1="176.3" x2="650" y2="176.3"/><line x1="62" y1="142.0" x2="650" y2="142.0"/><line x1="62" y1="107.7" x2="650" y2="107.7"/><line x1="62" y1="73.4" x2="650" y2="73.4"/><line x1="62" y1="39.1" x2="650" y2="39.1"/></g><g class="an-tick"><text x="54" y="248.9" text-anchor="end">16</text><text x="54" y="180.3" text-anchor="end">18</text><text x="54" y="111.7" text-anchor="end">20</text><text x="54" y="43.1" text-anchor="end">22</text></g><g class="an-tick"><line class="an-tk" x1="62.0" y1="262" x2="62.0" y2="267"/><text x="62.0" y="281" text-anchor="middle">30 Aug</text><line class="an-tk" x1="190.6" y1="262" x2="190.6" y2="267"/><text x="190.6" y="281" text-anchor="middle">6 Sep</text><line class="an-tk" x1="319.2" y1="262" x2="319.2" y2="267"/><text x="319.2" y="281" text-anchor="middle">13 Sep</text><line class="an-tk" x1="447.9" y1="262" x2="447.9" y2="267"/><text x="447.9" y="281" text-anchor="middle">20 Sep</text><line class="an-tk" x1="576.5" y1="262" x2="576.5" y2="267"/><text x="576.5" y="281" text-anchor="middle">27 Sep</text></g><path class="an-frame" d="M62 22 V262 H650"/><g class="an-dot"><circle cx="80.4" cy="86.1" r="2.3"/><circle cx="80.4" cy="85.1" r="2.3"/><circle cx="80.4" cy="84.1" r="2.3"/><circle cx="80.4" cy="83.0" r="2.3"/><circle cx="80.4" cy="82.0" r="2.3"/><circle cx="98.8" cy="99.8" r="2.3"/><circle cx="98.8" cy="98.8" r="2.3"/><circle cx="98.8" cy="97.8" r="2.3"/><circle cx="98.8" cy="96.7" r="2.3"/><circle cx="98.8" cy="95.7" r="2.3"/><circle cx="98.8" cy="94.7" r="2.3"/><circle cx="98.8" cy="93.7" r="2.3"/><circle cx="98.8" cy="92.6" r="2.3"/><circle cx="98.8" cy="91.6" r="2.3"/><circle cx="98.8" cy="90.6" r="2.3"/><circle cx="98.8" cy="89.5" r="2.3"/><circle cx="98.8" cy="88.5" r="2.3"/><circle cx="98.8" cy="87.5" r="2.3"/><circle cx="98.8" cy="86.5" r="2.3"/><circle cx="98.8" cy="85.4" r="2.3"/><circle cx="98.8" cy="84.4" r="2.3"/><circle cx="98.8" cy="83.4" r="2.3"/><circle cx="98.8" cy="82.3" r="2.3"/><circle cx="98.8" cy="81.3" r="2.3"/><circle cx="98.8" cy="80.3" r="2.3"/><circle cx="98.8" cy="79.3" r="2.3"/><circle cx="98.8" cy="78.2" r="2.3"/><circle cx="98.8" cy="77.2" r="2.3"/><circle cx="98.8" cy="76.2" r="2.3"/><circle cx="98.8" cy="73.8" r="2.3"/><circle cx="98.8" cy="72.7" r="2.3"/><circle cx="98.8" cy="71.0" r="2.3"/><circle cx="98.8" cy="70.0" r="2.3"/><circle cx="98.8" cy="64.5" r="2.3"/><circle cx="98.8" cy="63.5" r="2.3"/><circle cx="98.8" cy="62.5" r="2.3"/><circle cx="98.8" cy="58.3" r="2.3"/><circle cx="98.8" cy="57.3" r="2.3"/><circle cx="98.8" cy="55.6" r="2.3"/><circle cx="98.8" cy="54.6" r="2.3"/><circle cx="98.8" cy="52.2" r="2.3"/><circle cx="98.8" cy="51.1" r="2.3"/><circle cx="98.8" cy="46.7" r="2.3"/><circle cx="98.8" cy="45.7" r="2.3"/><circle cx="98.8" cy="44.6" r="2.3"/><circle cx="98.8" cy="42.2" r="2.3"/><circle cx="98.8" cy="41.2" r="2.3"/><circle cx="98.8" cy="39.8" r="2.3"/><circle cx="98.8" cy="38.5" r="2.3"/><circle cx="117.1" cy="104.6" r="2.3"/><circle cx="117.1" cy="103.6" r="2.3"/><circle cx="117.1" cy="102.6" r="2.3"/><circle cx="117.1" cy="101.5" r="2.3"/><circle cx="117.1" cy="100.5" r="2.3"/><circle cx="117.1" cy="99.5" r="2.3"/><circle cx="117.1" cy="98.5" r="2.3"/><circle cx="117.1" cy="97.4" r="2.3"/><circle cx="117.1" cy="96.4" r="2.3"/><circle cx="117.1" cy="95.4" r="2.3"/><circle cx="117.1" cy="94.3" r="2.3"/><circle cx="117.1" cy="93.3" r="2.3"/><circle cx="117.1" cy="92.3" r="2.3"/><circle cx="117.1" cy="91.3" r="2.3"/><circle cx="117.1" cy="90.2" r="2.3"/><circle cx="117.1" cy="89.2" r="2.3"/><circle cx="117.1" cy="88.2" r="2.3"/><circle cx="117.1" cy="87.1" r="2.3"/><circle cx="117.1" cy="86.1" r="2.3"/><circle cx="117.1" cy="85.1" r="2.3"/><circle cx="117.1" cy="84.1" r="2.3"/><circle cx="135.5" cy="115.6" r="2.3"/><circle cx="135.5" cy="114.6" r="2.3"/><circle cx="135.5" cy="113.5" r="2.3"/><circle cx="135.5" cy="112.5" r="2.3"/><circle cx="135.5" cy="111.5" r="2.3"/><circle cx="135.5" cy="110.5" r="2.3"/><circle cx="135.5" cy="108.4" r="2.3"/><circle cx="135.5" cy="107.4" r="2.3"/><circle cx="135.5" cy="106.3" r="2.3"/><circle cx="135.5" cy="105.3" r="2.3"/><circle cx="135.5" cy="104.3" r="2.3"/><circle cx="135.5" cy="103.3" r="2.3"/><circle cx="135.5" cy="102.2" r="2.3"/><circle cx="135.5" cy="101.2" r="2.3"/><circle cx="135.5" cy="100.2" r="2.3"/><circle cx="135.5" cy="99.1" r="2.3"/><circle cx="135.5" cy="98.1" r="2.3"/><circle cx="135.5" cy="97.1" r="2.3"/><circle cx="135.5" cy="96.1" r="2.3"/><circle cx="135.5" cy="95.0" r="2.3"/><circle cx="135.5" cy="94.0" r="2.3"/><circle cx="135.5" cy="93.0" r="2.3"/><circle cx="135.5" cy="91.9" r="2.3"/><circle cx="135.5" cy="90.9" r="2.3"/><circle cx="135.5" cy="89.9" r="2.3"/><circle cx="135.5" cy="88.9" r="2.3"/><circle cx="135.5" cy="87.8" r="2.3"/><circle cx="135.5" cy="86.8" r="2.3"/><circle cx="135.5" cy="85.8" r="2.3"/><circle cx="135.5" cy="84.7" r="2.3"/><circle cx="135.5" cy="83.7" r="2.3"/><circle cx="135.5" cy="82.7" r="2.3"/><circle cx="135.5" cy="81.7" r="2.3"/><circle cx="135.5" cy="80.6" r="2.3"/><circle cx="135.5" cy="79.6" r="2.3"/><circle cx="135.5" cy="78.6" r="2.3"/><circle cx="135.5" cy="77.5" r="2.3"/><circle cx="135.5" cy="76.5" r="2.3"/><circle cx="135.5" cy="74.1" r="2.3"/><circle cx="135.5" cy="73.1" r="2.3"/><circle cx="153.9" cy="124.9" r="2.3"/><circle cx="153.9" cy="123.8" r="2.3"/><circle cx="153.9" cy="122.8" r="2.3"/><circle cx="153.9" cy="121.8" r="2.3"/><circle cx="153.9" cy="120.7" r="2.3"/><circle cx="153.9" cy="119.7" r="2.3"/><circle cx="153.9" cy="118.7" r="2.3"/><circle cx="153.9" cy="117.7" r="2.3"/><circle cx="153.9" cy="116.6" r="2.3"/><circle cx="153.9" cy="115.6" r="2.3"/><circle cx="153.9" cy="114.6" r="2.3"/><circle cx="153.9" cy="113.5" r="2.3"/><circle cx="153.9" cy="112.5" r="2.3"/><circle cx="153.9" cy="111.5" r="2.3"/><circle cx="153.9" cy="110.5" r="2.3"/><circle cx="153.9" cy="109.4" r="2.3"/><circle cx="153.9" cy="108.4" r="2.3"/><circle cx="153.9" cy="107.0" r="2.3"/><circle cx="153.9" cy="106.0" r="2.3"/><circle cx="153.9" cy="105.0" r="2.3"/><circle cx="153.9" cy="103.9" r="2.3"/><circle cx="153.9" cy="102.9" r="2.3"/><circle cx="153.9" cy="101.9" r="2.3"/><circle cx="153.9" cy="100.9" r="2.3"/><circle cx="153.9" cy="99.8" r="2.3"/><circle cx="153.9" cy="98.8" r="2.3"/><circle cx="153.9" cy="97.8" r="2.3"/><circle cx="153.9" cy="96.7" r="2.3"/><circle cx="153.9" cy="95.7" r="2.3"/><circle cx="153.9" cy="94.7" r="2.3"/><circle cx="153.9" cy="90.2" r="2.3"/><circle cx="153.9" cy="89.2" r="2.3"/><circle cx="153.9" cy="79.3" r="2.3"/><circle cx="153.9" cy="78.2" r="2.3"/><circle cx="153.9" cy="74.1" r="2.3"/><circle cx="153.9" cy="73.1" r="2.3"/><circle cx="172.2" cy="147.1" r="2.3"/><circle cx="172.2" cy="146.1" r="2.3"/><circle cx="172.2" cy="145.1" r="2.3"/><circle cx="172.2" cy="142.0" r="2.3"/><circle cx="172.2" cy="141.0" r="2.3"/><circle cx="172.2" cy="139.9" r="2.3"/><circle cx="172.2" cy="138.9" r="2.3"/><circle cx="172.2" cy="137.9" r="2.3"/><circle cx="172.2" cy="136.9" r="2.3"/><circle cx="172.2" cy="135.8" r="2.3"/><circle cx="172.2" cy="134.5" r="2.3"/><circle cx="172.2" cy="133.4" r="2.3"/><circle cx="172.2" cy="132.4" r="2.3"/><circle cx="172.2" cy="131.4" r="2.3"/><circle cx="172.2" cy="130.3" r="2.3"/><circle cx="172.2" cy="129.3" r="2.3"/><circle cx="172.2" cy="128.3" r="2.3"/><circle cx="172.2" cy="127.3" r="2.3"/><circle cx="172.2" cy="126.2" r="2.3"/><circle cx="172.2" cy="125.2" r="2.3"/><circle cx="172.2" cy="124.2" r="2.3"/><circle cx="172.2" cy="123.1" r="2.3"/><circle cx="172.2" cy="122.1" r="2.3"/><circle cx="172.2" cy="121.1" r="2.3"/><circle cx="172.2" cy="120.1" r="2.3"/><circle cx="172.2" cy="119.0" r="2.3"/><circle cx="172.2" cy="118.0" r="2.3"/><circle cx="172.2" cy="117.0" r="2.3"/><circle cx="172.2" cy="115.9" r="2.3"/><circle cx="172.2" cy="114.9" r="2.3"/><circle cx="172.2" cy="113.9" r="2.3"/><circle cx="172.2" cy="108.4" r="2.3"/><circle cx="172.2" cy="107.0" r="2.3"/><circle cx="190.6" cy="152.6" r="2.3"/><circle cx="190.6" cy="151.6" r="2.3"/><circle cx="190.6" cy="150.6" r="2.3"/><circle cx="190.6" cy="149.5" r="2.3"/><circle cx="190.6" cy="148.5" r="2.3"/><circle cx="190.6" cy="147.5" r="2.3"/><circle cx="190.6" cy="146.5" r="2.3"/><circle cx="190.6" cy="145.4" r="2.3"/><circle cx="190.6" cy="142.0" r="2.3"/><circle cx="190.6" cy="141.0" r="2.3"/><circle cx="190.6" cy="139.9" r="2.3"/><circle cx="190.6" cy="138.9" r="2.3"/><circle cx="190.6" cy="137.9" r="2.3"/><circle cx="190.6" cy="136.9" r="2.3"/><circle cx="190.6" cy="135.8" r="2.3"/><circle cx="190.6" cy="134.8" r="2.3"/><circle cx="190.6" cy="133.8" r="2.3"/><circle cx="190.6" cy="132.7" r="2.3"/><circle cx="190.6" cy="131.7" r="2.3"/><circle cx="190.6" cy="130.7" r="2.3"/><circle cx="190.6" cy="127.3" r="2.3"/><circle cx="190.6" cy="126.2" r="2.3"/><circle cx="190.6" cy="125.2" r="2.3"/><circle cx="190.6" cy="116.6" r="2.3"/><circle cx="190.6" cy="115.6" r="2.3"/><circle cx="190.6" cy="112.5" r="2.3"/><circle cx="190.6" cy="111.5" r="2.3"/><circle cx="190.6" cy="108.4" r="2.3"/><circle cx="190.6" cy="107.0" r="2.3"/><circle cx="209.0" cy="150.2" r="2.3"/><circle cx="209.0" cy="149.2" r="2.3"/><circle cx="209.0" cy="148.2" r="2.3"/><circle cx="209.0" cy="147.1" r="2.3"/><circle cx="209.0" cy="146.1" r="2.3"/><circle cx="209.0" cy="145.1" r="2.3"/><circle cx="209.0" cy="144.1" r="2.3"/><circle cx="209.0" cy="143.0" r="2.3"/><circle cx="209.0" cy="142.0" r="2.3"/><circle cx="209.0" cy="141.0" r="2.3"/><circle cx="209.0" cy="139.9" r="2.3"/><circle cx="209.0" cy="138.9" r="2.3"/><circle cx="209.0" cy="137.9" r="2.3"/><circle cx="209.0" cy="136.9" r="2.3"/><circle cx="209.0" cy="135.8" r="2.3"/><circle cx="209.0" cy="134.5" r="2.3"/><circle cx="209.0" cy="133.4" r="2.3"/><circle cx="209.0" cy="132.4" r="2.3"/><circle cx="209.0" cy="124.2" r="2.3"/><circle cx="209.0" cy="123.1" r="2.3"/><circle cx="209.0" cy="115.6" r="2.3"/><circle cx="209.0" cy="114.6" r="2.3"/><circle cx="209.0" cy="113.5" r="2.3"/><circle cx="209.0" cy="112.5" r="2.3"/><circle cx="209.0" cy="111.5" r="2.3"/><circle cx="209.0" cy="110.5" r="2.3"/><circle cx="209.0" cy="109.4" r="2.3"/><circle cx="209.0" cy="108.4" r="2.3"/><circle cx="209.0" cy="107.0" r="2.3"/><circle cx="227.4" cy="151.6" r="2.3"/><circle cx="227.4" cy="150.6" r="2.3"/><circle cx="227.4" cy="149.5" r="2.3"/><circle cx="227.4" cy="148.2" r="2.3"/><circle cx="227.4" cy="147.1" r="2.3"/><circle cx="227.4" cy="146.1" r="2.3"/><circle cx="227.4" cy="145.1" r="2.3"/><circle cx="227.4" cy="143.4" r="2.3"/><circle cx="227.4" cy="142.3" r="2.3"/><circle cx="227.4" cy="141.3" r="2.3"/><circle cx="227.4" cy="140.3" r="2.3"/><circle cx="227.4" cy="139.3" r="2.3"/><circle cx="227.4" cy="138.2" r="2.3"/><circle cx="227.4" cy="137.2" r="2.3"/><circle cx="227.4" cy="136.2" r="2.3"/><circle cx="227.4" cy="135.1" r="2.3"/><circle cx="227.4" cy="134.1" r="2.3"/><circle cx="227.4" cy="133.1" r="2.3"/><circle cx="227.4" cy="132.1" r="2.3"/><circle cx="227.4" cy="131.0" r="2.3"/><circle cx="227.4" cy="130.0" r="2.3"/><circle cx="227.4" cy="129.0" r="2.3"/><circle cx="227.4" cy="127.9" r="2.3"/><circle cx="227.4" cy="126.9" r="2.3"/><circle cx="227.4" cy="125.9" r="2.3"/><circle cx="227.4" cy="124.9" r="2.3"/><circle cx="227.4" cy="123.8" r="2.3"/><circle cx="227.4" cy="122.8" r="2.3"/><circle cx="227.4" cy="121.8" r="2.3"/><circle cx="227.4" cy="120.7" r="2.3"/><circle cx="227.4" cy="119.7" r="2.3"/><circle cx="227.4" cy="116.6" r="2.3"/><circle cx="227.4" cy="115.6" r="2.3"/><circle cx="245.8" cy="131.0" r="2.3"/><circle cx="245.8" cy="130.0" r="2.3"/><circle cx="245.8" cy="129.0" r="2.3"/><circle cx="245.8" cy="127.9" r="2.3"/><circle cx="245.8" cy="126.9" r="2.3"/><circle cx="245.8" cy="125.9" r="2.3"/><circle cx="245.8" cy="124.9" r="2.3"/><circle cx="245.8" cy="123.8" r="2.3"/><circle cx="245.8" cy="122.8" r="2.3"/><circle cx="245.8" cy="121.8" r="2.3"/><circle cx="245.8" cy="120.7" r="2.3"/><circle cx="245.8" cy="119.7" r="2.3"/><circle cx="245.8" cy="118.7" r="2.3"/><circle cx="245.8" cy="117.7" r="2.3"/><circle cx="245.8" cy="116.6" r="2.3"/><circle cx="245.8" cy="115.6" r="2.3"/><circle cx="245.8" cy="114.6" r="2.3"/><circle cx="245.8" cy="113.5" r="2.3"/><circle cx="245.8" cy="112.5" r="2.3"/><circle cx="245.8" cy="111.5" r="2.3"/><circle cx="245.8" cy="110.5" r="2.3"/><circle cx="245.8" cy="107.0" r="2.3"/><circle cx="245.8" cy="106.0" r="2.3"/><circle cx="245.8" cy="104.6" r="2.3"/><circle cx="245.8" cy="103.6" r="2.3"/><circle cx="245.8" cy="102.6" r="2.3"/><circle cx="245.8" cy="101.5" r="2.3"/><circle cx="245.8" cy="100.5" r="2.3"/><circle cx="245.8" cy="99.5" r="2.3"/><circle cx="245.8" cy="98.5" r="2.3"/><circle cx="245.8" cy="97.4" r="2.3"/><circle cx="245.8" cy="96.4" r="2.3"/><circle cx="245.8" cy="95.4" r="2.3"/><circle cx="245.8" cy="94.3" r="2.3"/><circle cx="245.8" cy="93.3" r="2.3"/><circle cx="245.8" cy="92.3" r="2.3"/><circle cx="245.8" cy="91.3" r="2.3"/><circle cx="245.8" cy="90.2" r="2.3"/><circle cx="245.8" cy="89.2" r="2.3"/><circle cx="245.8" cy="85.1" r="2.3"/><circle cx="245.8" cy="84.1" r="2.3"/><circle cx="245.8" cy="81.7" r="2.3"/><circle cx="245.8" cy="80.6" r="2.3"/><circle cx="264.1" cy="107.4" r="2.3"/><circle cx="264.1" cy="106.3" r="2.3"/><circle cx="264.1" cy="105.3" r="2.3"/><circle cx="264.1" cy="104.3" r="2.3"/><circle cx="264.1" cy="103.3" r="2.3"/><circle cx="264.1" cy="102.2" r="2.3"/><circle cx="264.1" cy="101.2" r="2.3"/><circle cx="264.1" cy="100.2" r="2.3"/><circle cx="264.1" cy="99.1" r="2.3"/><circle cx="264.1" cy="98.1" r="2.3"/><circle cx="264.1" cy="97.1" r="2.3"/><circle cx="264.1" cy="96.1" r="2.3"/><circle cx="264.1" cy="95.0" r="2.3"/><circle cx="264.1" cy="94.0" r="2.3"/><circle cx="264.1" cy="93.0" r="2.3"/><circle cx="264.1" cy="91.9" r="2.3"/><circle cx="264.1" cy="90.9" r="2.3"/><circle cx="264.1" cy="89.9" r="2.3"/><circle cx="264.1" cy="88.9" r="2.3"/><circle cx="264.1" cy="87.8" r="2.3"/><circle cx="264.1" cy="86.8" r="2.3"/><circle cx="264.1" cy="85.8" r="2.3"/><circle cx="264.1" cy="84.7" r="2.3"/><circle cx="264.1" cy="83.7" r="2.3"/><circle cx="264.1" cy="82.7" r="2.3"/><circle cx="264.1" cy="81.7" r="2.3"/><circle cx="264.1" cy="80.6" r="2.3"/><circle cx="264.1" cy="79.6" r="2.3"/><circle cx="264.1" cy="78.6" r="2.3"/><circle cx="264.1" cy="77.5" r="2.3"/><circle cx="264.1" cy="76.5" r="2.3"/><circle cx="264.1" cy="73.8" r="2.3"/><circle cx="264.1" cy="72.7" r="2.3"/><circle cx="264.1" cy="70.3" r="2.3"/><circle cx="264.1" cy="69.3" r="2.3"/><circle cx="264.1" cy="61.8" r="2.3"/><circle cx="264.1" cy="60.7" r="2.3"/><circle cx="264.1" cy="54.6" r="2.3"/><circle cx="264.1" cy="53.5" r="2.3"/><circle cx="264.1" cy="52.2" r="2.3"/><circle cx="264.1" cy="45.0" r="2.3"/><circle cx="264.1" cy="43.9" r="2.3"/><circle cx="264.1" cy="39.8" r="2.3"/><circle cx="264.1" cy="38.5" r="2.3"/><circle cx="282.5" cy="88.9" r="2.3"/><circle cx="282.5" cy="87.8" r="2.3"/><circle cx="282.5" cy="86.8" r="2.3"/><circle cx="282.5" cy="85.8" r="2.3"/><circle cx="282.5" cy="84.7" r="2.3"/><circle cx="282.5" cy="83.7" r="2.3"/><circle cx="282.5" cy="82.7" r="2.3"/><circle cx="282.5" cy="81.7" r="2.3"/><circle cx="282.5" cy="80.6" r="2.3"/><circle cx="282.5" cy="79.6" r="2.3"/><circle cx="282.5" cy="78.6" r="2.3"/><circle cx="282.5" cy="77.5" r="2.3"/><circle cx="282.5" cy="76.5" r="2.3"/><circle cx="282.5" cy="75.5" r="2.3"/><circle cx="282.5" cy="68.3" r="2.3"/><circle cx="282.5" cy="67.3" r="2.3"/><circle cx="282.5" cy="60.7" r="2.3"/><circle cx="282.5" cy="59.7" r="2.3"/><circle cx="282.5" cy="53.2" r="2.3"/><circle cx="282.5" cy="52.2" r="2.3"/><circle cx="282.5" cy="49.8" r="2.3"/><circle cx="282.5" cy="48.7" r="2.3"/><circle cx="282.5" cy="45.7" r="2.3"/><circle cx="282.5" cy="44.6" r="2.3"/><circle cx="282.5" cy="39.8" r="2.3"/><circle cx="282.5" cy="38.5" r="2.3"/><circle cx="300.9" cy="108.4" r="2.3"/><circle cx="300.9" cy="107.0" r="2.3"/><circle cx="300.9" cy="105.7" r="2.3"/><circle cx="300.9" cy="104.6" r="2.3"/><circle cx="300.9" cy="103.6" r="2.3"/><circle cx="300.9" cy="102.6" r="2.3"/><circle cx="300.9" cy="101.5" r="2.3"/><circle cx="300.9" cy="100.5" r="2.3"/><circle cx="300.9" cy="99.5" r="2.3"/><circle cx="300.9" cy="98.5" r="2.3"/><circle cx="300.9" cy="97.4" r="2.3"/><circle cx="300.9" cy="96.4" r="2.3"/><circle cx="300.9" cy="95.4" r="2.3"/><circle cx="300.9" cy="94.3" r="2.3"/><circle cx="300.9" cy="93.3" r="2.3"/><circle cx="300.9" cy="92.3" r="2.3"/><circle cx="300.9" cy="91.3" r="2.3"/><circle cx="300.9" cy="90.2" r="2.3"/><circle cx="300.9" cy="89.2" r="2.3"/><circle cx="300.9" cy="88.2" r="2.3"/><circle cx="300.9" cy="87.1" r="2.3"/><circle cx="300.9" cy="86.1" r="2.3"/><circle cx="300.9" cy="85.1" r="2.3"/><circle cx="319.2" cy="109.8" r="2.3"/><circle cx="319.2" cy="108.7" r="2.3"/><circle cx="319.2" cy="107.7" r="2.3"/><circle cx="319.2" cy="106.7" r="2.3"/><circle cx="319.2" cy="105.7" r="2.3"/><circle cx="319.2" cy="104.6" r="2.3"/><circle cx="319.2" cy="103.6" r="2.3"/><circle cx="319.2" cy="102.6" r="2.3"/><circle cx="319.2" cy="101.5" r="2.3"/><circle cx="319.2" cy="100.5" r="2.3"/><circle cx="319.2" cy="99.5" r="2.3"/><circle cx="319.2" cy="98.5" r="2.3"/><circle cx="319.2" cy="97.4" r="2.3"/><circle cx="319.2" cy="96.4" r="2.3"/><circle cx="319.2" cy="95.4" r="2.3"/><circle cx="319.2" cy="94.3" r="2.3"/><circle cx="319.2" cy="93.3" r="2.3"/><circle cx="319.2" cy="92.3" r="2.3"/><circle cx="319.2" cy="91.3" r="2.3"/><circle cx="319.2" cy="90.2" r="2.3"/><circle cx="319.2" cy="89.2" r="2.3"/><circle cx="319.2" cy="88.2" r="2.3"/><circle cx="319.2" cy="87.1" r="2.3"/><circle cx="319.2" cy="86.1" r="2.3"/><circle cx="319.2" cy="85.1" r="2.3"/><circle cx="319.2" cy="84.1" r="2.3"/><circle cx="319.2" cy="81.0" r="2.3"/><circle cx="319.2" cy="79.6" r="2.3"/><circle cx="319.2" cy="73.8" r="2.3"/><circle cx="319.2" cy="72.7" r="2.3"/><circle cx="337.6" cy="118.0" r="2.3"/><circle cx="337.6" cy="117.0" r="2.3"/><circle cx="337.6" cy="115.9" r="2.3"/><circle cx="337.6" cy="114.9" r="2.3"/><circle cx="337.6" cy="113.9" r="2.3"/><circle cx="337.6" cy="112.9" r="2.3"/><circle cx="337.6" cy="111.8" r="2.3"/><circle cx="337.6" cy="110.8" r="2.3"/><circle cx="337.6" cy="109.8" r="2.3"/><circle cx="337.6" cy="108.7" r="2.3"/><circle cx="337.6" cy="107.7" r="2.3"/><circle cx="337.6" cy="106.7" r="2.3"/><circle cx="337.6" cy="105.7" r="2.3"/><circle cx="337.6" cy="104.6" r="2.3"/><circle cx="337.6" cy="103.6" r="2.3"/><circle cx="337.6" cy="102.6" r="2.3"/><circle cx="337.6" cy="101.5" r="2.3"/><circle cx="337.6" cy="100.5" r="2.3"/><circle cx="337.6" cy="99.5" r="2.3"/><circle cx="337.6" cy="98.5" r="2.3"/><circle cx="337.6" cy="97.4" r="2.3"/><circle cx="337.6" cy="81.0" r="2.3"/><circle cx="337.6" cy="79.6" r="2.3"/><circle cx="337.6" cy="73.8" r="2.3"/><circle cx="337.6" cy="72.7" r="2.3"/><circle cx="356.0" cy="127.6" r="2.3"/><circle cx="356.0" cy="126.6" r="2.3"/><circle cx="356.0" cy="125.5" r="2.3"/><circle cx="356.0" cy="124.5" r="2.3"/><circle cx="356.0" cy="123.5" r="2.3"/><circle cx="356.0" cy="122.5" r="2.3"/><circle cx="356.0" cy="121.4" r="2.3"/><circle cx="356.0" cy="120.4" r="2.3"/><circle cx="356.0" cy="119.4" r="2.3"/><circle cx="356.0" cy="118.3" r="2.3"/><circle cx="356.0" cy="117.3" r="2.3"/><circle cx="356.0" cy="116.3" r="2.3"/><circle cx="356.0" cy="115.3" r="2.3"/><circle cx="356.0" cy="114.2" r="2.3"/><circle cx="356.0" cy="113.2" r="2.3"/><circle cx="356.0" cy="112.2" r="2.3"/><circle cx="356.0" cy="111.1" r="2.3"/><circle cx="356.0" cy="110.1" r="2.3"/><circle cx="356.0" cy="109.1" r="2.3"/><circle cx="356.0" cy="108.1" r="2.3"/><circle cx="356.0" cy="107.0" r="2.3"/><circle cx="356.0" cy="105.0" r="2.3"/><circle cx="356.0" cy="103.9" r="2.3"/><circle cx="356.0" cy="74.1" r="2.3"/><circle cx="356.0" cy="73.1" r="2.3"/><circle cx="374.4" cy="146.1" r="2.3"/><circle cx="374.4" cy="145.1" r="2.3"/><circle cx="374.4" cy="142.7" r="2.3"/><circle cx="374.4" cy="141.7" r="2.3"/><circle cx="374.4" cy="140.6" r="2.3"/><circle cx="374.4" cy="138.9" r="2.3"/><circle cx="374.4" cy="137.9" r="2.3"/><circle cx="374.4" cy="136.9" r="2.3"/><circle cx="374.4" cy="135.8" r="2.3"/><circle cx="374.4" cy="134.5" r="2.3"/><circle cx="374.4" cy="133.4" r="2.3"/><circle cx="374.4" cy="132.4" r="2.3"/><circle cx="374.4" cy="131.4" r="2.3"/><circle cx="374.4" cy="130.3" r="2.3"/><circle cx="374.4" cy="129.3" r="2.3"/><circle cx="374.4" cy="128.3" r="2.3"/><circle cx="374.4" cy="127.3" r="2.3"/><circle cx="374.4" cy="126.2" r="2.3"/><circle cx="374.4" cy="125.2" r="2.3"/><circle cx="374.4" cy="124.2" r="2.3"/><circle cx="374.4" cy="123.1" r="2.3"/><circle cx="374.4" cy="122.1" r="2.3"/><circle cx="374.4" cy="121.1" r="2.3"/><circle cx="374.4" cy="110.5" r="2.3"/><circle cx="374.4" cy="109.4" r="2.3"/><circle cx="374.4" cy="108.4" r="2.3"/><circle cx="374.4" cy="107.0" r="2.3"/><circle cx="392.8" cy="166.3" r="2.3"/><circle cx="392.8" cy="165.3" r="2.3"/><circle cx="392.8" cy="164.3" r="2.3"/><circle cx="392.8" cy="163.3" r="2.3"/><circle cx="392.8" cy="161.9" r="2.3"/><circle cx="392.8" cy="160.9" r="2.3"/><circle cx="392.8" cy="159.8" r="2.3"/><circle cx="392.8" cy="158.8" r="2.3"/><circle cx="392.8" cy="157.8" r="2.3"/><circle cx="392.8" cy="156.7" r="2.3"/><circle cx="392.8" cy="155.7" r="2.3"/><circle cx="392.8" cy="154.7" r="2.3"/><circle cx="392.8" cy="153.7" r="2.3"/><circle cx="392.8" cy="152.6" r="2.3"/><circle cx="392.8" cy="151.6" r="2.3"/><circle cx="392.8" cy="150.6" r="2.3"/><circle cx="392.8" cy="149.5" r="2.3"/><circle cx="392.8" cy="148.5" r="2.3"/><circle cx="392.8" cy="147.5" r="2.3"/><circle cx="392.8" cy="146.5" r="2.3"/><circle cx="392.8" cy="145.4" r="2.3"/><circle cx="392.8" cy="136.9" r="2.3"/><circle cx="392.8" cy="135.8" r="2.3"/><circle cx="392.8" cy="119.7" r="2.3"/><circle cx="392.8" cy="118.7" r="2.3"/><circle cx="392.8" cy="117.7" r="2.3"/><circle cx="392.8" cy="108.4" r="2.3"/><circle cx="392.8" cy="107.0" r="2.3"/><circle cx="411.1" cy="183.5" r="2.3"/><circle cx="411.1" cy="182.5" r="2.3"/><circle cx="411.1" cy="181.4" r="2.3"/><circle cx="411.1" cy="180.4" r="2.3"/><circle cx="411.1" cy="177.0" r="2.3"/><circle cx="411.1" cy="175.9" r="2.3"/><circle cx="411.1" cy="174.9" r="2.3"/><circle cx="411.1" cy="173.9" r="2.3"/><circle cx="411.1" cy="172.9" r="2.3"/><circle cx="411.1" cy="171.8" r="2.3"/><circle cx="411.1" cy="170.8" r="2.3"/><circle cx="411.1" cy="169.8" r="2.3"/><circle cx="411.1" cy="168.7" r="2.3"/><circle cx="411.1" cy="167.7" r="2.3"/><circle cx="411.1" cy="166.7" r="2.3"/><circle cx="411.1" cy="165.7" r="2.3"/><circle cx="411.1" cy="164.6" r="2.3"/><circle cx="411.1" cy="145.4" r="2.3"/><circle cx="411.1" cy="144.4" r="2.3"/><circle cx="411.1" cy="142.7" r="2.3"/><circle cx="411.1" cy="141.7" r="2.3"/><circle cx="429.5" cy="199.9" r="2.3"/><circle cx="429.5" cy="198.9" r="2.3"/><circle cx="429.5" cy="197.9" r="2.3"/><circle cx="429.5" cy="196.9" r="2.3"/><circle cx="429.5" cy="195.8" r="2.3"/><circle cx="429.5" cy="194.8" r="2.3"/><circle cx="429.5" cy="193.8" r="2.3"/><circle cx="429.5" cy="192.7" r="2.3"/><circle cx="429.5" cy="191.7" r="2.3"/><circle cx="429.5" cy="190.7" r="2.3"/><circle cx="429.5" cy="189.7" r="2.3"/><circle cx="429.5" cy="188.6" r="2.3"/><circle cx="429.5" cy="187.6" r="2.3"/><circle cx="429.5" cy="186.6" r="2.3"/><circle cx="429.5" cy="185.5" r="2.3"/><circle cx="429.5" cy="184.5" r="2.3"/><circle cx="429.5" cy="183.5" r="2.3"/><circle cx="447.9" cy="219.8" r="2.3"/><circle cx="447.9" cy="218.8" r="2.3"/><circle cx="447.9" cy="217.8" r="2.3"/><circle cx="447.9" cy="216.7" r="2.3"/><circle cx="447.9" cy="215.7" r="2.3"/><circle cx="447.9" cy="214.7" r="2.3"/><circle cx="447.9" cy="213.7" r="2.3"/><circle cx="447.9" cy="211.3" r="2.3"/><circle cx="447.9" cy="210.2" r="2.3"/><circle cx="447.9" cy="209.2" r="2.3"/><circle cx="447.9" cy="208.2" r="2.3"/><circle cx="447.9" cy="207.1" r="2.3"/><circle cx="447.9" cy="206.1" r="2.3"/><circle cx="447.9" cy="205.1" r="2.3"/><circle cx="447.9" cy="204.1" r="2.3"/><circle cx="447.9" cy="203.0" r="2.3"/><circle cx="447.9" cy="202.0" r="2.3"/><circle cx="447.9" cy="201.0" r="2.3"/><circle cx="447.9" cy="199.9" r="2.3"/><circle cx="447.9" cy="184.2" r="2.3"/><circle cx="447.9" cy="183.1" r="2.3"/><circle cx="447.9" cy="177.0" r="2.3"/><circle cx="447.9" cy="175.6" r="2.3"/><circle cx="466.2" cy="233.9" r="2.3"/><circle cx="466.2" cy="232.9" r="2.3"/><circle cx="466.2" cy="231.8" r="2.3"/><circle cx="466.2" cy="230.5" r="2.3"/><circle cx="466.2" cy="229.4" r="2.3"/><circle cx="466.2" cy="228.4" r="2.3"/><circle cx="466.2" cy="227.4" r="2.3"/><circle cx="466.2" cy="226.3" r="2.3"/><circle cx="466.2" cy="225.3" r="2.3"/><circle cx="466.2" cy="224.3" r="2.3"/><circle cx="466.2" cy="223.3" r="2.3"/><circle cx="466.2" cy="222.2" r="2.3"/><circle cx="466.2" cy="221.2" r="2.3"/><circle cx="466.2" cy="220.2" r="2.3"/><circle cx="466.2" cy="219.1" r="2.3"/><circle cx="484.6" cy="239.0" r="2.3"/><circle cx="484.6" cy="238.0" r="2.3"/><circle cx="484.6" cy="237.0" r="2.3"/><circle cx="484.6" cy="235.9" r="2.3"/><circle cx="484.6" cy="234.9" r="2.3"/><circle cx="484.6" cy="233.9" r="2.3"/><circle cx="484.6" cy="232.9" r="2.3"/><circle cx="484.6" cy="231.8" r="2.3"/><circle cx="484.6" cy="230.5" r="2.3"/><circle cx="484.6" cy="229.4" r="2.3"/><circle cx="484.6" cy="228.4" r="2.3"/><circle cx="484.6" cy="227.4" r="2.3"/><circle cx="484.6" cy="226.3" r="2.3"/><circle cx="484.6" cy="225.3" r="2.3"/><circle cx="484.6" cy="224.3" r="2.3"/><circle cx="484.6" cy="223.3" r="2.3"/><circle cx="484.6" cy="222.2" r="2.3"/><circle cx="484.6" cy="221.2" r="2.3"/><circle cx="484.6" cy="220.2" r="2.3"/><circle cx="484.6" cy="219.1" r="2.3"/><circle cx="484.6" cy="218.1" r="2.3"/><circle cx="503.0" cy="253.8" r="2.3"/><circle cx="503.0" cy="252.7" r="2.3"/><circle cx="503.0" cy="251.7" r="2.3"/><circle cx="503.0" cy="250.7" r="2.3"/><circle cx="503.0" cy="249.7" r="2.3"/><circle cx="503.0" cy="248.6" r="2.3"/><circle cx="503.0" cy="244.5" r="2.3"/><circle cx="503.0" cy="243.5" r="2.3"/><circle cx="503.0" cy="242.5" r="2.3"/><circle cx="503.0" cy="241.4" r="2.3"/><circle cx="503.0" cy="240.4" r="2.3"/><circle cx="503.0" cy="237.3" r="2.3"/><circle cx="503.0" cy="236.3" r="2.3"/><circle cx="503.0" cy="234.2" r="2.3"/><circle cx="503.0" cy="233.2" r="2.3"/><circle cx="503.0" cy="231.5" r="2.3"/><circle cx="503.0" cy="230.5" r="2.3"/><circle cx="503.0" cy="229.4" r="2.3"/><circle cx="503.0" cy="228.4" r="2.3"/><circle cx="503.0" cy="227.4" r="2.3"/><circle cx="503.0" cy="226.3" r="2.3"/><circle cx="503.0" cy="225.3" r="2.3"/><circle cx="503.0" cy="224.3" r="2.3"/><circle cx="503.0" cy="223.3" r="2.3"/><circle cx="503.0" cy="222.2" r="2.3"/><circle cx="503.0" cy="221.2" r="2.3"/><circle cx="503.0" cy="220.2" r="2.3"/><circle cx="503.0" cy="219.1" r="2.3"/><circle cx="503.0" cy="218.1" r="2.3"/><circle cx="503.0" cy="216.7" r="2.3"/><circle cx="503.0" cy="215.7" r="2.3"/><circle cx="503.0" cy="214.7" r="2.3"/><circle cx="503.0" cy="213.7" r="2.3"/><circle cx="503.0" cy="210.9" r="2.3"/><circle cx="503.0" cy="209.9" r="2.3"/><circle cx="503.0" cy="199.9" r="2.3"/><circle cx="503.0" cy="198.9" r="2.3"/><circle cx="503.0" cy="191.7" r="2.3"/><circle cx="503.0" cy="190.7" r="2.3"/><circle cx="521.4" cy="244.9" r="2.3"/><circle cx="521.4" cy="243.8" r="2.3"/><circle cx="521.4" cy="242.8" r="2.3"/><circle cx="521.4" cy="241.8" r="2.3"/><circle cx="521.4" cy="240.7" r="2.3"/><circle cx="521.4" cy="239.7" r="2.3"/><circle cx="521.4" cy="238.7" r="2.3"/><circle cx="521.4" cy="237.7" r="2.3"/><circle cx="521.4" cy="236.6" r="2.3"/><circle cx="521.4" cy="235.6" r="2.3"/><circle cx="521.4" cy="234.6" r="2.3"/><circle cx="521.4" cy="233.5" r="2.3"/><circle cx="521.4" cy="232.5" r="2.3"/><circle cx="521.4" cy="231.5" r="2.3"/><circle cx="521.4" cy="230.5" r="2.3"/><circle cx="521.4" cy="229.4" r="2.3"/><circle cx="521.4" cy="228.4" r="2.3"/><circle cx="521.4" cy="227.4" r="2.3"/><circle cx="539.8" cy="251.0" r="2.3"/><circle cx="539.8" cy="250.0" r="2.3"/><circle cx="539.8" cy="249.0" r="2.3"/><circle cx="539.8" cy="247.9" r="2.3"/><circle cx="539.8" cy="244.9" r="2.3"/><circle cx="539.8" cy="243.8" r="2.3"/><circle cx="539.8" cy="242.8" r="2.3"/><circle cx="539.8" cy="241.8" r="2.3"/><circle cx="539.8" cy="240.7" r="2.3"/><circle cx="539.8" cy="239.7" r="2.3"/><circle cx="539.8" cy="238.7" r="2.3"/><circle cx="539.8" cy="237.7" r="2.3"/><circle cx="539.8" cy="236.6" r="2.3"/><circle cx="539.8" cy="235.6" r="2.3"/><circle cx="539.8" cy="234.6" r="2.3"/><circle cx="539.8" cy="233.5" r="2.3"/><circle cx="539.8" cy="232.5" r="2.3"/><circle cx="539.8" cy="231.5" r="2.3"/><circle cx="539.8" cy="230.5" r="2.3"/><circle cx="539.8" cy="229.4" r="2.3"/><circle cx="539.8" cy="228.4" r="2.3"/><circle cx="539.8" cy="227.4" r="2.3"/><circle cx="539.8" cy="226.3" r="2.3"/><circle cx="539.8" cy="211.3" r="2.3"/><circle cx="539.8" cy="210.2" r="2.3"/><circle cx="558.1" cy="236.6" r="2.3"/><circle cx="558.1" cy="235.6" r="2.3"/><circle cx="558.1" cy="234.6" r="2.3"/><circle cx="558.1" cy="233.5" r="2.3"/><circle cx="558.1" cy="232.5" r="2.3"/><circle cx="558.1" cy="231.5" r="2.3"/><circle cx="558.1" cy="230.5" r="2.3"/><circle cx="558.1" cy="229.4" r="2.3"/><circle cx="558.1" cy="228.4" r="2.3"/><circle cx="558.1" cy="227.4" r="2.3"/><circle cx="558.1" cy="226.3" r="2.3"/><circle cx="558.1" cy="225.3" r="2.3"/><circle cx="558.1" cy="224.3" r="2.3"/><circle cx="558.1" cy="223.3" r="2.3"/><circle cx="558.1" cy="222.2" r="2.3"/><circle cx="558.1" cy="221.2" r="2.3"/><circle cx="558.1" cy="220.2" r="2.3"/><circle cx="558.1" cy="219.1" r="2.3"/><circle cx="558.1" cy="218.1" r="2.3"/><circle cx="558.1" cy="216.7" r="2.3"/><circle cx="558.1" cy="215.7" r="2.3"/><circle cx="558.1" cy="214.7" r="2.3"/><circle cx="558.1" cy="210.6" r="2.3"/><circle cx="558.1" cy="209.5" r="2.3"/><circle cx="558.1" cy="208.5" r="2.3"/><circle cx="558.1" cy="207.5" r="2.3"/><circle cx="558.1" cy="206.5" r="2.3"/><circle cx="558.1" cy="205.4" r="2.3"/><circle cx="558.1" cy="181.1" r="2.3"/><circle cx="558.1" cy="180.1" r="2.3"/><circle cx="558.1" cy="177.0" r="2.3"/><circle cx="558.1" cy="175.6" r="2.3"/><circle cx="576.5" cy="210.6" r="2.3"/><circle cx="576.5" cy="209.5" r="2.3"/><circle cx="576.5" cy="207.5" r="2.3"/><circle cx="576.5" cy="206.5" r="2.3"/><circle cx="576.5" cy="204.7" r="2.3"/><circle cx="576.5" cy="203.7" r="2.3"/><circle cx="576.5" cy="202.7" r="2.3"/><circle cx="576.5" cy="201.7" r="2.3"/><circle cx="576.5" cy="200.6" r="2.3"/><circle cx="576.5" cy="199.6" r="2.3"/><circle cx="576.5" cy="198.6" r="2.3"/><circle cx="576.5" cy="197.5" r="2.3"/><circle cx="576.5" cy="196.5" r="2.3"/><circle cx="576.5" cy="195.5" r="2.3"/><circle cx="576.5" cy="194.5" r="2.3"/><circle cx="576.5" cy="193.4" r="2.3"/><circle cx="576.5" cy="192.4" r="2.3"/><circle cx="576.5" cy="191.4" r="2.3"/><circle cx="576.5" cy="190.3" r="2.3"/><circle cx="576.5" cy="189.3" r="2.3"/><circle cx="576.5" cy="188.3" r="2.3"/><circle cx="576.5" cy="187.3" r="2.3"/><circle cx="576.5" cy="186.2" r="2.3"/><circle cx="576.5" cy="185.2" r="2.3"/><circle cx="576.5" cy="181.1" r="2.3"/><circle cx="576.5" cy="180.1" r="2.3"/><circle cx="576.5" cy="177.0" r="2.3"/><circle cx="576.5" cy="175.6" r="2.3"/><circle cx="594.9" cy="205.4" r="2.3"/><circle cx="594.9" cy="204.4" r="2.3"/><circle cx="594.9" cy="203.0" r="2.3"/><circle cx="594.9" cy="202.0" r="2.3"/><circle cx="594.9" cy="201.0" r="2.3"/><circle cx="594.9" cy="199.9" r="2.3"/><circle cx="594.9" cy="197.5" r="2.3"/><circle cx="594.9" cy="196.5" r="2.3"/><circle cx="594.9" cy="195.5" r="2.3"/><circle cx="594.9" cy="194.5" r="2.3"/><circle cx="594.9" cy="193.4" r="2.3"/><circle cx="594.9" cy="192.4" r="2.3"/><circle cx="594.9" cy="191.4" r="2.3"/><circle cx="594.9" cy="190.3" r="2.3"/><circle cx="594.9" cy="189.3" r="2.3"/><circle cx="594.9" cy="188.3" r="2.3"/><circle cx="594.9" cy="187.3" r="2.3"/><circle cx="594.9" cy="186.2" r="2.3"/><circle cx="594.9" cy="185.2" r="2.3"/><circle cx="594.9" cy="184.2" r="2.3"/><circle cx="594.9" cy="183.1" r="2.3"/><circle cx="594.9" cy="182.1" r="2.3"/><circle cx="594.9" cy="181.1" r="2.3"/><circle cx="594.9" cy="180.1" r="2.3"/><circle cx="594.9" cy="177.0" r="2.3"/><circle cx="594.9" cy="175.6" r="2.3"/><circle cx="594.9" cy="174.6" r="2.3"/><circle cx="594.9" cy="173.5" r="2.3"/><circle cx="594.9" cy="167.4" r="2.3"/><circle cx="594.9" cy="166.3" r="2.3"/><circle cx="594.9" cy="165.3" r="2.3"/><circle cx="594.9" cy="164.3" r="2.3"/><circle cx="594.9" cy="156.4" r="2.3"/><circle cx="594.9" cy="155.4" r="2.3"/><circle cx="594.9" cy="149.2" r="2.3"/><circle cx="594.9" cy="148.2" r="2.3"/><circle cx="594.9" cy="142.7" r="2.3"/><circle cx="594.9" cy="141.7" r="2.3"/><circle cx="613.2" cy="211.3" r="2.3"/><circle cx="613.2" cy="210.2" r="2.3"/><circle cx="613.2" cy="209.2" r="2.3"/><circle cx="613.2" cy="208.2" r="2.3"/><circle cx="613.2" cy="207.1" r="2.3"/><circle cx="613.2" cy="206.1" r="2.3"/><circle cx="613.2" cy="205.1" r="2.3"/><circle cx="613.2" cy="204.1" r="2.3"/><circle cx="613.2" cy="203.0" r="2.3"/><circle cx="613.2" cy="202.0" r="2.3"/><circle cx="613.2" cy="201.0" r="2.3"/><circle cx="613.2" cy="199.9" r="2.3"/><circle cx="613.2" cy="198.9" r="2.3"/><circle cx="613.2" cy="197.9" r="2.3"/><circle cx="613.2" cy="196.9" r="2.3"/><circle cx="613.2" cy="195.8" r="2.3"/><circle cx="613.2" cy="194.8" r="2.3"/><circle cx="613.2" cy="193.8" r="2.3"/><circle cx="613.2" cy="192.7" r="2.3"/><circle cx="613.2" cy="191.7" r="2.3"/><circle cx="613.2" cy="190.7" r="2.3"/><circle cx="613.2" cy="189.3" r="2.3"/><circle cx="613.2" cy="188.3" r="2.3"/><circle cx="613.2" cy="187.3" r="2.3"/><circle cx="613.2" cy="186.2" r="2.3"/><circle cx="613.2" cy="185.2" r="2.3"/><circle cx="613.2" cy="184.2" r="2.3"/><circle cx="613.2" cy="183.1" r="2.3"/><circle cx="613.2" cy="182.1" r="2.3"/><circle cx="613.2" cy="181.1" r="2.3"/><circle cx="613.2" cy="180.1" r="2.3"/><circle cx="631.6" cy="199.6" r="2.3"/><circle cx="631.6" cy="198.6" r="2.3"/><circle cx="631.6" cy="197.5" r="2.3"/><circle cx="631.6" cy="196.5" r="2.3"/><circle cx="631.6" cy="195.5" r="2.3"/><circle cx="631.6" cy="194.5" r="2.3"/><circle cx="631.6" cy="193.4" r="2.3"/><circle cx="631.6" cy="192.4" r="2.3"/><circle cx="631.6" cy="191.4" r="2.3"/><circle cx="631.6" cy="190.3" r="2.3"/><circle cx="631.6" cy="189.3" r="2.3"/><circle cx="631.6" cy="188.3" r="2.3"/><circle cx="631.6" cy="187.3" r="2.3"/><circle cx="631.6" cy="186.2" r="2.3"/><circle cx="631.6" cy="185.2" r="2.3"/></g><polyline class="an-line" points="80.4,85.8 97.3,85.8 98.8,88.2 115.7,88.2 117.1,102.2 134.0,102.2 135.5,99.8 152.4,99.8 153.9,123.1 170.8,123.1 172.2,141.0 189.2,141.0 190.6,142.0 207.5,142.0 209.0,145.8 225.9,145.8 227.4,126.6 244.3,126.6 245.8,101.9 262.7,101.9 264.1,81.7 281.0,81.7 282.5,85.1 299.4,85.1 300.9,107.4 317.8,107.4 319.2,103.9 336.2,103.9 337.6,115.6 354.5,115.6 356.0,121.1 372.9,121.1 374.4,145.8 391.3,145.8 392.8,166.3 409.7,166.3 411.1,183.5 428.0,183.5 429.5,199.9 446.4,199.9 447.9,219.1 464.8,219.1 466.2,233.5 483.2,233.5 484.6,227.4 501.5,227.4 503.0,240.7 519.9,240.7 521.4,235.6 538.3,235.6 539.8,230.8 556.7,230.8 558.1,175.9 575.0,175.9 576.5,203.4 593.4,203.4 594.9,195.8 611.8,195.8 613.2,196.5 630.2,196.5 631.6,192.4 648.5,192.4"/><line class="an-lead" x1="282.5" y1="38.5" x2="316.5" y2="44.5"/><text class="an-note" x="320.5" y="48.5" text-anchor="start">warm outliers, 22.0 °C</text><line class="an-lead" x1="503.0" y1="253.8" x2="463.0" y2="255.8"/><text class="an-note" x="459.0" y="259.8" text-anchor="end">cold outlier, 15.7 °C</text><text class="an-lab" transform="translate(16 142) rotate(-90)" text-anchor="middle">Indoor air temperature (°C)</text><text class="an-lab" x="356" y="312" text-anchor="middle">Date, 2021</text><g class="an-legend"><circle cx="462" cy="30" r="3" class="an-dot-1"/><text x="470" y="34">flagged reading</text><line x1="568" y1="30" x2="586" y2="30" class="an-line"/><text x="592" y="34">daily level</text></g></svg></div>
+                <figcaption><span class="fig">Fig. 4</span> <strong>Detected against a moving average.</strong> Kineum office sensor temperature, September 2021: each dot is a flagged reading, the line is the daily level. Redrawn from the original R analysis.</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="result-row">
+            <div><h4>Result</h4><p><strong>100,000+ records</strong> analysed across <strong>50+ zones</strong>; outliers placed on the 3D model, so it is clear which part of the building is off. Next step: checking live readings against a calibrated physics model, so a deviation points straight to the component at fault.</p></div>
+          </div>
+          <div class="partners-mini">
+            <h4>Data partner</h4>
+            <ul>
+              <li><strong>Nextcloud</strong> · ASHVIN's secure project data store, which supplied the building sensor data and project information. <a href="https://nextcloud.com/" target="_blank" rel="noopener">nextcloud.com ↗</a></li>
+            </ul>
+          </div>
           <footer class="paper-foot">
-            <ul class="tags"><li>Python</li><li>R</li><li>SQL</li><li>IoT / BMS</li><li>ESP32</li><li>Unity</li></ul>
+            <ul class="tags"><li>R</li><li>Python</li><li>Anomaly detection</li><li>IoT / BMS</li><li>Unity</li><li>BIM</li></ul>
           </footer>
         </article>
 
@@ -233,52 +231,43 @@
           </div>
           <header class="paper-head">
             <div>
-              <p class="paper-meta">Horizon 2020 · TU Berlin · 2024 · weather data by Arup</p>
+              <p class="paper-meta">Horizon 2020 · TU Berlin · 2024</p>
               <h3>Will a 1961 duplex in Gdynia overheat as the climate warms?</h3>
               <p class="collab"><span>Worked with</span> Prof. Timo Hartmann (TU Berlin) · Nour Samaro</p>
             </div>
           </header>
-          <div class="abstract">
-            <div><h4>Problem</h4><p>A three-storey duplex from 1961 with 56 cm brick walls, in a cool-humid climate (ASHRAE 5A). It was not built for future heatwaves. How much will it overheat, and do envelope upgrades help?</p></div>
-            <div><h4>Method</h4><p>83 EnergyPlus runs, as built vs. upgraded envelope, under 2017–21 weather and RCP 8.5 projections for 2040 and 2070; ASHRAE 55 adaptive comfort.</p></div>
-            <div><h4>Result</h4><p>As built, the living room overheats for 73.5% of summer by 2061–80. Upgrades (window U-value 3.3 → 1.6, insulation, shading) cut that from <strong>2,700 to 638 hours</strong>, still above the 200-hour limit, so active cooling is needed too.</p></div>
+          <div class="abstract two">
+            <div><h4>Problem</h4><p>A 1961 brick duplex in Gdynia, Poland was never designed for hotter summers. How often will its living room overheat by 2050 and 2080, and does upgrading the envelope fix it?</p></div>
+            <div><h4>Method</h4><p>83 EnergyPlus runs on the existing building and an upgraded envelope, using historical and RCP 8.5 future weather files, with overheating judged by the ASHRAE 55 adaptive comfort model.</p></div>
           </div>
-          <figure class="chart">
-            <svg viewBox="0 0 560 250" role="img" aria-label="Overheating hours, May to September. As built: 819 (2017–21), 2,271 (2031–50), 2,700 (2061–80). Upgraded: 0, 224, 638. Limit 200 hours.">
-              <g class="c-grid"><line x1="50" y1="210" x2="550" y2="210"/><line x1="50" y1="150" x2="550" y2="150"/><line x1="50" y1="90" x2="550" y2="90"/><line x1="50" y1="30" x2="550" y2="30"/></g>
-              <g class="c-axis"><text x="40" y="214" text-anchor="end">0</text><text x="40" y="154" text-anchor="end">1k</text><text x="40" y="94" text-anchor="end">2k</text><text x="40" y="34" text-anchor="end">3k</text></g>
-              <rect class="c-a" x="90" y="160.9" width="56" height="49.1"/>
-              <rect class="c-b" x="152" y="209" width="56" height="1"/>
-              <rect class="c-a" x="250" y="73.7" width="56" height="136.3"/>
-              <rect class="c-b" x="312" y="196.6" width="56" height="13.4"/>
-              <rect class="c-a" x="410" y="48" width="56" height="162"/>
-              <rect class="c-b" x="472" y="171.7" width="56" height="38.3"/>
-              <line class="c-limit" x1="50" y1="198" x2="550" y2="198"/>
-              <g class="c-val" text-anchor="middle"><text x="118" y="154">819</text><text x="180" y="190">0</text><text x="278" y="67">2,271</text><text x="340" y="190">224</text><text x="438" y="42">2,700</text><text x="500" y="165">638</text></g>
-              <g class="c-axis" text-anchor="middle"><text x="149" y="232">2017–21</text><text x="309" y="232">2031–50</text><text x="469" y="232">2061–80</text></g>
-            </svg>
-            <figcaption><span class="fig">Fig. 5</span> Overheating hours, May–September. <span class="lg"><span class="key key-a"></span>As built</span> <span class="lg"><span class="key key-b"></span>Upgraded envelope</span> <span class="lg"><span class="key key-limit"></span>200 h limit</span></figcaption>
-          </figure>
+          <div class="feature-figs">
+            <p class="gal-h">Real data from the Gdynia case study</p>
+            <div class="feat-grid">
+              <figure class="feat">
+                <button type="button" class="zoom" data-full="assets/figures/gdynia-duplex.jpg" aria-label="Enlarge: the 1961 duplex in Gdynia"><img src="assets/figures/gdynia-duplex.jpg" alt="Photo of the 1961 duplex in Gdynia, Poland, with the studied house circled" loading="lazy"></button>
+                <figcaption><span class="fig">Fig. 5</span> <strong>The case-study building.</strong> The 1961 duplex in Gdynia, Poland, with 56 cm brick walls and a gas boiler, studied within BIM-SPEED.</figcaption>
+              </figure>
+              <figure class="feat an-fig">
+                <div class="an-plot"><svg viewBox="0 0 680 318" role="img" aria-label="Overheating hours in the Gdynia living room, May to September. As built: 819 hours (2017–21), 2,271 (2031–50), 2,700 (2061–80). Upgraded envelope: 0, 224, 638. Comfort limit 200 hours."><g class="an-grid"><line x1="70" y1="212.3" x2="650" y2="212.3"/><line x1="70" y1="174.7" x2="650" y2="174.7"/><line x1="70" y1="137.0" x2="650" y2="137.0"/><line x1="70" y1="99.3" x2="650" y2="99.3"/><line x1="70" y1="61.7" x2="650" y2="61.7"/><line x1="70" y1="24.0" x2="650" y2="24.0"/></g><g class="an-tick"><text x="62" y="254.0" text-anchor="end">0</text><text x="62" y="178.7" text-anchor="end">1,000</text><text x="62" y="103.3" text-anchor="end">2,000</text><text x="62" y="28.0" text-anchor="end">3,000</text></g><rect class="bg-a" x="108.7" y="188.3" width="54" height="61.7"/><rect class="bg-b" x="170.7" y="248.8" width="54" height="1.2"/><text class="bg-val" x="135.7" y="182.3" text-anchor="middle">819</text><text class="bg-val" x="197.7" y="243.0" text-anchor="middle">0</text><line class="an-tk" x1="166.7" y1="250" x2="166.7" y2="255"/><g class="an-tick"><text x="166.7" y="269" text-anchor="middle">2017–21</text><text x="166.7" y="283" text-anchor="middle" class="bg-sub">historical</text></g><rect class="bg-a" x="302.0" y="78.9" width="54" height="171.1"/><rect class="bg-b" x="364.0" y="233.1" width="54" height="16.9"/><text class="bg-val" x="329.0" y="72.9" text-anchor="middle">2,271</text><text class="bg-val" x="391.0" y="227.1" text-anchor="middle">224</text><line class="an-tk" x1="360.0" y1="250" x2="360.0" y2="255"/><g class="an-tick"><text x="360.0" y="269" text-anchor="middle">2031–50</text><text x="360.0" y="283" text-anchor="middle" class="bg-sub">RCP 8.5</text></g><rect class="bg-a" x="495.3" y="46.6" width="54" height="203.4"/><rect class="bg-b" x="557.3" y="201.9" width="54" height="48.1"/><text class="bg-val" x="522.3" y="40.6" text-anchor="middle">2,700</text><text class="bg-val" x="584.3" y="195.9" text-anchor="middle">638</text><line class="an-tk" x1="553.3" y1="250" x2="553.3" y2="255"/><g class="an-tick"><text x="553.3" y="269" text-anchor="middle">2061–80</text><text x="553.3" y="283" text-anchor="middle" class="bg-sub">RCP 8.5</text></g><line class="bg-lim" x1="70" y1="234.9" x2="650" y2="234.9"/><path class="an-frame" d="M70 24 V250 H650"/><text class="an-lab" transform="translate(18 137) rotate(-90)" text-anchor="middle">Overheating hours, May–Sep</text><g class="an-legend"><rect x="82" y="26" width="11" height="11" class="bg-a"/><text x="98" y="36">as built</text><rect x="162" y="26" width="11" height="11" class="bg-b"/><text x="178" y="36">upgraded envelope</text><line x1="296" y1="31.5" x2="318" y2="31.5" class="bg-lim"/><text x="324" y="36">200 h comfort limit</text></g></svg></div>
+                <figcaption><span class="fig">Fig. 6</span> <strong>Upgrades help, but not enough.</strong> Living-room overheating hours, May to September, as built and with an upgraded envelope, against the 200-hour comfort limit.</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="result-row">
+            <div><h4>Result</h4><p>As built, the living room overheats for <strong>73.5% of summer</strong> by 2061–80. Better windows (U 3.3 → 1.6), extra insulation and shading cut that from <strong>2,700 to 638 hours</strong>, still above the limit, so the building will also need active cooling.</p></div>
+          </div>
+          <div class="partners-mini">
+            <h4>Data partners</h4>
+            <ul>
+              <li><strong>BIM-SPEED</strong> · building geometry, constructions and materials for the Gdynia case. <a href="https://www.bim-speed.eu/" target="_blank" rel="noopener">bim-speed.eu ↗</a></li>
+              <li><strong>Arup</strong> · historical and future (RCP 8.5) weather files. <a href="https://www.arup.com/" target="_blank" rel="noopener">arup.com ↗</a></li>
+            </ul>
+          </div>
           <footer class="paper-foot">
             <ul class="tags"><li>EnergyPlus</li><li>ASHRAE 55</li><li>RCP 8.5</li><li>Climate scenarios</li><li>Excel</li></ul>
           </footer>
         </article>
 
-        <aside class="partner" id="partners" aria-labelledby="partner-title">
-          <div class="partner-head">
-            <p class="paper-meta">Collaborating partner · REINCARNATE &amp; ASHVIN</p>
-            <a class="partner-logo" href="https://mainflux.com/" target="_blank" rel="noopener" aria-label="Mainflux Labs website"><img src="assets/logos/mainflux.png" alt="Mainflux Labs logo"></a>
-          </div>
-          <h3 id="partner-title">Mainflux Labs</h3>
-          <div class="partner-body">
-            <p>Mainflux Labs builds an open-source IoT platform for the cloud–edge continuum: cloud-native microservices in Docker and Kubernetes that scale from multi-datacentre deployments down to Raspberry Pi-class devices. The company works on EU research projects with partners including TU Berlin, TU Delft, UPC Barcelona and Fraunhofer.</p>
-            <ul class="partner-list">
-              <li><strong>REINCARNATE:</strong> supplied the measured IoT data from the 3L building that calibrated and validated my thesis model.</li>
-              <li><strong>ASHVIN:</strong> I deployed their platform on a Raspberry Pi with ESP32 sensors and real-time visualisation.</li>
-            </ul>
-          </div>
-          <p class="links"><a class="more" href="https://mainflux.com/" target="_blank" rel="noopener">mainflux.com ↗</a><a href="https://www.ashvin.eu/" target="_blank" rel="noopener">ASHVIN ↗</a><a href="https://www.spatial-h2020.eu/" target="_blank" rel="noopener">SPATIAL ↗</a></p>
-        </aside>
       </div>
     </section>
 
@@ -290,18 +279,6 @@
           <h2>Further research &amp; tools</h2>
         </div>
         <div class="minor">
-          <article class="minor-card">
-            <header><p class="paper-meta">Ongoing PhD research · multi-partner project</p><span class="mark mark-iwiq">IWIQ</span></header>
-            <h3>Greywater recycling &amp; heat recovery from BIM</h3>
-            <p>Research on integrated water quality and reuse in residential buildings. I develop the BIM-based pipeline that extracts greywater sources from IFC models and generates routing networks automatically.</p>
-            <ul class="tags"><li>Python</li><li>Revit API / IFC</li><li>BIM automation</li><li>Digital twin</li></ul>
-          </article>
-          <article class="minor-card">
-            <header><p class="paper-meta">BAM · Federal Institute for Materials Research and Testing</p><span class="mark mark-bam">BAM</span></header>
-            <h3>LIBSMapy: spectroscopy analysis toolkit</h3>
-            <p>Contributed to a Python application for Laser-Induced Breakdown Spectroscopy measurements of cementitious materials: denoising, regression models, element mapping, clustering and cement-content estimation.</p>
-            <ul class="tags"><li>Python</li><li>Signal processing</li><li>Regression</li><li>Clustering</li></ul>
-          </article>
           <article class="minor-card">
             <header><p class="paper-meta">DECODER · Concordia University, Montreal · 2025</p></header>
             <h3>Energy forecasting API for renovation planning</h3>
@@ -318,28 +295,12 @@
       </div>
     </section>
 
-    <!-- 3. Experience -->
-    <section class="sec" id="experience">
-      <div class="wrap">
-        <div class="sec-head">
-          <span class="sec-no">3</span>
-          <h2>Experience</h2>
-        </div>
-        <ol class="cv">
-          <li><span class="when">2025–26</span><div><h3>Graduate Researcher and master's thesis, building energy simulation &amp; digital twins</h3><p class="org">REINCARNATE &amp; Mainflux Labs · Berlin</p></div></li>
-          <li><span class="when">2022–24</span><div><h3>Building Data Analyst, HVAC operational analysis</h3><p class="org">ASHVIN, EU Horizon 2020 · Berlin</p></div></li>
-          <li><span class="when">2022–24</span><div><h3>Research Assistant, building simulation &amp; technical training</h3><p class="org">Technical University of Berlin</p></div></li>
-          <li><span class="when">2019–21</span><div><h3>Research Assistant &amp; Research Lead, building technology</h3><p class="org">The Polytechnic, Ibadan · Nigeria</p></div></li>
-          <li><span class="when">2016–20</span><div><h3>Project Engineer, construction coordination</h3><p class="org">Blevic Geomatics &amp; Consults · Lagos. Delivered a 500-seat event centre (EUR 115k–176k).</p></div></li>
-        </ol>
-      </div>
-    </section>
 
-    <!-- 4. Methods -->
+    <!-- 3. Methods -->
     <section class="sec" id="methods">
       <div class="wrap">
         <div class="sec-head">
-          <span class="sec-no">4</span>
+          <span class="sec-no">3</span>
           <h2>Methods &amp; tools</h2>
         </div>
         <div class="methods">

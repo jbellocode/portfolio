@@ -14,11 +14,10 @@
   // id, window title, icon label, icon, default size
   var APPS = [
     { id: 'about', title: 'About John', label: 'About John', icon: 'user', tone: 'oak', w: 500, h: 640 },
-    { id: 'reincarnate', title: 'REINCARNATE · Master’s thesis', label: 'REINCARNATE', img: 'assets/logos/reincarnate.png', w: 1000, h: 760 },
+    { id: 'reincarnate', title: 'REINCARNATE · Horizon Europe', label: 'REINCARNATE', img: 'assets/logos/reincarnate.png', w: 1000, h: 760 },
     { id: 'ashvin', title: 'ASHVIN · Horizon 2020', label: 'ASHVIN', img: 'assets/logos/ashvin.png', w: 960, h: 720 },
     { id: 'bimspeed', title: 'BIM-SPEED · Gdynia study', label: 'BIM-SPEED', img: 'assets/logos/bimspeed.png', w: 960, h: 740 },
     { id: 'fig1', title: 'Fig1_psychrometric.chart', label: 'Fig1.chart', icon: 'chart', tone: 'glass', w: 680, h: 600 },
-    { id: 'mainflux', title: 'Mainflux Labs · partner', label: 'Mainflux Labs', img: 'assets/logos/mainflux.png', w: 860, h: 520 },
     { id: 'more', title: 'Further research', label: 'Further research', icon: 'folder', w: 900, h: 680 },
     { id: 'cv', title: 'CV · Experience & methods', label: 'CV', icon: 'doc', w: 860, h: 700 },
     { id: 'contact', title: 'Contact', label: 'Contact', icon: 'mail', tone: 'oak', w: 560, h: 420 }
@@ -27,7 +26,7 @@
   APPS.forEach(function (a) { APP[a.id] = a; });
 
   // links inside the page content that should open windows instead
-  var LINK_TO_WIN = { '#research': 'reincarnate', '#contact': 'contact', '#partners': 'mainflux', '#more': 'more', '#experience': 'cv', '#methods': 'cv' };
+  var LINK_TO_WIN = { '#research': 'reincarnate', '#contact': 'contact', '#more': 'more', '#experience': 'cv', '#methods': 'cv' };
 
   var body = document.body;
   var desk = document.getElementById('desk');
@@ -86,8 +85,7 @@
     content.reincarnate = function () { return frag(paper(0)); };
     content.ashvin = function () { return frag(paper(1)); };
     content.bimspeed = function () { return frag(paper(2)); };
-    content.fig1 = function () { return frag(q('.psy')); };
-    content.mainflux = function () { return frag(q('#partners')); };
+    content.fig1 = function () { return frag(q('.hero-card')); };
     content.more = function () { return frag(heading('Further research & tools'), q('#more .minor')); };
     content.cv = function () {
       return frag(
