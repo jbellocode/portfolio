@@ -109,6 +109,19 @@
               <a class="btn" href="https://cordis.europa.eu/project/id/101056773" target="_blank" rel="noopener">EU CORDIS record ↗</a>
             </div>
           </div>
+          <div class="feature-figs">
+            <p class="gal-h">From the thesis · real data from the 3L office</p>
+            <div class="feat-grid">
+              <figure class="feat">
+                <button type="button" class="zoom" data-full="assets/figures/calibration-progression.jpg" aria-label="Enlarge: Measured indoor temperature against three calibrated model versions, peak summer week"><img src="assets/figures/calibration-progression.jpg" alt="Measured indoor temperature against three calibrated model versions, peak summer week" loading="lazy"></button>
+                <figcaption><span class="fig">Calibration</span> <strong>A physics-based twin calibrated on real measurements.</strong> Hourly sensor data from Mainflux against three EnergyPlus model versions in the peak summer week. Each round closes the gap: RMSE 3.71 → 2.90 → 2.34 °C, CV(RMSE) 9.65%.</figcaption>
+              </figure>
+              <figure class="feat">
+                <button type="button" class="zoom" data-full="assets/figures/peak-week-control.jpg" aria-label="Enlarge: Peak summer week, passive baseline against automated TABS control"><img src="assets/figures/peak-week-control.jpg" alt="Peak summer week, passive baseline against automated TABS control" loading="lazy"></button>
+                <figcaption><span class="fig">Control</span> <strong>Anticipating thermal inertia instead of reacting.</strong> The passive baseline climbs to 31 °C. My predictive RMOT control of the concrete TABS slab holds the zone near 26 °C through the same week.</figcaption>
+              </figure>
+            </div>
+          </div>
           <header class="paper-head">
             <div>
               <p class="paper-meta">Horizon Europe · Master's thesis, TU Berlin · Feb 2026 · with Mainflux Labs</p>
@@ -357,5 +370,25 @@
     </section>
   </main>
 
+  <dialog class="lightbox" id="lightbox" aria-label="Enlarged figure">
+    <form method="dialog"><button class="lb-close" aria-label="Close">Close ✕</button></form>
+    <img alt="">
+    <p></p>
+  </dialog>
+  <script>
+    (function () {
+      var lb = document.getElementById('lightbox');
+      if (!lb || !lb.showModal) return;
+      var img = lb.querySelector('img'), cap = lb.querySelector('p');
+      document.querySelectorAll('.zoom').forEach(function (b) {
+        b.addEventListener('click', function () {
+          img.src = b.dataset.full; img.alt = b.querySelector('img').alt;
+          cap.textContent = b.parentNode.querySelector('figcaption').textContent;
+          lb.showModal();
+        });
+      });
+      lb.addEventListener('click', function (e) { if (e.target === lb) lb.close(); });
+    })();
+  </script>
 </body>
 </html>
