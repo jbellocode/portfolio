@@ -62,7 +62,7 @@
             <li><span class="step-no">01</span><div><h3>Build</h3><p>Map HVAC drawings, floor plans, IFC files and sensor feeds into calibrated digital twins.</p></div></li>
             <li><span class="step-no">02</span><div><h3>Forecast</h3><p>Use future weather data in simulations to plan heating and cooling ahead.</p></div></li>
             <li><span class="step-no">03</span><div><h3>Tune</h3><p>Adjust control logic so rooms stay inside their temperature and CO₂ limits.</p></div></li>
-            <li><span class="step-no">04</span><div><h3>Anomaly detection</h3><p>Flag odd sensor readings and pin them to the right room on a BIM model.</p></div></li>
+            <li><span class="step-no">04</span><div><h3>Anomaly detection</h3><p>Forecast expected sensor readings with ML models, flag deviations and pin them to the right room on a BIM model.</p></div></li>
           </ol>
           </div>
           <div class="iso">
@@ -198,7 +198,7 @@
           </header>
           <div class="abstract two">
             <div><h4>Problem</h4><p>A working office produces thousands of sensor readings, and an outlier in a table gives facility staff no clue which room or component it came from.</p></div>
-            <div><h4>Method</h4><p>Flagged temperature anomalies against a moving average in R, then mapped them onto a clickable BIM model of the Kineum office in Unity.</p></div>
+            <div><h4>Method</h4><p>Forecast expected temperature readings with ML models (gradient boosting, autoencoder) in Python and a moving-average baseline in R, flagged readings that deviated, then mapped them onto a clickable BIM model of the Kineum office in Unity.</p></div>
           </div>
           <div class="feature-figs">
             <p class="gal-h">Real data from the Kineum office · ASHVIN demo site</p>
@@ -223,7 +223,7 @@
             </ul>
           </div>
           <footer class="paper-foot">
-            <ul class="tags"><li>R</li><li>Python</li><li>Anomaly detection</li><li>IoT / BMS</li><li>Unity</li><li>BIM</li></ul>
+            <ul class="tags"><li>Python</li><li>R</li><li>Machine learning</li><li>Forecasting</li><li>Anomaly detection</li><li>IoT / BMS</li><li>Unity</li><li>BIM</li></ul>
           </footer>
         </article>
 
@@ -319,7 +319,7 @@
         <div class="methods">
           <div><h3>HVAC &amp; heating systems</h3><p>EnergyPlus HVAC and plant modelling (radiant TABS slabs, district heating and cooling, natural ventilation), OpenStudio, heating-system diagnostics, ISO 11855 / ISO 7730</p></div>
           <div><h3>Simulation &amp; BIM</h3><p>EnergyPlus, IES VE, DesignBuilder, OpenStudio, SketchUp, IfcOpenShell, web-ifc, Revit and Revit API, ArchiCAD, AutoCAD, Navisworks, gbXML</p></div>
-          <div><h3>Data &amp; automation</h3><p>Python, R, SQL, REST APIs, IoT/BMS time series, anomaly detection, sensor-data validation</p></div>
+          <div><h3>Data &amp; automation</h3><p>Python, R, SQL, REST APIs, IoT/BMS time series, ML forecasting (gradient boosting, autoencoder), anomaly detection, sensor-data validation</p></div>
           <div><h3>Standards &amp; methods</h3><p>Model calibration (ASHRAE Guideline 14 metrics), ASHRAE 55 adaptive comfort, RCP climate scenarios, scenario comparison</p></div>
         </div>
       </div>
