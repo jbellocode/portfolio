@@ -199,6 +199,10 @@ figcaption { font-size: .86rem; line-height: 1.55; color: var(--muted); margin-t
 .minor-card h3 { font-family: var(--serif); font-weight: 500; font-size: 1.35rem; line-height: 1.25; }
 .minor-card > p { font-family: var(--serif); font-size: 1.05rem; line-height: 1.6; color: var(--ink-2); }
 .minor-card .tags { margin-top: auto; padding-top: 6px; }
+.minor-logo { display: flex; align-items: center; height: 56px; padding: 10px 14px; background: #ffffff; border: 1px solid var(--rule); border-radius: 6px; align-self: flex-start; }
+.minor-logo img { height: 34px; width: auto; max-width: 100%; }
+.minor-logo:hover { border-color: var(--accent); }
+.minor-btn { align-self: flex-start; margin-top: 4px; }
 @media (max-width: 900px) {
   .figs, .minor { grid-template-columns: 1fr; }
 }
