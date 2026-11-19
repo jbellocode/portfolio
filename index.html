@@ -310,7 +310,7 @@
             <a class="minor-logo" href="https://www.tu.berlin/" target="_blank" rel="noopener" aria-label="Technische Universität Berlin website"><img src="assets/logos/tuberlin.svg" alt="Technische Universität Berlin logo"></a>
             <header><p class="paper-meta">Technische Universität Berlin · Life-cycle assessment</p></header>
             <h3>Life-cycle assessment and multi-criteria comparison of pile foundations</h3>
-            <p>Compared cast-in-place concrete, timber and prefabricated steel piles for a residential building over a 50-year life cycle in R. I built a life-cycle inventory of embodied energy, CO₂, NOx and SO₂, modelled maintenance and replacement schedules, and ranked the options with TOPSIS multi-criteria analysis. Timber had the lowest energy and emissions in most indicators and ranked first in both TOPSIS runs.</p>
+            <p>Compared cast-in-place concrete, timber and prefabricated steel piles for a residential building over a 50-year life cycle in R. I modelled maintenance and replacement schedules, built a life-cycle inventory of embodied energy, CO₂, NOx and SO₂ by multiplying material quantities by emission factors and by the number of construction, maintenance and replacement events, and ranked the options with TOPSIS multi-criteria analysis. Timber had the lowest energy and emissions in most indicators and ranked first in both TOPSIS runs.</p>
             <table class="lca-opts">
               <caption>Design options</caption>
               <tbody>
@@ -324,9 +324,9 @@
                 <div class="lca-tl">
                   <button type="button" class="zoom" data-full="assets/figures/lca-timeline-concrete.png" aria-label="Enlarge: maintenance and replacement timeline for the concrete pile"><img src="assets/figures/lca-timeline-concrete.png" alt="Timeline 2021 to 2071 for the cast-in-place concrete pile: construction, maintenance, shallow deck replacements and a final deck replacement" loading="lazy"></button>
                   <button type="button" class="zoom" data-full="assets/figures/lca-timeline-timber.png" aria-label="Enlarge: maintenance and replacement timeline for the timber pile"><img src="assets/figures/lca-timeline-timber.png" alt="Timeline 2021 to 2071 for the timber pile: frequent maintenance, shallow deck replacements and a deck replacement around 2051" loading="lazy"></button>
-                  <button type="button" class="zoom" data-full="assets/figures/lca-timeline-steel.png" aria-label="Enlarge: maintenance and replacement timeline for the steel pile"><img src="assets/figures/lca-timeline-steel.png" alt="Timeline 2021 to 2071 for the prefabricated steel pile: frequent maintenance, one shallow deck replacement and a deck replacement around 2063" loading="lazy"></button>
+                  <button type="button" class="zoom" data-full="assets/figures/lca-timeline-steel.png" aria-label="Enlarge: maintenance and replacement timeline for the steel pile"><img src="assets/figures/lca-timeline-steel.png" alt="Timeline 2021 to 2071 for the prefabricated steel pile: frequent maintenance, one shallow deck replacement and a deck replacement in the early 2060s" loading="lazy"></button>
                 </div>
-                <figcaption><span class="fig">Fig. 7</span> <strong>Life-cycle events over 50 years.</strong> Construction (DC), maintenance (M), shallow deck replacement (SDR) and deck replacement (DR) for each pile type, generated in R.</figcaption>
+                <figcaption><span class="fig">Fig. 7</span> <strong>Life-cycle events over 50 years, generated in R.</strong> Labels follow the course's maintenance model: initial construction (DC), maintenance (M), shallow deck replacement (SDR) and deck replacement (DR). Each event adds material to the inventory.</figcaption>
               </figure>
               <figure class="feat">
                 <button type="button" class="zoom" data-full="assets/figures/lca-radar.png" aria-label="Enlarge: radar plots of normalised energy, CO2, NOx and SO2 per option"><img src="assets/figures/lca-radar.png" alt="Four radar plots of normalised energy, CO2, NOx and SO2 for options 1 to 3: option 1 (concrete) peaks in energy and CO2, option 3 (steel) peaks in NOx and SO2" loading="lazy"></button>
@@ -334,7 +334,7 @@
               </figure>
             </div>
             <div class="topsis" role="group" aria-label="TOPSIS ranking of the pile options">
-              <p class="gal-h">TOPSIS multi-criteria ranking (share of preference)</p>
+              <p class="gal-h">TOPSIS ranking: closeness to the ideal option, normalised to 100%</p>
               <div class="topsis-runs">
                 <div>
                   <p class="topsis-run">Run 1</p>
