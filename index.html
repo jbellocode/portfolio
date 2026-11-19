@@ -306,6 +306,53 @@
             <p>Led a six-member team researching bricks made from recycled polymer and sand, coordinating analysis, documentation and partner reporting.</p>
             <ul class="tags"><li>Materials testing</li><li>Team lead</li></ul>
           </article>
+          <article class="minor-card minor-wide" id="lca">
+            <a class="minor-logo" href="https://www.tu.berlin/" target="_blank" rel="noopener" aria-label="Technische Universität Berlin website"><img src="assets/logos/tuberlin.svg" alt="Technische Universität Berlin logo"></a>
+            <header><p class="paper-meta">Technische Universität Berlin · Life-cycle assessment</p></header>
+            <h3>Life-cycle assessment and multi-criteria comparison of pile foundations</h3>
+            <p>Compared cast-in-place concrete, timber and prefabricated steel piles for a residential building over a 50-year life cycle in R. I built a life-cycle inventory of embodied energy, CO₂, NOx and SO₂, modelled maintenance and replacement schedules, and ranked the options with TOPSIS multi-criteria analysis. Timber had the lowest energy and emissions in most indicators and ranked first in both TOPSIS runs.</p>
+            <table class="lca-opts">
+              <caption>Design options</caption>
+              <tbody>
+                <tr><th scope="row">Option 1</th><td>Cast-in-place concrete pile</td></tr>
+                <tr><th scope="row">Option 2</th><td>Timber pile</td></tr>
+                <tr><th scope="row">Option 3</th><td>Prefabricated steel pile</td></tr>
+              </tbody>
+            </table>
+            <div class="lca-figs">
+              <figure class="feat">
+                <div class="lca-tl">
+                  <button type="button" class="zoom" data-full="assets/figures/lca-timeline-concrete.png" aria-label="Enlarge: maintenance and replacement timeline for the concrete pile"><img src="assets/figures/lca-timeline-concrete.png" alt="Timeline 2021 to 2071 for the cast-in-place concrete pile: construction, maintenance, shallow deck replacements and a final deck replacement" loading="lazy"></button>
+                  <button type="button" class="zoom" data-full="assets/figures/lca-timeline-timber.png" aria-label="Enlarge: maintenance and replacement timeline for the timber pile"><img src="assets/figures/lca-timeline-timber.png" alt="Timeline 2021 to 2071 for the timber pile: frequent maintenance, shallow deck replacements and a deck replacement around 2051" loading="lazy"></button>
+                  <button type="button" class="zoom" data-full="assets/figures/lca-timeline-steel.png" aria-label="Enlarge: maintenance and replacement timeline for the steel pile"><img src="assets/figures/lca-timeline-steel.png" alt="Timeline 2021 to 2071 for the prefabricated steel pile: frequent maintenance, one shallow deck replacement and a deck replacement around 2063" loading="lazy"></button>
+                </div>
+                <figcaption><span class="fig">Fig. 7</span> <strong>Life-cycle events over 50 years.</strong> Construction (DC), maintenance (M), shallow deck replacement (SDR) and deck replacement (DR) for each pile type, generated in R.</figcaption>
+              </figure>
+              <figure class="feat">
+                <button type="button" class="zoom" data-full="assets/figures/lca-radar.png" aria-label="Enlarge: radar plots of normalised energy, CO2, NOx and SO2 per option"><img src="assets/figures/lca-radar.png" alt="Four radar plots of normalised energy, CO2, NOx and SO2 for options 1 to 3: option 1 (concrete) peaks in energy and CO2, option 3 (steel) peaks in NOx and SO2" loading="lazy"></button>
+                <figcaption><span class="fig">Fig. 8</span> <strong>Normalised indicators per option.</strong> Concrete (1) leads in energy and CO₂, steel (3) in NOx and SO₂, and timber (2) stays lowest in most indicators.</figcaption>
+              </figure>
+            </div>
+            <div class="topsis" role="group" aria-label="TOPSIS ranking of the pile options">
+              <p class="gal-h">TOPSIS multi-criteria ranking (share of preference)</p>
+              <div class="topsis-runs">
+                <div>
+                  <p class="topsis-run">Run 1</p>
+                  <div class="topsis-row"><span>Timber</span><span class="topsis-bar"><i style="width:52.18%"></i></span><b>52.2%</b></div>
+                  <div class="topsis-row"><span>Concrete</span><span class="topsis-bar"><i style="width:30.47%"></i></span><b>30.5%</b></div>
+                  <div class="topsis-row"><span>Steel</span><span class="topsis-bar"><i style="width:17.35%"></i></span><b>17.4%</b></div>
+                </div>
+                <div>
+                  <p class="topsis-run">Run 2</p>
+                  <div class="topsis-row"><span>Timber</span><span class="topsis-bar"><i style="width:34.3%"></i></span><b>34.3%</b></div>
+                  <div class="topsis-row"><span>Steel</span><span class="topsis-bar"><i style="width:33.6%"></i></span><b>33.6%</b></div>
+                  <div class="topsis-row"><span>Concrete</span><span class="topsis-bar"><i style="width:32.1%"></i></span><b>32.1%</b></div>
+                </div>
+              </div>
+            </div>
+            <p class="lca-note">Method note: a refined study would compare piles of equal load capacity using EPD data, which can change the ranking.</p>
+            <ul class="tags"><li>Life-cycle assessment</li><li>Embodied impacts</li><li>R</li><li>TOPSIS</li><li>Multi-criteria analysis</li></ul>
+          </article>
         </div>
       </div>
     </section>

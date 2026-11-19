@@ -203,6 +203,23 @@ figcaption { font-size: .86rem; line-height: 1.55; color: var(--muted); margin-t
 .minor-logo img { height: 34px; width: auto; max-width: 100%; }
 .minor-logo:hover { border-color: var(--accent); }
 .minor-btn { align-self: flex-start; margin-top: 4px; }
+.minor-wide { grid-column: 1 / -1; }
+.lca-opts { border-collapse: collapse; font-size: .92rem; max-width: 420px; }
+.lca-opts caption { text-align: left; font-family: var(--mono); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); padding-bottom: 6px; }
+.lca-opts th, .lca-opts td { text-align: left; padding: 6px 14px 6px 0; border-bottom: 1px solid var(--rule); font-weight: 400; }
+.lca-opts th { color: var(--muted); white-space: nowrap; }
+.lca-figs { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 24px; align-items: start; margin-top: 6px; }
+.lca-tl { display: flex; flex-direction: column; gap: 8px; }
+.lca-figs .zoom img { aspect-ratio: auto; }
+.topsis { margin-top: 4px; }
+.topsis-runs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; margin-top: 10px; }
+.topsis-run { font-weight: 600; font-size: .92rem; margin-bottom: 6px; }
+.topsis-row { display: grid; grid-template-columns: 74px minmax(0, 1fr) 52px; align-items: center; gap: 10px; font-size: .9rem; margin-bottom: 6px; }
+.topsis-row b { font-weight: 500; text-align: right; font-variant-numeric: tabular-nums; }
+.topsis-bar { display: block; height: 10px; background: var(--rule); border-radius: 2px; overflow: hidden; }
+.topsis-bar i { display: block; height: 100%; background: var(--accent); }
+.lca-note { font-size: .92rem !important; color: var(--muted) !important; font-style: italic; }
+@media (max-width: 760px) { .lca-figs, .topsis-runs { grid-template-columns: 1fr; } }
 @media (max-width: 900px) {
   .figs, .minor { grid-template-columns: 1fr; }
 }
